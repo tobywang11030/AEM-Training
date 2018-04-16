@@ -1,5 +1,9 @@
 # mangoCMS 一个基于Adobe AEM实现的CMS
 
+部署方法
+1. 启动AEM
+2. 项目根目录下运行 mvn clean install -PautoInstallPackage
+
 
 #相关资料
 Adobe 官方教程入口

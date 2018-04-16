@@ -114,6 +114,16 @@
                                             emptyText="Search Page Label"
                                             fieldLabel="Search Page Label"
                                             name="./searchLabel"/>
+                                    <mydropdown
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            fieldLabel="My Dropdown Label"
+                                            name="./mydropdown">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/apps/mango/components/content/datasource"
+                                                />
+                                    </mydropdown>
 
                                 </items>
                             </tab>

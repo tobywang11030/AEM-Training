@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Header Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="General"
+                    sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <usersubmenu
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Header Properties"
+                            sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <tab
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <homepath
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            emptyText="Home Path"
+                                            fieldLabel="Home Path"
+                                            name="./homePath"
+                                            rootPath="/content/mango"/>
+                                    <rootPath
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            emptyText="Category Root Path"
+                                            fieldLabel="Category Root Path"
+                                            name="./rootPath"
+                                            rootPath="/content/mango"/>
+                                    <blogTitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            emptyText="Blog Title"
+                                            fieldLabel="Blog Title"
+                                            name="./blogTitle"/>
+                                    <blogSubTitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            emptyText="Blog Sub Title"
+                                            fieldLabel="Blog Sub Title"
+                                            name="./blogSubTitle"/>
+                                    <adminPath
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            emptyText="Admin Page Path"
+                                            fieldLabel="Admin Page Path"
+                                            name="./adminPath"/>
+                                    <adminLabel
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            emptyText="Admin Path Label"
+                                            fieldLabel="Admin Path Label"
+                                            name="./adminLabel"/>
+                                    <logoutURL
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            emptyText="Logout Service URL"
+                                            fieldLabel="Logout Service URL"
+                                            name="./logoutURL"/>
+                                    <logoutLabel
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            emptyText="Logout Path Label"
+                                            fieldLabel="Logout Path Label"
+                                            name="./logoutLabel"/>
+                                    <loginURL
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            emptyText="Login Page URL"
+                                            fieldLabel="Login Page URL"
+                                            name="./loginURL"/>
+                                    <loginLabel
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            emptyText="Login Path Label"
+                                            fieldLabel="Login Path Label"
+                                            name="./loginLabel"/>
+                                    <registerPath
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            emptyText="Register Page URL"
+                                            fieldLabel="Register Page URL"
+                                            name="./registerPath"/>
+                                    <registerLabel
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            emptyText="Register Path Label"
+                                            fieldLabel="Register Path Label"
+                                            name="./registerLabel"/>
+                                    <searchPagePath
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            emptyText="Search Page Path"
+                                            fieldLabel="Search Page Path"
+                                            name="./searchPagePath"/>
+                                    <searchLabel
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            emptyText="Search Page Label"
+                                            fieldLabel="Search Page Label"
+                                            name="./searchLabel"/>
+
+                                </items>
+                            </tab>
+                        </items>
+                    </usersubmenu>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

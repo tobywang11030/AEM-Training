@@ -1,0 +1,98 @@
+<sly data-sly-use.header="com.mango.core.models.HeaderModel">
+    <header>
+        <div class="banner">
+            <div class="fn-clear wrapper">
+                <h1 class="fn-inline">
+                    <a href="${properties.homePath}.html" rel="start">
+                        <sly data-sly-test="${properties.blogTitle!=null}">
+                            ${properties.blogTitle}
+                        </sly>
+                        <sly data-sly-test="${properties.blogTitle==null}">
+                            Please set the Blog Title in Edit Mode
+                        </sly>
+                    </a>
+                </h1>
+                <small> &nbsp; ${properties.blogSubTitle}</small>
+                <div class="fn-right">
+                    <sly data-sly-test="${header.isLogin}">
+                        <a href="${properties.adminPath}" title="${adminLabel}">
+                            <i class="icon-setting"></i>${properties.adminLabel}
+                        </a>
+                        <a href="${properties.logoutURL}">
+                            <i class="icon-logout"></i> ${properties.logoutLabel}
+                        </a>
+                    </sly>
+                    <sly data-sly-test="${!header.isLogin}">
+                            <a href="${properties.loginURL}.html">
+                                <i class="icon-login"></i> ${properties.loginLabel}
+                            </a>
+                            <a href="${properties.registerPath}.html">
+                                <i class="icon-register"></i> ${properties.registerLabel}
+                            </a>
+                    </sly>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="fn-clear wrapper">
+                <nav class="fn-left">
+                    <sly  data-sly-list="${header.pageBean.children}">
+                        <sly data-sly-test="${item.path==header.currentPath}">
+                            <a class="current" rel="section" href="${item.path}.html"><i class="${item.pageIcon}"></i>${item.pageTitle}</a>
+                        </sly>
+                        <sly data-sly-test="${item.path!=header.currentPath}">
+                            <a rel="section" href="${item.path}.html"><i class="${item.pageIcon}"></i>${item.pageTitle}</a>
+                        </sly>
+
+                    </sly>
+                </nav>
+                <div class="fn-right">
+                    <form class="form" action="${properties.searchPagePath}.html">
+                        <input placeholder="${properties.searchLabel}" id="search" type="text" name="keyword"/>
+                        <button type="submit"><i class="icon-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="responsive fn-none">
+        <i class="icon-list"></i>
+        <ul class="list">
+            <sly data-sly-test="${header.isLogin}">
+                <li>
+                    <a href="${properties.adminPath}" title="${adminLabel}">
+                        <i class="icon-setting"></i> ${adminLabel}
+                    </a>
+                </li>
+                <li>
+                    <a href="${properties.logoutURL}">
+                        <i class="icon-logout"></i> ${logoutLabel}
+                    </a>
+                </li>
+            </sly>
+            <sly data-sly-test="${!header.isLogin}">
+                    <li>
+                        <a href="${properties.loginURL}.html">
+                            <i class="icon-login"></i> ${loginLabel}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="${properties.registerPath}.html">
+                            <i class="icon-register"></i> ${registerLabel}
+                        </a>
+                    </li>
+            </sly>
+            <sly  data-sly-list="${header.pageBean.children}">
+                <sly data-sly-test="${item.path==header.currentPath}">
+                    <li>
+                        <a href="${item.path}.html">
+                            <i class="${item.pageIcon}"></i>
+                            ${item.pageTitle}
+                        </a>
+                    </li>
+                </sly>
+            </sly>
+        </ul>
+    </div>
+</sly>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2018-04-16T15:40:04.485+08:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/mango/templates/header"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="页眉页"
+        sling:resourceType="mango/components/structure/header"
+        pageTitle="页眉页">
+        <headercontent
+            jcr:lastModified="{Date}2018-04-16T15:40:04.484+08:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="mango/components/content/header"
+            adminLabel="管理后台"
+            blogSubTitle="The bese AEM Blog"
+            blogTitle="My Blog"
+            homePath="/content/mango/home"
+            loginLabel="登录"
+            logoutLabel="登出"
+            registerLabel="注册"
+            rootPath="/content/mango/category"
+            searchLabel="搜索"/>
+    </jcr:content>
+</jcr:root>

@@ -5,14 +5,16 @@
 2. 项目根目录下运行 mvn clean install -PautoInstallPackage
 
 
-#相关资料
+相关资料
+
 Adobe 官方教程入口
 https://helpx.adobe.com/support/experience-manager/6-3.html
 
 Adobe 官方视频教程入口
 https://helpx.adobe.com/experience-manager/kt/index/aem-6-3-videos.html
 
-#常用技术点
+常用技术点
+
 动态下拉菜单
 https://www.linkedin.com/pulse/granite-datasource-inside-touch-ui-select-object-aem-gonz%C3%A1lez-ramos
 https://helpx.adobe.com/experience-manager/using/creating-touchui-validate11.html

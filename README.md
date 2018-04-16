@@ -16,7 +16,6 @@ https://helpx.adobe.com/experience-manager/kt/index/aem-6-3-videos.html
 常用技术点
 
 动态下拉菜单
-
 https://www.linkedin.com/pulse/granite-datasource-inside-touch-ui-select-object-aem-gonz%C3%A1lez-ramos
 https://helpx.adobe.com/experience-manager/using/creating-touchui-validate11.html
 

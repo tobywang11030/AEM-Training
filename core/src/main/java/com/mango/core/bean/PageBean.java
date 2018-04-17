@@ -2,10 +2,13 @@ package com.mango.core.bean;
 
 import com.day.cq.wcm.api.Page;
 import org.apache.sling.api.resource.ValueMap;
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormatter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
+import java.util.GregorianCalendar;
 import java.util.Iterator;
 import java.util.List;
 
@@ -165,8 +168,16 @@ public class PageBean {
     public String getDescription() {
         return this.getPage().getProperties().get("jcr:description", String.class);
     }
-    public String getpageIcon() {
+    public String getPageIcon() {
         return this.getPage().getProperties().get("dc:pageIcon", String.class);
+    }
+    public String getPageCreatedTime() {
+        String createdtime =  this.getPage().getProperties().get("jcr:created", String.class);
+       
+        DateTime lastModifiedTime = new DateTime(createdtime);
+        
+        
+        return lastModifiedTime.toString("yyyy-MM-dd HH:mm");
     }
     
 

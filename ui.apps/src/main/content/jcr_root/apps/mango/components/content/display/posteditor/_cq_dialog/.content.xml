@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           jcr:primaryType="nt:unstructured"
-          jcr:title="文章编辑器配置"
+          jcr:title="文章配置"
           sling:resourceType="cq/gui/components/authoring/dialog">
     <content
             jcr:primaryType="nt:unstructured"
@@ -13,11 +13,54 @@
         <items jcr:primaryType="nt:unstructured">
             <tabs
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="编辑器配置"
+                    jcr:title="基本属性"
                     sling:resourceType="granite/ui/components/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-
-
+                    <articleTitle
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            emptyText="Article Title"
+                            fieldLabel="Article Title"
+                            name="./articleTitle"/>
+                    <articleTag
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/common/tagspicker"
+                            allowCreate="{Boolean}true"
+                            cq-msm-lockable="cq:tags"
+                            fieldLabel="选择标签"
+                            metaType="tags"
+                            rootPath="/etc/tags/mango"
+                            name="./articleTag"/>
+                    <firstColumnLinks
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/multifield"
+                            fieldLabel="添加新标签">
+                        <field
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                acs-commons-nested="NODE_STORE"
+                                name="./">
+                            <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                    method="absolute"/>
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <linkText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                emptyText="标签名"
+                                                fieldLabel="标签名"
+                                                name="./tagName"/>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </firstColumnLinks>
                 </items>
             </tabs>
         </items>

@@ -137,5 +137,15 @@
             <artifactId>gson</artifactId>
             <version>2.3</version>
         </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.joda</groupId>
+            <artifactId>joda-convert</artifactId>
+            <version>1.9.2</version>
+        </dependency>
     </dependencies>
 </project>

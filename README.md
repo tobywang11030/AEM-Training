@@ -16,8 +16,8 @@ https://helpx.adobe.com/experience-manager/kt/index/aem-6-3-videos.html
 常用技术点
 
 动态下拉菜单
-https://mkbansal.wordpress.com/2016/01/04/aem-acs-generic-list-dialog-configuration-touch-ui/
 https://www.linkedin.com/pulse/granite-datasource-inside-touch-ui-select-object-aem-gonz%C3%A1lez-ramos
+https://mkbansal.wordpress.com/2016/01/04/aem-acs-generic-list-dialog-configuration-touch-ui/
 https://helpx.adobe.com/experience-manager/using/creating-touchui-validate11.html
 
 使用Multifield

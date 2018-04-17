@@ -31,7 +31,7 @@
                             fieldLabel="选择标签"
                             metaType="tags"
                             rootPath="/etc/tags/mango"
-                            name="./articleTag"/>
+                            name="./selectedTags"/>
                     <firstColumnLinks
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/foundation/form/multifield"
@@ -40,7 +40,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/fieldset"
                                 acs-commons-nested="NODE_STORE"
-                                name="./">
+                                name="./articleTags">
                             <layout
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"

@@ -9,4 +9,5 @@
         jcr:title="编程语言"
         sling:resourceType="mango/components/structure/pages/category-page"
         pageTitle="编程语言"/>
+    <firstblog/>
 </jcr:root>

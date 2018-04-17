@@ -8,6 +8,18 @@
     <jcr:content
         jcr:primaryType="cq:PageContent"
         sling:resourceType="mango/components/structure/pages/post-page">
+        <editorpar
+                jcr:lastModified="{Date}2018-04-16T15:40:04.484+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys">
+            <posteditor
+                    jcr:lastModified="{Date}2018-04-16T15:40:04.484+08:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mango/components/content/display/posteditor">
+            </posteditor>
+        </editorpar>
 
     </jcr:content>
 </jcr:root>

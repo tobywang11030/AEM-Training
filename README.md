@@ -20,6 +20,12 @@ https://www.linkedin.com/pulse/granite-datasource-inside-touch-ui-select-object-
 https://mkbansal.wordpress.com/2016/01/04/aem-acs-generic-list-dialog-configuration-touch-ui/
 https://helpx.adobe.com/experience-manager/using/creating-touchui-validate11.html
 
+Components for Page Authoring
+https://helpx.adobe.com/experience-manager/6-2/sites/authoring/using/editmode.html#Text
+
+Understanding AEM Content Fragments
+https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html
+
 使用Multifield
 https://helpx.adobe.com/experience-manager/using/multifield_aem63.html
 

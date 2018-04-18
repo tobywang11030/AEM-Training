@@ -23,6 +23,8 @@ Repo Tool integration-into-intellij https://github.com/Adobe-Marketing-Cloud/too
 Maven settings
 http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
 
+运行时加上 -Padobe-public
+
 AEM分步学习
 
 Part 1 Project Setup

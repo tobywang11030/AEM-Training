@@ -18,6 +18,8 @@ Adobe 官方实例教程入口，教你一步一步的开发AEM，很实用
 
 AEM Dev Tools For Eclipse https://eclipse.adobe.com/aem/dev-tools/
 
+Repo Tool integration-into-intellij https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-intellij
+
 常用技术点
 
 How to Build AEM Projects using Apache Maven

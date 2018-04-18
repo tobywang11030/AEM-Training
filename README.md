@@ -13,7 +13,13 @@ https://helpx.adobe.com/support/experience-manager/6-3.html
 Adobe 官方视频教程入口
 https://helpx.adobe.com/experience-manager/kt/index/aem-6-3-videos.html
 
+Adobe 官方实例教程入口，教你一步一步的开发AEM，很实用
+附带官方实例源码https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd
+
 常用技术点
+
+How to Build AEM Projects using Apache Maven
+https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-projects-maven.html
 
 动态下拉菜单
 https://www.linkedin.com/pulse/granite-datasource-inside-touch-ui-select-object-aem-gonz%C3%A1lez-ramos

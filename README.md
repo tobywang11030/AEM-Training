@@ -20,6 +20,9 @@ AEM Dev Tools For Eclipse https://eclipse.adobe.com/aem/dev-tools/
 
 Repo Tool integration-into-intellij https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-intellij
 
+Maven settings
+http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
+
 AEM分步学习
 
 Part 1 Project Setup

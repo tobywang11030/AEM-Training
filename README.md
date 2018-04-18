@@ -22,47 +22,23 @@ Repo Tool integration-into-intellij https://github.com/Adobe-Marketing-Cloud/too
 
 AEM分步学习
 
-Table of Contents
+Part 1 Project Setup
+https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html
 
-In general each Part of the tutorial takes about 1-2 hours.
+Part 2 Creating a Base Page and Template
+https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html
 
-Part 1
+Part 3 Client-Side Libraries and Responsive Grid
+https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part3.html
 
-Project Setup - Covers the creation of a Maven Multi Module Project to manage the code and configurations for an AEM Site.
-Maven, Lazybones Template, Eclipse IDE, Core Components, SCM, and Github. 
+Part 4 Developing with the Style System
+https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part4.html
 
-Part 2
+Part 5 Navigation and Search
+https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part5.html
 
-Creating a Base Page and Template - Covers the creation of a base page and an editable template. Core Components are proxied into the project.
-Editable Templates, Core Components, Content Authoring
-
-Part 3
-
-Client-Side Libraries and Responsive Grid- Covers creation of AEM Client-Side Libraries or clientlibs to deploy and manage CSS and Javascript for an AEM Sites implementation. Integration with AEM's responsive grid and mobile emulator.
-Client-Side Libraries, CSS, Javascript, LESS, Bootstrap, Responsive Grid
-
-Part 4
-
-Developing with the Style System  - Covers extending Core Components with brand-specific CSS and leveraging the Style System to create multiple variations of components. This part also uses Content Fragments for long form article content and covers some advanced policy configurations of the Template Editor.
-CSS, Style System, Template Editor Policies
-
-Part 5
-
-Navigation and Search  - Covers dynamic navigation driven by the content hierarchy and fixed navigation populated by content authors. Sling Models, HTL templating language, and dialogs are used to implement the Header and Footer navigation. A Quick Search component is also added to the Header.
-HTL, Design Dialogs, Composite Components
-
-Part 6
-
-Sling Models and Card Component - Covers the end to end creation of a custom card component that displays a teaser image, title, and description backed by an article page. Includes developing a Sling Model to encapsulate business logic to dynamically populate the card component and corresponding HTL to render the component. Also includes the creation of a design dialog to integrate the Style System in a custom component.
-Sling Models, HTL, Style System, Custom Components
-
-Coming Soon...
-
-Additional parts of the tutorial will be added. Below are topics expected to be covered in the future:
-
-Extending Page Properties
-Integrating with Social Media
-Content Services and Sling Model Exporter
+Part 6 Sling Models and Card Component 
+https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part6.html
 
 常用技术点
 

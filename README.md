@@ -16,6 +16,8 @@ https://helpx.adobe.com/experience-manager/kt/index/aem-6-3-videos.html
 Adobe 官方实例教程入口，教你一步一步的开发AEM，很实用
 附带官方实例源码https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd
 
+AEM Dev Tools For Eclipse https://eclipse.adobe.com/aem/dev-tools/
+
 常用技术点
 
 How to Build AEM Projects using Apache Maven

@@ -20,6 +20,12 @@ https://www.linkedin.com/pulse/granite-datasource-inside-touch-ui-select-object-
 https://mkbansal.wordpress.com/2016/01/04/aem-acs-generic-list-dialog-configuration-touch-ui/
 https://helpx.adobe.com/experience-manager/using/creating-touchui-validate11.html
 
+Using Translator to Manage Dictionaries
+https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/i18n-translator.html
+
+Configuring the Rich Text Editor
+https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/rich-text-editor.html#PluginsandtheirFeatures
+
 Components for Page Authoring
 https://helpx.adobe.com/experience-manager/6-2/sites/authoring/using/editmode.html#Text
 

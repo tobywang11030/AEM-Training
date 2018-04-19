@@ -49,6 +49,11 @@ https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-t
 Part 6 Sling Models and Card Component 
 https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part6.html
 
+Adobe官方aem-project-archetype
+mvn archetype:generate -DarchetypeGroupId=com.adobe.granite.archetypes -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=10 -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/
+
+其中archetypeVersion：8-13.分别含有不同的feature
+
 常用技术点
 
 How to Build AEM Projects using Apache Maven

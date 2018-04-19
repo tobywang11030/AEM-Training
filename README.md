@@ -34,7 +34,13 @@
 	Adobe 官方实例教程入口
 </h3>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	教你一步一步的开发AEM，很实用 附带官方实例源码<a href="https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd">https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd</a> 
+	教你一步一步的开发AEM，很实用 附带官方实例源码&nbsp;<a href="https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd">https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd</a>
+</p>
+<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	Adobe官方“怎么样实现XX”文章汇总
+</h3>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	https://helpx.adobe.com/experience-manager/topics/how-to.html
 </p>
 <h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	HTL 详细语法
@@ -127,53 +133,57 @@
 	常用技术点
 </h2>
 <p>
-	<ol>
-		<li>
-			Create AEM component by using Sling Model&nbsp;https://helpx.adobe.com/experience-manager/using/aem63_slingmodel.html
-		</li>
-		<li>
-			How to Build AEM Projects using Apache Maven&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-projects-maven.html">https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-projects-maven.html</a>
-		</li>
-		<li>
-			动态下拉菜单&nbsp;<a href="https://www.linkedin.com/pulse/granite-datasource-inside-touch-ui-select-object-aem-gonz%C3%A1lez-ramos">https://www.linkedin.com/pulse/granite-datasource-inside-touch-ui-select-object-aem-gonz%C3%A1lez-ramos</a><a href="https://mkbansal.wordpress.com/2016/01/04/aem-acs-generic-list-dialog-configuration-touch-ui/">https://mkbansal.wordpress.com/2016/01/04/aem-acs-generic-list-dialog-configuration-touch-ui/</a><a href="https://helpx.adobe.com/experience-manager/using/creating-touchui-validate11.html">https://helpx.adobe.com/experience-manager/using/creating-touchui-validate11.html</a>
-		</li>
-		<li>
-			Using Translator to Manage Dictionaries&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/i18n-translator.html">https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/i18n-translator.html</a>
-		</li>
-		<li>
-			Configuring the Rich Text Editor&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/rich-text-editor.html#PluginsandtheirFeatures">https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/rich-text-editor.html#PluginsandtheirFeatures</a>
-		</li>
-		<li>
-			Components for Page Authoring&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-2/sites/authoring/using/editmode.html#Text">https://helpx.adobe.com/experience-manager/6-2/sites/authoring/using/editmode.html#Text</a>
-		</li>
-		<li>
-			Understanding AEM Content Fragments&nbsp;<a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html">https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html</a>
-		</li>
-		<li>
-			使用Multifield&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/multifield_aem63.html">https://helpx.adobe.com/experience-manager/using/multifield_aem63.html</a>
-		</li>
-		<li>
-			使用SlingModel&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/aem63_htl_repeat_slingmodel.html">https://helpx.adobe.com/experience-manager/using/aem63_htl_repeat_slingmodel.html</a>
-		</li>
-		<li>
-			Creating an Adobe Experience Manager HTML Template Language component that uses the WCMUsePojo API<a href="https://helpx.adobe.com/experience-manager/using/first_htl_WCMUsePojo.html">https://helpx.adobe.com/experience-manager/using/first_htl_WCMUsePojo.html</a>
-		</li>
-		<li>
-			SlingModel&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html">https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html</a>
-		</li>
-		<li>
-			创建custom sling servlet&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/resourcetypes.html">https://helpx.adobe.com/experience-manager/using/resourcetypes.html</a>
-		</li>
-		<li>
-			创建render component&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/resourcetypes.html#h2Createarendercomponentthatusesthetemplatebrh2">https://helpx.adobe.com/experience-manager/using/resourcetypes.html#h2Createarendercomponentthatusesthetemplatebrh2</a>
-		</li>
-		<li>
-			创建一个Servlet service&nbsp;<a href="http://www.6dglobal.com/blog/servlets-sling-case-disappearing-servlet-path-2013-01-31">http://www.6dglobal.com/blog/servlets-sling-case-disappearing-servlet-path-2013-01-31</a>
-		</li>
-		<li>
-			Sling Servlet service 文档&nbsp;<a href="https://sling.apache.org/documentation/the-sling-engine/servlets.html">https://sling.apache.org/documentation/the-sling-engine/servlets.html</a>
-		</li>
-	</ol>
+	<br />
+</p>
+<ol>
+	<li>
+		Create AEM component by using Sling Model&nbsp;https://helpx.adobe.com/experience-manager/using/aem63_slingmodel.html
+	</li>
+	<li>
+		How to Build AEM Projects using Apache Maven&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-projects-maven.html">https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-projects-maven.html</a> 
+	</li>
+	<li>
+		动态下拉菜单&nbsp;<a href="https://www.linkedin.com/pulse/granite-datasource-inside-touch-ui-select-object-aem-gonz%C3%A1lez-ramos">https://www.linkedin.com/pulse/granite-datasource-inside-touch-ui-select-object-aem-gonz%C3%A1lez-ramos</a><a href="https://mkbansal.wordpress.com/2016/01/04/aem-acs-generic-list-dialog-configuration-touch-ui/">https://mkbansal.wordpress.com/2016/01/04/aem-acs-generic-list-dialog-configuration-touch-ui/</a><a href="https://helpx.adobe.com/experience-manager/using/creating-touchui-validate11.html">https://helpx.adobe.com/experience-manager/using/creating-touchui-validate11.html</a> 
+	</li>
+	<li>
+		Using Translator to Manage Dictionaries&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/i18n-translator.html">https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/i18n-translator.html</a> 
+	</li>
+	<li>
+		Configuring the Rich Text Editor&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/rich-text-editor.html#PluginsandtheirFeatures">https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/rich-text-editor.html#PluginsandtheirFeatures</a> 
+	</li>
+	<li>
+		Components for Page Authoring&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-2/sites/authoring/using/editmode.html#Text">https://helpx.adobe.com/experience-manager/6-2/sites/authoring/using/editmode.html#Text</a> 
+	</li>
+	<li>
+		Understanding AEM Content Fragments&nbsp;<a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html">https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html</a> 
+	</li>
+	<li>
+		使用Multifield&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/multifield_aem63.html">https://helpx.adobe.com/experience-manager/using/multifield_aem63.html</a> 
+	</li>
+	<li>
+		使用SlingModel&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/aem63_htl_repeat_slingmodel.html">https://helpx.adobe.com/experience-manager/using/aem63_htl_repeat_slingmodel.html</a> 
+	</li>
+	<li>
+		Creating an Adobe Experience Manager HTML Template Language component that uses the WCMUsePojo API<a href="https://helpx.adobe.com/experience-manager/using/first_htl_WCMUsePojo.html">https://helpx.adobe.com/experience-manager/using/first_htl_WCMUsePojo.html</a> 
+	</li>
+	<li>
+		SlingModel&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html">https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html</a> 
+	</li>
+	<li>
+		创建custom sling servlet&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/resourcetypes.html">https://helpx.adobe.com/experience-manager/using/resourcetypes.html</a> 
+	</li>
+	<li>
+		创建render component&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/resourcetypes.html#h2Createarendercomponentthatusesthetemplatebrh2">https://helpx.adobe.com/experience-manager/using/resourcetypes.html#h2Createarendercomponentthatusesthetemplatebrh2</a> 
+	</li>
+	<li>
+		创建一个Servlet service&nbsp;<a href="http://www.6dglobal.com/blog/servlets-sling-case-disappearing-servlet-path-2013-01-31">http://www.6dglobal.com/blog/servlets-sling-case-disappearing-servlet-path-2013-01-31</a> 
+	</li>
+	<li>
+		Sling Servlet service 文档&nbsp;<a href="https://sling.apache.org/documentation/the-sling-engine/servlets.html">https://sling.apache.org/documentation/the-sling-engine/servlets.html</a> 
+	</li>
+</ol>
+<p>
+	<br />
 </p>
 <p>
 	<br />

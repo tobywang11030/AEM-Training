@@ -1,7 +1,7 @@
 <p>
 	<br />
 </p>
-<h1 style="margin-left:0px;color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;">
+<h1 style="text-align:center;margin-left:0px;color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;">
 	mangoCMS 一个基于Adobe AEM实现的CMS
 </h1>
 <h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
@@ -34,7 +34,7 @@
 	Adobe 官方实例教程入口
 </h3>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	教你一步一步的开发AEM，很实用 附带官方实例源码&nbsp;<a href="https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd">https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd</a>
+	教你一步一步的开发AEM，很实用 附带官方实例源码&nbsp;<a href="https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd">https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd</a> 
 </p>
 <h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	Adobe官方“怎么样实现XX”文章汇总
@@ -120,8 +120,11 @@
 <h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	Adobe官方aem-project-archetype&nbsp;
 </h3>
+<p>
+<pre class="prettyprint lang-xml">mvn archetype:generate -DarchetypeGroupId=com.adobe.granite.archetypes -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=10 -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/</pre>
+</p>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	mvn archetype:generate -DarchetypeGroupId=com.adobe.granite.archetypes -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=10 -DarchetypeRepository=<a href="https://repo.adobe.com/nexus/content/groups/public/">https://repo.adobe.com/nexus/content/groups/public/</a> 
+	<br />
 </p>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	其中archetypeVersion：8-13.分别含有不同的feature

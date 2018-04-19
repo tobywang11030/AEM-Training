@@ -36,6 +36,15 @@
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	教你一步一步的开发AEM，很实用 附带官方实例源码&nbsp;<a href="https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd">https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd</a> 
 </p>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+		Adobe官方aem-project-archetype&nbsp;
+	</h3>
+<pre class="prettyprint lang-xml">mvn archetype:generate -DarchetypeGroupId=com.adobe.granite.archetypes -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=10 -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/</pre>
+	<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+		其中archetypeVersion：8-13.分别含有不同的feature
+	</p>
+</p>
 <h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	Adobe官方“怎么样实现XX”文章汇总
 </h3>
@@ -115,19 +124,7 @@
 	Part 6 Sling Models and Card Component&nbsp;
 </h3>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<a href="https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part6.html">https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part6.html</a> 
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Adobe官方aem-project-archetype&nbsp;
-</h3>
-<p>
-<pre class="prettyprint lang-xml">mvn archetype:generate -DarchetypeGroupId=com.adobe.granite.archetypes -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=10 -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/</pre>
-</p>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<br />
-</p>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	其中archetypeVersion：8-13.分别含有不同的feature
+	<a href="https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part6.html">https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part6.html</a>
 </p>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	<br />

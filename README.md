@@ -64,6 +64,12 @@
 	&nbsp;<a href="https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110">https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110</a> 
 </p>
 <h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	Apache Sling :: URL decomposition
+</h3>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	&nbsp;<a href="http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html">http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html</a> 
+</p>
+<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	AEM Dev Tools For Eclipse&nbsp;
 </h3>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">

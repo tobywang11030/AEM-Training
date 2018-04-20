@@ -52,9 +52,7 @@
 <h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	AEM几个核心技术
 </h2>
-<p>
-	<br />
-</p>
+
 <h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	Apache Sling&nbsp;
 </h3>
@@ -100,9 +98,7 @@
 <p>
 	HTML Template Language (HTL)是AEM所推荐使用的服务器端动态HTML模板语言
 </p>
-<p>
-	<br />
-</p>
+
 <h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	HTL 语法详解
 </h4>
@@ -181,9 +177,7 @@
 <h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	AEM核心概念（Core Concepts）
 </h2>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<br />
-</p>
+
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -493,12 +487,8 @@
 <h2 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
 	其他术语
 </h2>
-<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-	<br />
-</p>
-<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-	<br />
-</p>
+
+
 <p>
 	<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border:none;">
 		<tbody>

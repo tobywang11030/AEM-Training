@@ -34,10 +34,7 @@
 	Adobe 官方实例教程入口
 </h3>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	教你一步一步的开发AEM，很实用 附带官方实例源码&nbsp;<a href="https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd">https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd</a> 
-</p>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<br />
+	教你一步一步的开发AEM，很实用 附带官方实例源码&nbsp;<a href="https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd">https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd</a>
 </p>
 <h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	Adobe官方aem-project-archetype&nbsp;
@@ -46,32 +43,77 @@
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	其中archetypeVersion：8-13.分别含有不同的feature
 </p>
-<p>
-	<br />
-</p>
 <h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	Adobe官方“怎么样实现XX”文章汇总
 </h3>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	https://helpx.adobe.com/experience-manager/topics/how-to.html
 </p>
+<h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	AEM几个核心技术
+</h2>
+<p>
+	<br />
+</p>
 <h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	HTL 详细语法
+	Apache Sling&nbsp;
 </h3>
+<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	官网 http://sling.apache.org/
+</h4>
+<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	Apache Sling :: Sling Models
+</h4>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	&nbsp;<a href="https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110">https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110</a>
+</p>
+<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	Apache Sling :: URL decomposition
+</h4>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	&nbsp;<a href="http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html">http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html</a>
+</p>
+<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	java JCR &amp; Apache&nbsp;<span style="color:#333333;font-family:&quot;font-size:15px;background-color:#FFFFFF;">Jackrabbit</span>
+</h3>
+<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	Java JSR-170(JCR)&nbsp;
+</h4>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	JCR规范下载http://download.oracle.com/otndocs/jcp/content_repository-1.0.1-mr-oth-JSpec/index.html
+</p>
+<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	<span style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">Jackrabbit</span>
+</h4>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	<span style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">依据JCR规范的一个JCR实现类库&nbsp;</span>http://jackrabbit.apache.org/jcr/jackrabbit-architecture.html
+</p>
+<h3>
+	Apache Felix
+</h3>
+<p>
+	一个OSGI实现 官网 http://felix.apache.org/
+</p>
+<h3>
+	HTL
+</h3>
+<p>
+	HTML Template Language (HTL)是AEM所推荐使用的服务器端动态HTML模板语言
+</p>
+<p>
+	<br />
+</p>
+<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	HTL 语法详解
+</h4>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	&nbsp;<a href="https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md#221-use">https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md#221-use</a> 
 </p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Apache Sling :: Sling Models
-</h3>
+<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	HTL Adobe 官方教程
+</h4>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	&nbsp;<a href="https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110">https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110</a> 
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Apache Sling :: URL decomposition
-</h3>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	&nbsp;<a href="http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html">http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html</a> 
+	&nbsp;<a href="https://helpx.adobe.com/experience-manager/htl/using/getting-started.html">https://helpx.adobe.com/experience-manager/htl/using/getting-started.html</a>
 </p>
 <h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	AEM Dev Tools For Eclipse&nbsp;
@@ -93,9 +135,6 @@
 </p>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	运行时加上 -Padobe-public
-</p>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<br />
 </p>
 <h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	AEM分步学习
@@ -148,7 +187,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Author instance</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Author instance</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -160,7 +199,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Caching, frying, and baking</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Caching, frying, and baking</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -172,7 +211,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Clustering and load-balancing</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Clustering and load-balancing</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -187,7 +226,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Component</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Component</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -199,7 +238,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Content Finder</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Content Finder</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -211,7 +250,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Digital assets</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Digital assets</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -223,7 +262,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Dispatcher</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Dispatcher</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -235,7 +274,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">JCR, Java Content Repository</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">JCR, Java Content Repository</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -259,7 +298,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Multi-Site Manager (MSM)</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Multi-Site Manager (MSM)</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -271,7 +310,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">OSGi</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">OSGi</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -283,7 +322,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Parsys, Paragraph System</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Parsys, Paragraph System</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -295,7 +334,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Microkernel</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Microkernel</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -307,7 +346,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Publish instance</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Publish instance</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -319,7 +358,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Quickstart</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Quickstart</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -356,7 +395,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Replication agents</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Replication agents</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -368,7 +407,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Scaffolding</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Scaffolding</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -380,7 +419,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Segmentation</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Segmentation</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -392,7 +431,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Sidekick</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Sidekick</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -404,7 +443,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Site Catalyst</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Site Catalyst</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -416,7 +455,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Tar Storage (TarMK)</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Tar Storage (TarMK)</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -428,7 +467,7 @@
 <div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Template</span>
+			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Template</span> 
 		</h3>
 	</div>
 	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -442,7 +481,7 @@
 </p>
 <div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 	<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Workflow</span>
+		<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Workflow</span> 
 	</h3>
 </div>
 <p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
@@ -466,61 +505,61 @@
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">AEM </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">AEM </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">Adobe
   Experience Manager, a web content management system from Adobe built on top
-  of Sling </span>
+  of Sling </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Apache </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">Apache </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">Apache
-  HTTP Server, a general-purpose web server </span>
+  HTTP Server, a general-purpose web server </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Apache Sling </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">Apache Sling </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">Content-driven
-  framework for building web applications in Java </span>
+  framework for building web applications in Java </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Atomic broadcast </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">Atomic broadcast </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">Broadcast
   primitive in distributed systems that requires that all nodes receive
-  broadcast messages reliably and in the same order </span>
+  broadcast messages reliably and in the same order </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Big flip </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">Big flip </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
@@ -528,93 +567,93 @@
 						<span style="font-size:11.5pt;font-family:&quot;">Approach
   to updating distributed systems where a cluster of nodes is updated one half
   at a time, such that the two halves are not online concurrently during
-  updates </span>
+  updates </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Bundle </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">Bundle </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">A
-  JAR package specifically adapted to be deployed to an OSGi framework </span>
+  JAR package specifically adapted to be deployed to an OSGi framework </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Component </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">Component </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">A
-  functional module in OSGi </span>
+  functional module in OSGi </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Config </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">Config </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">In
-  this thesis, a particular version of a Sling application </span>
+  this thesis, a particular version of a Sling application </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Content repository </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">Content repository </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">Abstract
-  data store defined by JCR that Sling uses as the data tier </span>
+  data store defined by JCR that Sling uses as the data tier </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Crank file </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">Crank file </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">A
-  file defining an OSGi application that can be started by Crankstart </span>
+  file defining an OSGi application that can be started by Crankstart </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Crankstart </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">Crankstart </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">OSGi
   application launcher that starts and configures an OSGi framework according
-  to commands in a crank file </span>
+  to commands in a crank file </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Dependency hell </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">Dependency hell </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
@@ -622,229 +661,229 @@
 						<span style="font-size:11.5pt;font-family:&quot;">Situation
   in which the graph of dependencies of a software package includes
   dependencies on multiple versions of the same third-party package, which
-  cannot be loaded into a system at the same time without proper isolation </span>
+  cannot be loaded into a system at the same time without proper isolation </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Health check </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">Health check </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">A
   test in Sling with an expected result, useful for checking whether certain
-  conditions in a running Sling instance are satisfied </span>
+  conditions in a running Sling instance are satisfied </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Home directory </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">Home directory </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">A
   directory on the host file system that Sling, OSGi, and JCR use for storing
-  configuration, logs, and other bookkeeping records </span>
+  configuration, logs, and other bookkeeping records </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">HTTP endpoint </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">HTTP endpoint </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">A
-  URL under which a Sling instance can be reached </span>
+  URL under which a Sling instance can be reached </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">HTTP front-end </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">HTTP front-end </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">A
   server that maintains a pool of web servers to which it forwards incoming
-  HTTP requests </span>
+  HTTP requests </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Jackrabbit </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">Jackrabbit </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">Reference
-  implementation of JCR, used as the default JCR implementation in Sling </span>
+  implementation of JCR, used as the default JCR implementation in Sling </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">JAR hell </span></b><span style="font-size:11.5pt;"></span>
+						<b><span style="font-size:11.5pt;">JAR hell </span></b><span style="font-size:11.5pt;"></span> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">Dependency
-  hell specific to the Java platform </span>
+  hell specific to the Java platform </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">JCR </span></b>
+						<b><span style="font-size:11.5pt;">JCR </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">Java
   Content Repository, specification that defines an abstract model and a Java
-  API for data management and storage </span>
+  API for data management and storage </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Launchpad </span></b>
+						<b><span style="font-size:11.5pt;">Launchpad </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">Default
-  Sling application launcher </span>
+  Sling application launcher </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Minion </span></b>
+						<b><span style="font-size:11.5pt;">Minion </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">In
   this thesis, one of the Sling instances running a particular version of a
-  Sling application </span>
+  Sling application </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Oak </span></b>
+						<b><span style="font-size:11.5pt;">Oak </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">An
-  implementation of JCR that focuses on scalability and performance </span>
+  implementation of JCR that focuses on scalability and performance </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Online update </span></b>
+						<b><span style="font-size:11.5pt;">Online update </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">An
-  update that satisfies two properties: atomicity and zero downtime </span>
+  update that satisfies two properties: atomicity and zero downtime </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Orchestrator </span></b>
+						<b><span style="font-size:11.5pt;">Orchestrator </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">In
   this thesis, application managing the continuous delivery mechanism,
-  responsible for spawning and stopping Minions </span>
+  responsible for spawning and stopping Minions </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">OSGi </span></b>
+						<b><span style="font-size:11.5pt;">OSGi </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">Set
-  of specifications that define a dynamic component model for Java </span>
+  of specifications that define a dynamic component model for Java </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">OSGi framework </span></b>
+						<b><span style="font-size:11.5pt;">OSGi framework </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">Environment,
-  similar to a container, that hosts an OSGi application </span>
+  similar to a container, that hosts an OSGi application </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Resource </span></b>
+						<b><span style="font-size:11.5pt;">Resource </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">A
-  piece of data available to Sling </span>
+  piece of data available to Sling </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Resource resolver </span></b>
+						<b><span style="font-size:11.5pt;">Resource resolver </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">A
   component responsible for finding (resolving) resources in Sling given their
-  paths </span>
+  paths </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">RESTful </span></b>
+						<b><span style="font-size:11.5pt;">RESTful </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
@@ -852,127 +891,127 @@
 						<span style="font-size:11.5pt;font-family:&quot;">Conforming
   to REST (Representational State Transfer) style of HTTP requests, where
   requests make use of URIs and HTTP methods (GET, POST, PUT, DELETE) in a way
-  that makes each request self-descriptive </span>
+  that makes each request self-descriptive </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Rolling upgrade </span></b>
+						<b><span style="font-size:11.5pt;">Rolling upgrade </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">Approach
   to updating distributed systems where each node in a cluster is updated one
-  at a time </span>
+  at a time </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Script </span></b>
+						<b><span style="font-size:11.5pt;">Script </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">A
   Sling component for handling HTTP requests, similar to a servlet,
-  programmable in languages other than Java </span>
+  programmable in languages other than Java </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Service </span></b>
+						<b><span style="font-size:11.5pt;">Service </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">An
-  interface through which OSGi components communicate </span>
+  interface through which OSGi components communicate </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Service registry </span></b>
+						<b><span style="font-size:11.5pt;">Service registry </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">OSGi
-  module keeping track of all available services </span>
+  module keeping track of all available services </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Servlet </span></b>
+						<b><span style="font-size:11.5pt;">Servlet </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">A
-  Java component for handling HTTP requests </span>
+  Java component for handling HTTP requests </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Sling </span></b>
+						<b><span style="font-size:11.5pt;">Sling </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">See
-  Apache Sling </span>
+  Apache Sling </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Virtual resource </span></b>
+						<b><span style="font-size:11.5pt;">Virtual resource </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">A
-  resource in Sling that does not reside in the content repository </span>
+  resource in Sling that does not reside in the content repository </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">Workspace </span></b>
+						<b><span style="font-size:11.5pt;">Workspace </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">An
   element of a JCR repository that contains a tree of data nodes, intended for
-  being used as a branch of the repository content </span>
+  being used as a branch of the repository content </span> 
 					</p>
 				</td>
 			</tr>
 			<tr>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
-						<b><span style="font-size:11.5pt;">ZooKeeper </span></b>
+						<b><span style="font-size:11.5pt;">ZooKeeper </span></b> 
 					</p>
 				</td>
 				<td width="300" valign="top" style="border:none;">
 					<p class="Default">
 						<span style="font-size:11.5pt;font-family:&quot;">Cluster
-  coordination service that provides services that require atomic broadcast </span>
+  coordination service that provides services that require atomic broadcast </span> 
 					</p>
 				</td>
 			</tr>

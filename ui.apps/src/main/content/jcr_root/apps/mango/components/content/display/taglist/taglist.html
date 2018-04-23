@@ -1,0 +1,6 @@
+<sly data-sly-use.tags="com.mango.core.models.TagsModel">
+    <sly data-sly-list.tag="${tags.tags}">
+        <a class="tag" rel="tag" href="/content/mango/search.html?tag=${tag.name}">
+            ${tag.title}</a>
+    </sly>
+</sly>

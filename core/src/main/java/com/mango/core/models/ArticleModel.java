@@ -75,8 +75,8 @@ public class ArticleModel {
                 pageNode.setProperty("pageTitle", articleTitle);
                 session.save();
             }
+            List<String> newTags = new ArrayList<>();
             if (articleTags != null) {
-                List<String> newTags = new ArrayList<>();
                 Iterator<Resource> resourceIterator = articleTags.listChildren();
                 while (resourceIterator.hasNext()) {
                     Resource name = resourceIterator.next();
@@ -84,16 +84,18 @@ public class ArticleModel {
                     String tagid = TAG_NAMESPACE + COLON + createTagNodeIfNotExist(resolver, tagName, tagName);
                     newTags.add(tagid);
                 }
-                newTags.addAll(Arrays.asList(selectedTags));
-                Node currentNode = resource.adaptTo(Node.class);
-                currentNode.setProperty("selectedTags", newTags.toArray(new String[0]));
-                String articleTagsPath = resource.getPath() + SLASH + "articleTags";
-                Node articleTagsNode = JcrUtils.getNodeIfExists(articleTagsPath, session);
-                if (articleTagsNode != null) {
-                    articleTagsNode.remove();
-                }
-                session.save();
             }
+            newTags.addAll(Arrays.asList(selectedTags));
+            Node currentNode = resource.adaptTo(Node.class);
+            currentNode.setProperty("selectedTags", newTags.toArray(new String[0]));
+            pageNode.setProperty("cq:tags", newTags.toArray(new String[0]));
+            String articleTagsPath = resource.getPath() + SLASH + "articleTags";
+            Node articleTagsNode = JcrUtils.getNodeIfExists(articleTagsPath, session);
+            if (articleTagsNode != null) {
+                articleTagsNode.remove();
+            }
+            session.save();
+           
         } catch (Exception e) {
             LOG.error("error: " +e);
         }

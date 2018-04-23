@@ -3,3 +3,4 @@ ui.apps/target/
 ui.content/target/
 core/target/
 .idea/
+core/.vs/

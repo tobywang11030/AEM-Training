@@ -29,24 +29,10 @@
 
         <div class="content-reset">
             <sly data-sly-resource="${'richtext' @ resourceType='mango/components/content/richtext'}"></sly>
-            <div>
-                <font color="green"><b>---- EOF ----</b></font>
-                <br>
-                <div>
-                    点击加入开源技术 Q 群 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=56bc192858f5fabdec9fb564b22552c121b58860179f61a89d2a44e22a906640">242561391</a>，让学习和分享成为一种习惯！
-                </div>
-            </div>
         </div>
 
         <footer class="tags">
-            <a class="tag" rel="tag" href="https://88250.b3log.org/tags/MySQL">
-                MySQL</a>
-            <a class="tag" rel="tag" href="https://88250.b3log.org/tags/%E5%AD%97%E7%AC%A6%E9%9B%86">
-                字符集</a>
-            <a class="tag" rel="tag" href="https://88250.b3log.org/tags/UTF8">
-                UTF8</a>
-            <a class="tag" rel="tag" href="https://88250.b3log.org/tags/Emoji">
-                Emoji</a>
+            <sly data-sly-resource="${'articleTag' @ resourceType='/apps/mango/components/content/display/taglist'}"></sly>
 
 
             <div class="rel fn-clear">

@@ -60,10 +60,10 @@
 	官网 http://sling.apache.org/
 </h4>
 <h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Apache Sling :: Sling Models
+	Apache Sling :: Servlet Resolution
 </h4>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	&nbsp;<a href="https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110">https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110</a>
+	&nbsp;<a href="https://sling.apache.org/old-stuff/servlet-resolution.html">https://sling.apache.org/old-stuff/servlet-resolution.html</a>
 </p>
 <h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	Apache Sling :: URL decomposition
@@ -76,6 +76,12 @@
 </h4>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	&nbsp;<a href="https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html">https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html</a>
+</p>
+<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	Apache Sling :: Sling Models
+</h4>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	&nbsp;<a href="https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110">https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110</a>
 </p>
 <h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	java JCR &amp; Apache&nbsp;<span style="color:#333333;font-family:&quot;font-size:15px;background-color:#FFFFFF;">Jackrabbit</span>

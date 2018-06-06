@@ -15,8 +15,7 @@
 		项目根目录下运行 mvn clean install -PautoInstallPackage
 	</li>
 </ol>
-
-(https://github.com/tobywang11030/mangoCMS/raw/master/AEM.png)
+![Alt text](https://github.com/tobywang11030/mangoCMS/raw/master/AEM.png)
 <h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	相关资料
 </h2>

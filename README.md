@@ -15,6 +15,10 @@
 		项目根目录下运行 mvn clean install -PautoInstallPackage
 	</li>
 </ol>
+<h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	AEM技术架构 https://www.processon.com/view/link/5b174207e4b068c25215ef9e
+</h2>
+
 ![Alt text](https://github.com/tobywang11030/mangoCMS/raw/master/AEM.png)
 <h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	相关资料

@@ -71,6 +71,12 @@
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	&nbsp;<a href="http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html">http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html</a>
 </p>
+<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	Apache Sling :: HTL Scripting
+</h4>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	&nbsp;<a href="https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html">https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html</a>
+</p>
 <h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	java JCR &amp; Apache&nbsp;<span style="color:#333333;font-family:&quot;font-size:15px;background-color:#FFFFFF;">Jackrabbit</span>
 </h3>

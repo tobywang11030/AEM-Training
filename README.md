@@ -19,7 +19,7 @@
 	AEM技术架构 https://www.processon.com/view/link/5b174207e4b068c25215ef9e
 </h2>
 <p>
-	![Alt text](https://github.com/tobywang11030/mangoCMS/blob/master/AEM.png?raw=true)
+	 ![index](https://github.com/linwh8/ModernWebPrograming/raw/master/My_image/recipe_index.png)
 </p>
 <p>
 	<div class="header parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">

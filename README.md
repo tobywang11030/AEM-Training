@@ -1,5 +1,5 @@
 <p>
-	<br />
+<img 	src="https://github.com/tobywang11030/mangoCMS/raw/master/AEM.png" alt="AEM技术架构图"/>
 </p>
 <h1 style="text-align:center;margin-left:0px;color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;">
 	mangoCMS 一个基于Adobe AEM实现的CMS
@@ -18,9 +18,6 @@
 <h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	AEM技术架构 https://www.processon.com/view/link/5b174207e4b068c25215ef9e
 </h2>
-<p>
-	 ![index](https://github.com/linwh8/ModernWebPrograming/raw/master/My_image/recipe_index.png)
-</p>
 <p>
 	<div class="header parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 		<div class="header " style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">

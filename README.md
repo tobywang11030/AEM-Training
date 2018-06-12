@@ -1,5 +1,5 @@
 <p>
-<img 	src="https://github.com/tobywang11030/mangoCMS/raw/master/AEM.png" alt="AEM技术架构图"/>
+	<img src="https://github.com/tobywang11030/mangoCMS/raw/master/AEM.png" alt="AEM技术架构图" /> 
 </p>
 <h1 style="text-align:center;margin-left:0px;color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;">
 	mangoCMS 一个基于Adobe AEM实现的CMS
@@ -19,89 +19,93 @@
 	AEM技术架构 https://www.processon.com/view/link/5b174207e4b068c25215ef9e
 </h2>
 <p>
-	<div class="header parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-		<div class="header " style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<h3 id="EditableandStaticTemplates" style="font-style:inherit;font-size:24px;font-family:inherit;">
-				Editable and Static Templates
-			</h3>
-		</div>
+	<br />
+</p>
+<div class="header parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
+	<div class="header " style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+		<h3 id="EditableandStaticTemplates" style="font-style:inherit;font-size:24px;font-family:inherit;">
+			Editable and Static Templates
+		</h3>
 	</div>
-	<div class="text parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-		<div class="text" style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-				AEM now offers two basic types of templates:
-			</p>
-		</div>
+</div>
+<div class="text parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
+	<div class="text" style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+			AEM now offers two basic types of templates:
+		</p>
 	</div>
-	<div class="procedure parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-		<div class="procedure" style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<ul class="steps" style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-				<div class="proc_par proc_parsys" style="margin:0px;padding:0px 0px 0px 18px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-					<div style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-						<div class="step" style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-							<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-								<div class="step" style="margin-left:18px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-									<div style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-										<div class="text parbase" style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-											<div class="text" style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-												<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-													<a href="https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/templates.html#CreatingandManagingNewTemplates">Editable Templates</a>
-												</p>
-												<ul style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-													<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-														Can be&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/templates.html#CreatingaNewTemplate">created</a>&nbsp;and&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/templates.html#EditingaTemplate">edited</a>&nbsp;by template authors using the&nbsp;<b>Template</b>&nbsp;console and editor. The&nbsp;<b>Template</b>&nbsp;console is accessible in the&nbsp;<b>General</b>&nbsp;section of the&nbsp;<b>Tools</b>&nbsp;console.<br />
-													</li>
-													<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-														After the new page is created a dynamic connection is maintained between the page and the template. This means that changes to the template structure and/or locked content will be reflected on any pages created with that template. Changes to the unlocked (i.e. initial) content will not be reflected.
-													</li>
-													<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-														Use content policies, which you can define these from the template editor, to persist the design properties. Design mode within the page editor is no longer used for editable templates.
-													</li>
-												</ul>
-											</div>
+</div>
+<div class="procedure parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
+	<div class="procedure" style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+		<ul class="steps" style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+			<div class="proc_par proc_parsys" style="margin:0px;padding:0px 0px 0px 18px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+				<div style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+					<div class="step" style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+						<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+							<div class="step" style="margin-left:18px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+								<div style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+									<div class="text parbase" style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+										<div class="text" style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+											<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+												<a href="https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/templates.html#CreatingandManagingNewTemplates">Editable Templates</a> 
+											</p>
+											<ul style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+													Can be&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/templates.html#CreatingaNewTemplate">created</a>&nbsp;and&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/templates.html#EditingaTemplate">edited</a>&nbsp;by template authors using the&nbsp;<b>Template</b>&nbsp;console and editor. The&nbsp;<b>Template</b>&nbsp;console is accessible in the&nbsp;<b>General</b>&nbsp;section of the&nbsp;<b>Tools</b>&nbsp;console.<br />
+												</li>
+												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+													After the new page is created a dynamic connection is maintained between the page and the template. This means that changes to the template structure and/or locked content will be reflected on any pages created with that template. Changes to the unlocked (i.e. initial) content will not be reflected.
+												</li>
+												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+													Use content policies, which you can define these from the template editor, to persist the design properties. Design mode within the page editor is no longer used for editable templates.
+												</li>
+											</ul>
 										</div>
 									</div>
 								</div>
-							</li>
-						</div>
-						<div class="step" style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-							<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-								<div class="step" style="margin-left:18px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-									<div style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-										<div class="text parbase" style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-											<span style="font-family:inherit;font-style:inherit;font-weight:inherit;">Static Templates</span>
-											<div class="text" style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-												<ul style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-													<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-														Static templates have been available for several versions of AEM.<br />
-													</li>
-													<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-														They are&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/page-templates-static.html">provided by your developers</a>, so they cannot be created or edited by authors.
-													</li>
-													<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-														Are copied to create the new page, but no dynamic connection exists after this (though the template name is registered for information).<br />
-													</li>
-													<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-														Use&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/default-components-designmode.html">Design Mode</a>&nbsp;to persist design properties.
-													</li>
-													<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-														Because editing static templates is the exclusive task of a developer, please see the developer document&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/page-templates-static.html">Page Templates - Static</a>&nbsp;for more information.
-													</li>
-												</ul>
-											</div>
+							</div>
+						</li>
+					</div>
+					<div class="step" style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+						<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+							<div class="step" style="margin-left:18px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+								<div style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+									<div class="text parbase" style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+										<span style="font-family:inherit;font-style:inherit;font-weight:inherit;">Static Templates</span> 
+										<div class="text" style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
+											<ul style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+													Static templates have been available for several versions of AEM.<br />
+												</li>
+												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+													They are&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/page-templates-static.html">provided by your developers</a>, so they cannot be created or edited by authors.
+												</li>
+												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+													Are copied to create the new page, but no dynamic connection exists after this (though the template name is registered for information).<br />
+												</li>
+												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+													Use&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/default-components-designmode.html">Design Mode</a>&nbsp;to persist design properties.
+												</li>
+												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
+													Because editing static templates is the exclusive task of a developer, please see the developer document&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/page-templates-static.html">Page Templates - Static</a>&nbsp;for more information.
+												</li>
+											</ul>
 										</div>
 									</div>
 								</div>
-							</li>
-						</div>
+							</div>
+						</li>
 					</div>
 				</div>
-			</ul>
-		</div>
+			</div>
+		</ul>
 	</div>
-	<div class="text parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-		<span style="font-family:inherit;font-style:inherit;font-weight:inherit;">By definition, the template console and template editor only allow creation and editing of editable templates. Therefore this document focuses exclusively on editable templates.</span>
-	</div>
+</div>
+<div class="text parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
+	<span style="font-family:inherit;font-style:inherit;font-weight:inherit;">By definition, the template console and template editor only allow creation and editing of editable templates. Therefore this document focuses exclusively on editable templates.</span> 
+</div>
+<p>
+	<br />
 </p>
 <h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	相关资料
@@ -1116,8 +1120,6 @@
 	<li>
 		Create AEM component by using WCMUsePojo&nbsp;https://helpx.adobe.com/experience-manager/using/first_htl_WCMUsePojo.html
 	</li>
-	
-	
 	<li>
 		How to Build AEM Projects using Apache Maven&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-projects-maven.html">https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-projects-maven.html</a> 
 	</li>

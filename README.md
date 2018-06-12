@@ -1114,6 +1114,11 @@
 		Create AEM component by using Sling Model&nbsp;https://helpx.adobe.com/experience-manager/using/aem63_slingmodel.html
 	</li>
 	<li>
+		Create AEM component by using WCMUsePojo&nbsp;https://helpx.adobe.com/experience-manager/using/first_htl_WCMUsePojo.html
+	</li>
+	
+	
+	<li>
 		How to Build AEM Projects using Apache Maven&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-projects-maven.html">https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-projects-maven.html</a> 
 	</li>
 	<li>

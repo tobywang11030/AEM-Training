@@ -1121,6 +1121,9 @@
 		Create AEM component by using WCMUsePojo&nbsp;https://helpx.adobe.com/experience-manager/using/first_htl_WCMUsePojo.html
 	</li>
 	<li>
+		Scheduling with a cron expression&nbsp;https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html
+	</li>
+	<li>
 		How to Build AEM Projects using Apache Maven&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-projects-maven.html">https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-projects-maven.html</a> 
 	</li>
 	<li>

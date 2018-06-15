@@ -1124,6 +1124,9 @@
 		Scheduling with a cron expression&nbsp;https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html
 	</li>
 		<li>
+		Query Builder API&nbsp;https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/querybuilder-api.html
+	</li>
+		<li>
 		Scripting variables in JSP&nbsp;https://cwiki.apache.org/confluence/display/SLING/Scripting+variables#Scriptingvariables-Commonscriptingvariables
 	</li>
 	<li>

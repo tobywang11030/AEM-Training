@@ -1132,6 +1132,9 @@
 		<li>
 		Content Services&nbsp;https://helpx.adobe.com/experience-manager/6-4/mobile/using/content-services.html
 	</li>
+	<li>
+		Developing AEM Mobile Content Services&nbsp;https://helpx.adobe.com/experience-manager/6-4/mobile/using/spaces-and-entities.html
+	</li>
 		<li>
 		Scripting variables in JSP&nbsp;https://cwiki.apache.org/confluence/display/SLING/Scripting+variables#Scriptingvariables-Commonscriptingvariables
 	</li>

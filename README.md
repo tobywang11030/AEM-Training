@@ -1130,6 +1130,9 @@
 		SSO in AEM&nbsp;https://helpx.adobe.com/experience-manager/6-3/sites/deploying/using/single-sign-on.html
 	</li>
 		<li>
+		Content Services&nbsp;https://helpx.adobe.com/experience-manager/6-4/mobile/using/content-services.html
+	</li>
+		<li>
 		Scripting variables in JSP&nbsp;https://cwiki.apache.org/confluence/display/SLING/Scripting+variables#Scriptingvariables-Commonscriptingvariables
 	</li>
 	<li>

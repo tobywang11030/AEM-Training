@@ -1138,6 +1138,13 @@
 	<li>
 		Getting Started with AEM Content Services&nbsp;https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html
 	</li>
+	<li>
+		Developing Sling Model Exporters in AEM&nbsp;https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html
+	</li>
+	<li>
+		Enabling JSON Export for a Component
+&nbsp;https://helpx.adobe.com/experience-manager/6-3/release-notes/json-exporter-dev-fp.html
+	</li>
 		<li>
 		Scripting variables in JSP&nbsp;https://cwiki.apache.org/confluence/display/SLING/Scripting+variables#Scriptingvariables-Commonscriptingvariables
 	</li>

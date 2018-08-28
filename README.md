@@ -1114,6 +1114,9 @@
 	<br />
 </p>
 <ol>
+		<li>
+		在线查看AEM的log&nbsp;http://localhost:4502/system/console/slinglog
+	</li>
 	<li>
 		Create AEM component by using Sling Model&nbsp;https://helpx.adobe.com/experience-manager/using/aem63_slingmodel.html
 	</li>

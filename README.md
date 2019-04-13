@@ -254,6 +254,7 @@
 <pre>Granite.I18n.setLocale('sc_cn');</pre>
 <pre>&nbsp;&nbsp;&nbsp;&nbsp;6.然后在自己的JS中Granite.I18n.get('upload-time')；获取</pre>
 <br />
+访问http://localhost:4502/libs/cq/i18n/translator.html 路径在线编辑i18n
 </b></span><span></span>
 </p>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">

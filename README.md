@@ -18,9 +18,6 @@
 <h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	AEM技术架构 https://www.processon.com/view/link/5b174207e4b068c25215ef9e
 </h2>
-<p>
-	<br />
-</p>
 <div class="header parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
 	<div class="header " style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
 		<h3 id="EditableandStaticTemplates" style="font-style:inherit;font-size:24px;font-family:inherit;">
@@ -233,6 +230,34 @@
 </p>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	运行时加上 -Padobe-public
+</p>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	<br />
+</p>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	i18n的使用
+</p>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	&nbsp;&nbsp;&nbsp;&nbsp;1.&nbsp;<span id="__kindeditor_bookmark_start_11__">&nbsp;&nbsp;&nbsp;&nbsp;/etc/languages 下定义全局语言例如：sc_cn, zh_tw</span>
+</p>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	<span>&nbsp; &nbsp; 2. 代码合适位置，创建自己的i18n定义文件，例如/apps/ns-zh/i18n/zh.json，文件的node属性中包含jcr:language=sc_cn，jcr:mixinTypes=mix:language</span>
+</p>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	<span>&nbsp;&nbsp;&nbsp;&nbsp;3.&nbsp;创建语言分类页面，例如sc_cn.html，在其jcr:content中添加<span style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">jcr:language=sc_cn</span></span>
+</p>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	<span>&nbsp;&nbsp;&nbsp;&nbsp;4.在组件的HTML中使用&nbsp;&nbsp;</span><span style="color:#E784A2;font-weight:bold;">${</span><span style="color:#4CD656;">'check-address' </span><span style="color:#E784A2;font-weight:bold;">@</span>i18n<span style="color:#E784A2;font-weight:bold;">}</span>
+</p>
+<p style="font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	<span><b>&nbsp;&nbsp;&nbsp;&nbsp;5.在JS中使用，先全局定义
+<pre>Granite.I18n.setLocale('sc_cn');</pre>
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;6.然后在自己的JS中Granite.I18n.get('upload-time')；获取</pre>
+<br />
+</b></span><span></span>
+</p>
+<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
+	<span></span>
 </p>
 <h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	AEM分步学习
@@ -1114,7 +1139,7 @@
 	<br />
 </p>
 <ol>
-		<li>
+	<li>
 		在线查看AEM的log&nbsp;http://localhost:4502/system/console/slinglog
 	</li>
 	<li>
@@ -1126,13 +1151,13 @@
 	<li>
 		Scheduling with a cron expression&nbsp;https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html
 	</li>
-		<li>
+	<li>
 		Query Builder API&nbsp;https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/querybuilder-api.html
 	</li>
-		<li>
+	<li>
 		SSO in AEM&nbsp;https://helpx.adobe.com/experience-manager/6-3/sites/deploying/using/single-sign-on.html
 	</li>
-		<li>
+	<li>
 		Content Services&nbsp;https://helpx.adobe.com/experience-manager/6-4/mobile/using/content-services.html
 	</li>
 	<li>
@@ -1148,7 +1173,7 @@
 		Enabling JSON Export for a Component
 &nbsp;https://helpx.adobe.com/experience-manager/6-3/release-notes/json-exporter-dev-fp.html
 	</li>
-		<li>
+	<li>
 		Scripting variables in JSP&nbsp;https://cwiki.apache.org/confluence/display/SLING/Scripting+variables#Scriptingvariables-Commonscriptingvariables
 	</li>
 	<li>

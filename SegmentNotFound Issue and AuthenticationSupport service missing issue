@@ -10,7 +10,7 @@
 6. 执行如下命令，oak工具会执行索引同步操作，重新建立索引
 java -Xmx6000m -jar oak-run-1.8.2.jar checkpoints /opt/aem64/publish/crx-quickstart/repository/segmentstore rm-unreferenced
 7. 执行如下命令，oak工具会做最后的索引对比，使新的索引生效
-java -Xmx6000m -jar oak-run-1.8.2.jar checkpoints /opt/aem64/publish/crx-quickstart/repository/segmentstore rm-unreferenced
+java Xmx6000m -jar oak-run-1.8.2.jar compact /opt/aem64/publish/crx-quickstart/repository/segmentstore
 8. 启动AEM，查看问题是否解决，如未解决，重复上述步骤
 
 

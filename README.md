@@ -251,7 +251,10 @@
 </p>
 <p style="font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	<span><b>&nbsp;&nbsp;&nbsp;&nbsp;5.在JS中使用，先全局定义
-<pre>Granite.I18n.setLocale('sc_cn');</pre>
+<pre>
+<sly data-sly-use.clientlibs="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlibs.js @ categories='granite.utils'}"/>
+Granite.I18n.setLocale('sc_cn');</pre>
 <pre>&nbsp;&nbsp;&nbsp;&nbsp;6.然后在自己的JS中Granite.I18n.get('upload-time')；获取</pre>
 <br />
 访问http://localhost:4502/libs/cq/i18n/translator.html 路径在线编辑i18n

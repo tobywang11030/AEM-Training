@@ -252,8 +252,7 @@
 <p style="font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	<span><b>&nbsp;&nbsp;&nbsp;&nbsp;5.在JS中使用，先全局定义
 <pre>
-<sly data-sly-use.clientlibs="/libs/granite/sightly/templates/clientlib.html"
-     data-sly-call="${clientlibs.js @ categories='granite.utils'}"/>
+先引入这个category的JS：granite.utils
 Granite.I18n.setLocale('sc_cn');</pre>
 <pre>&nbsp;&nbsp;&nbsp;&nbsp;6.然后在自己的JS中Granite.I18n.get('upload-time')；获取</pre>
 <br />

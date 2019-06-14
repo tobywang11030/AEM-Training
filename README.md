@@ -238,7 +238,7 @@
 	i18n的使用
 </p>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	&nbsp;&nbsp;&nbsp;&nbsp;1.&nbsp;<span id="__kindeditor_bookmark_start_11__">&nbsp;&nbsp;&nbsp;&nbsp;/etc/languages 下定义全局语言例如：sc_cn, zh_tw</span>
+	&nbsp;&nbsp;&nbsp;&nbsp;1.&nbsp;<span id="__kindeditor_bookmark_start_11__">&nbsp;&nbsp;&nbsp;&nbsp;/etc/languages (没有的话，自己创建它，添加languages属性，类型为数组)下定义全局语言例如：sc_cn, zh_tw</span>
 </p>
 <p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
 	<span>&nbsp; &nbsp; 2. 代码合适位置，创建自己的i18n定义文件，例如/apps/ns-zh/i18n/zh.json，文件的node属性中包含jcr:language=sc_cn，jcr:mixinTypes=mix:language</span>

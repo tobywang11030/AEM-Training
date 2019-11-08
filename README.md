@@ -374,7 +374,7 @@ AEM的默认数据存储方式，该方式下数据已Tar文件的形式存储�
 
 启用该存储方式，可以将Node数据以及二进制数据（可选，二进制数据仍可以已文件形式存在本地磁盘或者S3等第三方云），这样可以借助Mongo Storage的高性能，分布式的特点提高AEM的数据存储性能。具体可参考https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/aem-with-mongodb.html
 
-### 2. Learning plan tracking form
+### 2. Self-Assessment Preparation and Learning worksheet 
 | Topics | Cost(hours) | Details | Reference | Start Date | End Date | Completed? | Questions | Comment |
 | :------------ | ------------ | :------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
 | Install and Configure the AEM Environment  |   | 1. Identify the default runmode of the AEM server<br>2. Identify the default runmode of the AEM server<br>3. Apply best practices for installation of AEM 6.0 ondifferent operating systems<br>4. Determine the valid run modes to operate AEM<br>5. State the configurations required for the installation on application servers<br>6. Identify the supported operating system for installing AEM on an application  |   |   |   |   |   |   |

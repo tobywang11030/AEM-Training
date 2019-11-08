@@ -1,1230 +1,343 @@
-<p>
-	<img src="https://github.com/tobywang11030/mangoCMS/raw/master/AEM.png" alt="AEM技术架构图" /> 
-</p>
-<h1 style="text-align:center;margin-left:0px;color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;">
-	mangoCMS 一个基于Adobe AEM实现的CMS
-</h1>
-<h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	部署方法
-</h2>
-<ol style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<li>
-		启动AEM
-	</li>
-	<li>
-		项目根目录下运行 mvn clean install -PautoInstallPackage
-	</li>
-</ol>
-<h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	AEM技术架构 https://www.processon.com/view/link/5b174207e4b068c25215ef9e
-</h2>
-<div class="header parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="header " style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 id="EditableandStaticTemplates" style="font-style:inherit;font-size:24px;font-family:inherit;">
-			Editable and Static Templates
-		</h3>
-	</div>
-</div>
-<div class="text parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="text" style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			AEM now offers two basic types of templates:
-		</p>
-	</div>
-</div>
-<div class="procedure parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="procedure" style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<ul class="steps" style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<div class="proc_par proc_parsys" style="margin:0px;padding:0px 0px 0px 18px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-				<div style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-					<div class="step" style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-						<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-							<div class="step" style="margin-left:18px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-								<div style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-									<div class="text parbase" style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-										<div class="text" style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-											<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-												<a href="https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/templates.html#CreatingandManagingNewTemplates">Editable Templates</a> 
-											</p>
-											<ul style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-													Can be&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/templates.html#CreatingaNewTemplate">created</a>&nbsp;and&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/templates.html#EditingaTemplate">edited</a>&nbsp;by template authors using the&nbsp;<b>Template</b>&nbsp;console and editor. The&nbsp;<b>Template</b>&nbsp;console is accessible in the&nbsp;<b>General</b>&nbsp;section of the&nbsp;<b>Tools</b>&nbsp;console.<br />
-												</li>
-												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-													After the new page is created a dynamic connection is maintained between the page and the template. This means that changes to the template structure and/or locked content will be reflected on any pages created with that template. Changes to the unlocked (i.e. initial) content will not be reflected.
-												</li>
-												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-													Use content policies, which you can define these from the template editor, to persist the design properties. Design mode within the page editor is no longer used for editable templates.
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-					</div>
-					<div class="step" style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-						<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-							<div class="step" style="margin-left:18px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-								<div style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-									<div class="text parbase" style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-										<span style="font-family:inherit;font-style:inherit;font-weight:inherit;">Static Templates</span> 
-										<div class="text" style="margin-left:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-											<ul style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-													Static templates have been available for several versions of AEM.<br />
-												</li>
-												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-													They are&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/page-templates-static.html">provided by your developers</a>, so they cannot be created or edited by authors.
-												</li>
-												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-													Are copied to create the new page, but no dynamic connection exists after this (though the template name is registered for information).<br />
-												</li>
-												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-													Use&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/default-components-designmode.html">Design Mode</a>&nbsp;to persist design properties.
-												</li>
-												<li style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-													Because editing static templates is the exclusive task of a developer, please see the developer document&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/page-templates-static.html">Page Templates - Static</a>&nbsp;for more information.
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-					</div>
-				</div>
-			</div>
-		</ul>
-	</div>
-</div>
-<div class="text parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<span style="font-family:inherit;font-style:inherit;font-weight:inherit;">By definition, the template console and template editor only allow creation and editing of editable templates. Therefore this document focuses exclusively on editable templates.</span> 
-</div>
-<p>
-	<br />
-</p>
-<h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	相关资料
-</h2>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Adobe 官方教程入口&nbsp;
-</h3>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<a href="https://helpx.adobe.com/support/experience-manager/6-3.html">https://helpx.adobe.com/support/experience-manager/6-3.html</a> 
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Adobe 官方视频教程入口
-</h3>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	&nbsp;<a href="https://helpx.adobe.com/experience-manager/kt/index/aem-6-3-videos.html">https://helpx.adobe.com/experience-manager/kt/index/aem-6-3-videos.html</a> 
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Adobe 官方实例教程入口
-</h3>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	教你一步一步的开发AEM，很实用 附带官方实例源码&nbsp;<a href="https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd">https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd</a> 
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Adobe官方aem-project-archetype&nbsp;
-</h3>
-<pre class="prettyprint lang-xml">mvn archetype:generate -DarchetypeGroupId=com.adobe.granite.archetypes -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=10 -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/</pre>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	其中archetypeVersion：8-13.分别含有不同的feature
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Adobe官方“怎么样实现XX”文章汇总
-</h3>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	https://helpx.adobe.com/experience-manager/topics/how-to.html
-</p>
-<h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	AEM几个核心技术
-</h2>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Apache Sling&nbsp;
-</h3>
-<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	官网 http://sling.apache.org/
-</h4>
-<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Apache Sling :: Servlet Resolution
-</h4>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	&nbsp;<a href="https://sling.apache.org/old-stuff/servlet-resolution.html">https://sling.apache.org/old-stuff/servlet-resolution.html</a> 
-</p>
-<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Apache Sling :: URL decomposition
-</h4>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	&nbsp;<a href="http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html">http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html</a> 
-</p>
-<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Apache Sling :: HTL Scripting
-</h4>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	&nbsp;<a href="https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html">https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html</a> 
-</p>
-<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Apache Sling :: Sling Models
-</h4>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	&nbsp;<a href="https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110">https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110</a> 
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	java JCR &amp; Apache&nbsp;<span style="color:#333333;font-family:&quot;font-size:15px;background-color:#FFFFFF;">Jackrabbit</span> 
-</h3>
-<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Java JSR-170(JCR)&nbsp;
-</h4>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	JCR规范下载http://download.oracle.com/otndocs/jcp/content_repository-1.0.1-mr-oth-JSpec/index.html
-</p>
-<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<span style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">Jackrabbit</span> 
-</h4>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<span style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">依据JCR规范的一个JCR实现类库&nbsp;</span>http://jackrabbit.apache.org/jcr/jackrabbit-architecture.html
-</p>
-<h3>
-	Apache Felix
-</h3>
-<p>
-	一个OSGI实现 官网 http://felix.apache.org/
-</p>
-<h3>
-	HTL
-</h3>
-<p>
-	HTML Template Language (HTL)是AEM所推荐使用的服务器端动态HTML模板语言
-</p>
-<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	HTL 语法详解
-</h4>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	&nbsp;<a href="https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md#221-use">https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md#221-use</a> 
-</p>
-<h4 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	HTL Adobe 官方教程
-</h4>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	&nbsp;<a href="https://helpx.adobe.com/experience-manager/htl/using/getting-started.html">https://helpx.adobe.com/experience-manager/htl/using/getting-started.html</a> 
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	AEM Dev Tools For Eclipse&nbsp;
-</h3>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<a href="https://eclipse.adobe.com/aem/dev-tools/">https://eclipse.adobe.com/aem/dev-tools/</a> 
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Repo Tool integration-into-intellij
-</h3>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	&nbsp;<a href="https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-intellij">https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-intellij</a> 
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Maven settings&nbsp;
-</h3>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<a href="http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html">http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html</a> 
-</p>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	运行时加上 -Padobe-public
-</p>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<br />
-</p>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	i18n的使用
-</p>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	&nbsp;&nbsp;&nbsp;&nbsp;1.&nbsp;<span id="__kindeditor_bookmark_start_11__">&nbsp;&nbsp;&nbsp;&nbsp;/etc/languages (没有的话，自己创建它，添加languages属性，类型为数组)下定义全局语言例如：sc_cn, zh_tw</span>
-</p>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<span>&nbsp; &nbsp; 2. 代码合适位置，创建自己的i18n定义文件，例如/apps/ns-zh/i18n/zh.json，文件的node属性中包含jcr:language=sc_cn，jcr:mixinTypes=mix:language</span>
-</p>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<span>&nbsp;&nbsp;&nbsp;&nbsp;3.&nbsp;创建语言分类页面，例如sc_cn.html，在其jcr:content中添加<span style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">jcr:language=sc_cn</span></span>
-</p>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<span>&nbsp;&nbsp;&nbsp;&nbsp;4.在组件的HTML中使用&nbsp;&nbsp;</span><span style="color:#E784A2;font-weight:bold;">${</span><span style="color:#4CD656;">'check-address' </span><span style="color:#E784A2;font-weight:bold;">@</span>i18n<span style="color:#E784A2;font-weight:bold;">}</span>
-</p>
-<p style="font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<span><b>&nbsp;&nbsp;&nbsp;&nbsp;5.在JS中使用，先全局定义
-<pre>
-先引入这个category的JS：granite.utils
-Granite.I18n.setLocale('sc_cn');</pre>
-<pre>&nbsp;&nbsp;&nbsp;&nbsp;6.然后在自己的JS中Granite.I18n.get('upload-time')；获取</pre>
-<br />
-访问http://localhost:4502/libs/cq/i18n/translator.html 路径在线编辑i18n
-</b></span><span></span>
-</p>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<span></span>
-</p>
-<h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	AEM分步学习
-</h2>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Part 1 Project Setup&nbsp;
-</h3>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<a href="https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html">https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html</a> 
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Part 2 Creating a Base Page and Template&nbsp;
-</h3>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<a href="https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html">https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html</a> 
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Part 3 Client-Side Libraries and Responsive Grid&nbsp;
-</h3>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<a href="https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part3.html">https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part3.html</a> 
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Part 4 Developing with the Style System
-</h3>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	&nbsp;<a href="https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part4.html">https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part4.html</a> 
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Part 5 Navigation and Search&nbsp;
-</h3>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<a href="https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part5.html">https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part5.html</a> 
-</p>
-<h3 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	Part 6 Sling Models and Card Component&nbsp;
-</h3>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<a href="https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part6.html">https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part6.html</a> 
-</p>
-<p style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	<br />
-</p>
-<h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	AEM核心概念（Core Concepts）
-</h2>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Author instance</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			Typically, for security, governance, and other reasons, a production site will divide instances of AEM into Author and Publish instances. For more information on deployment architecture (including Author/Publish instances), see documentation about&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html#AuthorandPublishInstalls">AEM Instances</a>.
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Caching, frying, and baking</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			Traditionally, the concepts of baking versus frying are an important distinction between different Web Content Management Systems. &nbsp;In CMS jargon, "baking" refers to the concept of committing data to static files at publish-time, while "frying" refers to the concept of processing data for final presentation at request-time (i.e., just in time).
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Clustering and load-balancing</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			To increase availability and imrpove the performance of a Production environment, it is common to combine multiple Author and/or Publish&nbsp;instances (into&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/recommended-deploys.html#main-pars_title_4">Clusters</a>), by either making them available to different groups of users or by load-balancing them behind a Dispatcher configuration.
-		</p>
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			It is also possible to combine multiple instances of the content repository to create a&nbsp;<em>high-availability</em>&nbsp;JCR solution, which can then be integrated with your AEM solution to maximize protection against hardware and software failure. See&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/recommended-deploys.html#main-pars_title_4">Recommended Deployments</a>&nbsp;for further information.&nbsp;
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Component</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			In AEM, a&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/default-components.html">Component</a>&nbsp;is an object type, instances of which can generally be created by dragging and dropping them from, say, the Sidekick. So for example, out-of-the-box components that ship with AEM include the Text, Title, Tag Cloud, Carousel, Image, and List components, all available from the Sidekick at runtime.
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Content Finder</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			In authoring mode, the&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/author-environment-tools.html#TheContentFinderClassicUI">Content Finder</a>&nbsp;is a special panel (frame) on the left-hand side of the page that, depending on the tab you select at the top, displays lists of images, documents, Flash assets, pages, paragraphs, or repository resources that you can drag and drop from the Content Finder into the page you're working on (on the right).
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Digital assets</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			In AEM, Digital Assets are (typically) images and rich media files. For further information, see&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/assets/using/assets.html">Working with Digital Assets in DAM</a>.
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Dispatcher</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			The&nbsp;<a href="https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html">Dispatcher</a>&nbsp;is both a caching and load-balancing tool, as well as providing certain security safeguards.
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">JCR, Java Content Repository</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			The&nbsp;<a href="http://www.day.com/specs/jcr/2.0/index.html">Java Content Repository specification</a>&nbsp;(JSR-283) provides both an abstract data model and an Application Programming Interface for realizing a massively scalable NoSQL data repository that combines features of a file system and an object database. While you do not need to understand JSR-283 in exhaustive detail, you should take time to familiarize yourself with the basic capabilities of JCR and the data model underlying it, because JCR is what makes possible the "everything is content" philosophy of AEM.
-		</p>
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			In essence, JCR is a system of nodes and properties, in which nodes can inherit from other nodes and all content is stored as property&nbsp;<i>values</i>. Note that in addition to ordinary inheritance, JCR allows for a concept of "mixin" nodes, which enables modelling of multiple inheritance.
-		</p>
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			JCR has a number of predefined node types and property types, but in general the typing system is quite flexible, and (indeed) one of the strengths of JCR is that it allows structured as well as unstructured content to be stored/managed with equal ease. That is, JCR can accommodate highly structured data, but it can also accommodate arbitrary dynamic data structures without schema constraints.
-		</p>
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			The JavaDoc for JCR's Java API is&nbsp;<a href="http://www.day.com/maven/javax.jcr/javadocs/jcr-2.0/index.html">here</a>.
-		</p>
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			Before attempting to read the JavaDoc or the JCR spec itself, you might want to look at&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/the-basics.html#JavaContentRepository">this high-level explanation</a>&nbsp;of JCR as implemented by Adobe Experience Services.
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Multi-Site Manager (MSM)</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			The&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/msm.html">MSM</a>&nbsp;feature of AEM helps customers handle multilingual and multinational content, enabling them to balance centralized branding with localized content.
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">OSGi</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<a href="http://www.osgi.org/About/Technology">OSGi</a>&nbsp;is the services-based runtime technology that provides the basis for modularized Java development in AEM. It is a framework that provides not only a highly dynamic (and secure) classloading and execution environment for code resources (known as&nbsp;<i>bundles</i>), but also full control over the visibility and lifecycle of the various services exposed by bundles. A service registry provides a cooperation model for bundles that takes lifecycle dynamics (and version requirements) into account. OSGi solves many of the problems that application servers were intended to solve, but does so in a lightweight, highly dynamic way, making it possible, for example, to hot-deploy services (making the new code immediately available without restarting the server).
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Parsys, Paragraph System</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			The&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/default-components-designmode.html#ParagraphSystemparsys">paragraph system</a>&nbsp;(parsys) is a compound component that allows authors to add components of different types to a page and contains other paragraph components. Each paragraph type is represented as a component. The paragraph system itself is also a component, which contains the other paragraph components.
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Microkernel</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			Every workspace in the repository can be separately configured to store its data through a specific&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/storage-elements-in-aem-6.html">microkernel</a>&nbsp;(a class that manages the reading and writing of the data). Similarly, the repository-wide version store can also be independently configured to use a particular microkernel. A number of different microkernels are available, capable of storing data in a variety of file formats or relational databases. (For example, there are persistence managers for MongoDB, DB2 or Oracle) The default microkernel for AEM is TarMK (see further below).
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Publish instance</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			For security, governance, and other reasons, a production site will typically divide instances of AEM into Author and Publish instances. For more information on deployment architecture (including Author/Publish instances), see documentation about&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html#AuthorandPublishInstalls">AEM Instances</a>.
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Quickstart</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			Unlike many other programs, you install AEM by using a single "Quickstart" self-extracting JAR file. When you double-click the JAR file for the first time, everything you need is automatically installed. The quickstart JAR includes all files required for the CRX repository (including administrative facilities), virtual repository services, index and search services, workflow services, security, and a Web server, plus the CQ Servlet Engine (CQSE) and all AEM services. There are no other files to install: the Quickstart is self-contained.
-		</p>
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			The first time you start the Quickstart, it creates an entire JCR-compliant repository in the background, which can take several minutes. After this initial startup, subsequent startups are much quicker as the repository infrastructure has already been laid down.
-		</p>
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			Many startup options (such as the active port number and whether the AEM instance in question should be a Publish instance versus an Author instance; and much more) can be controlled by appropriately renaming the Quickstart file. To see a list of options in this regard, run the JAR with "-help" on the command line:
-		</p>
-	</div>
-</div>
-<div class="codeblock parbase section" style="margin:0px;padding:3px 0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div style="margin:0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<div id="highlighter_939059" class="syntaxhighlighter nogutter shell" style="padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;margin:1em 0px !important;font-size:1em !important;">
-			<table border="0" cellpadding="0" cellspacing="0" style="color:#333333;width:823px;margin:0px !important;padding:0px !important;border:0px !important;font-size:1em !important;font-family:Consolas, &quot;background:none !important;height:auto !important;" class="ke-zeroborder">
-				<tbody>
-					<tr>
-						<td class="code" style="font-weight:bold;background:none 0px 0px repeat scroll #EDEDED;border:0px !important;font-size:1em !important;font-family:Consolas, &quot;vertical-align:baseline !important;">
-							<div class="container" style="margin:0px !important;padding:0px !important;border:0px !important;font-weight:normal !important;font-size:1em !important;background:none !important;vertical-align:baseline !important;">
-								<div class="line number1 index0 alt2" style="margin:0px !important;padding:0px 1em 0px 0em !important;border:0px !important;font-size:1em !important;background:none white !important;vertical-align:baseline !important;">
-									java -jar &lt;quickstartfilename&gt;.jar –help
-								</div>
-							</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Replication agents</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<a href="https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/replication.html">Replication</a>&nbsp;agents are central to AEM as the mechanism used to&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/publishing-pages.html#ActivatingContent">Publish (activate)</a>&nbsp;content from an author to a publish environment; flush content from the Dispatcher cache; return user generated content (for example, form input) from the Publish environment to the Author environment.
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Scaffolding</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			With&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/scaffolding.html">scaffolding</a>&nbsp;you can create a form (a scaffold) with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure.
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Segmentation</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			Site visitors have different interests and objectives when they come to a site. Understanding visitors' goals and fulfilling their expectations is an important success prerequisite for online marketing.&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/campaign-segmentation.html">Segmentation</a>&nbsp;helps to achieve this by analyzing and characterizing a visitor's details.
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Sidekick</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			The&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/basic-handling.html#Sidekick">Sidekick</a>&nbsp;is a palette-like floating window that appears on the editable page, from which new components can be dragged and actions that apply to the page can be executed.
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Site Catalyst</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<a href="https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/adobeanalytics.html">SiteCatalyst</a>&nbsp;provides marketers with one place to measure, analyze, and optimize integrated data from all online initiatives across multiple marketing channels. You can use Adobe SiteCatalyst to analyze data from AEM websites.
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Tar Storage (TarMK)</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			TarMK is the default persistence system in AEM. Although AEM can be configured to use a different persistence system (such as MongoDB), TarMK has certain advantages in that it is performance-optimized for typical JCR use-cases (thus is very fast), uses an industry-standard data format, and can be quickly and easily backed up. Read more&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/platform.html">here</a>.
-		</p>
-	</div>
-</div>
-<div class="variable parbase section" style="margin:0px;padding:0px;border:0px;font-size:16px;font-family:adobe-clean, HelveticaNeue-light, &quot;color:#333333;background-color:#FFFFFF;">
-	<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Template</span> 
-		</h3>
-	</div>
-	<div class="variable-text" style="margin:28px 0px;padding:0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-			In AEM, a&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/managing-pages.html#Templates">Template</a>&nbsp;specifies a particular type of page. It defines the structure of a page (while also typically specifying a thumbnail image, and various properties). For example, you may have separate templates for product pages, sitemaps, and contact information.
-		</p>
-	</div>
-</div>
-<p>
-	<br />
-</p>
-<div class="help-variable" style="margin:0px;padding:0px 16px 0px 0px;border:0px;font-weight:inherit;font-style:inherit;font-family:inherit;">
-	<h3 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-		<span class="help-variable-title" style="font-weight:bold;font-style:inherit;font-family:inherit;">Workflow</span> 
-	</h3>
-</div>
-<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-	The AEM&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/workflows.html">Workflow</a>&nbsp;system allows for creation of automated processes involving pages or assets.
-</p>
-<p style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-	<br />
-</p>
-<h2 style="font-weight:inherit;font-style:inherit;font-family:inherit;">
-	其他术语
-</h2>
-<p>
-	<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border:none;">
-		<tbody>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">AEM </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Adobe
-  Experience Manager, a web content management system from Adobe built on top
-  of Sling </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Apache </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Apache
-  HTTP Server, a general-purpose web server </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Apache Sling </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Content-driven
-  framework for building web applications in Java </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Atomic broadcast </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Broadcast
-  primitive in distributed systems that requires that all nodes receive
-  broadcast messages reliably and in the same order </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Big flip </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Approach
-  to updating distributed systems where a cluster of nodes is updated one half
-  at a time, such that the two halves are not online concurrently during
-  updates </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Bundle </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">A
-  JAR package specifically adapted to be deployed to an OSGi framework </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Component </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">A
-  functional module in OSGi </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Config </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">In
-  this thesis, a particular version of a Sling application </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Content repository </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Abstract
-  data store defined by JCR that Sling uses as the data tier </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Crank file </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">A
-  file defining an OSGi application that can be started by Crankstart </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Crankstart </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">OSGi
-  application launcher that starts and configures an OSGi framework according
-  to commands in a crank file </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Dependency hell </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Situation
-  in which the graph of dependencies of a software package includes
-  dependencies on multiple versions of the same third-party package, which
-  cannot be loaded into a system at the same time without proper isolation </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Health check </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">A
-  test in Sling with an expected result, useful for checking whether certain
-  conditions in a running Sling instance are satisfied </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Home directory </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">A
-  directory on the host file system that Sling, OSGi, and JCR use for storing
-  configuration, logs, and other bookkeeping records </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">HTTP endpoint </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">A
-  URL under which a Sling instance can be reached </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">HTTP front-end </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">A
-  server that maintains a pool of web servers to which it forwards incoming
-  HTTP requests </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Jackrabbit </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Reference
-  implementation of JCR, used as the default JCR implementation in Sling </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">JAR hell </span></b><span style="font-size:11.5pt;"></span> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Dependency
-  hell specific to the Java platform </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">JCR </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Java
-  Content Repository, specification that defines an abstract model and a Java
-  API for data management and storage </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Launchpad </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Default
-  Sling application launcher </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Minion </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">In
-  this thesis, one of the Sling instances running a particular version of a
-  Sling application </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Oak </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">An
-  implementation of JCR that focuses on scalability and performance </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Online update </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">An
-  update that satisfies two properties: atomicity and zero downtime </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Orchestrator </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">In
-  this thesis, application managing the continuous delivery mechanism,
-  responsible for spawning and stopping Minions </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">OSGi </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Set
-  of specifications that define a dynamic component model for Java </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">OSGi framework </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Environment,
-  similar to a container, that hosts an OSGi application </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Resource </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">A
-  piece of data available to Sling </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Resource resolver </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">A
-  component responsible for finding (resolving) resources in Sling given their
-  paths </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">RESTful </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Conforming
-  to REST (Representational State Transfer) style of HTTP requests, where
-  requests make use of URIs and HTTP methods (GET, POST, PUT, DELETE) in a way
-  that makes each request self-descriptive </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Rolling upgrade </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Approach
-  to updating distributed systems where each node in a cluster is updated one
-  at a time </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Script </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">A
-  Sling component for handling HTTP requests, similar to a servlet,
-  programmable in languages other than Java </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Service </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">An
-  interface through which OSGi components communicate </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Service registry </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">OSGi
-  module keeping track of all available services </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Servlet </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">A
-  Java component for handling HTTP requests </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Sling </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">See
-  Apache Sling </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Virtual resource </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">A
-  resource in Sling that does not reside in the content repository </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">Workspace </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">An
-  element of a JCR repository that contains a tree of data nodes, intended for
-  being used as a branch of the repository content </span> 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<b><span style="font-size:11.5pt;">ZooKeeper </span></b> 
-					</p>
-				</td>
-				<td width="300" valign="top" style="border:none;">
-					<p class="Default">
-						<span style="font-size:11.5pt;font-family:&quot;">Cluster
-  coordination service that provides services that require atomic broadcast </span> 
-					</p>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</p>
-<h2 style="color:#24292E;font-family:-apple-system, BlinkMacSystemFont, &quot;font-size:16px;">
-	常用技术点
-</h2>
-<p>
-	<br />
-</p>
-<ol>
-	<li>
-		在线查看AEM的log&nbsp;http://localhost:4502/system/console/slinglog
-	</li>
-	<li>
-		Create AEM component by using Sling Model&nbsp;https://helpx.adobe.com/experience-manager/using/aem63_slingmodel.html
-	</li>
-	<li>
-		Create AEM component by using WCMUsePojo&nbsp;https://helpx.adobe.com/experience-manager/using/first_htl_WCMUsePojo.html
-	</li>
-	<li>
-		Scheduling with a cron expression&nbsp;https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html
-	</li>
-	<li>
-		Query Builder API&nbsp;https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/querybuilder-api.html
-	</li>
-	<li>
-		SSO in AEM&nbsp;https://helpx.adobe.com/experience-manager/6-3/sites/deploying/using/single-sign-on.html
-	</li>
-	<li>
-		Content Services&nbsp;https://helpx.adobe.com/experience-manager/6-4/mobile/using/content-services.html
-	</li>
-	<li>
-		Developing AEM Mobile Content Services&nbsp;https://helpx.adobe.com/experience-manager/6-4/mobile/using/spaces-and-entities.html
-	</li>
-	<li>
-		Getting Started with AEM Content Services&nbsp;https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html
-	</li>
-	<li>
-		Developing Sling Model Exporters in AEM&nbsp;https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html
-	</li>
-	<li>
-		Enabling JSON Export for a Component
-&nbsp;https://helpx.adobe.com/experience-manager/6-3/release-notes/json-exporter-dev-fp.html
-	</li>
-	<li>
-		Scripting variables in JSP&nbsp;https://cwiki.apache.org/confluence/display/SLING/Scripting+variables#Scriptingvariables-Commonscriptingvariables
-	</li>
-	<li>
-		How to Build AEM Projects using Apache Maven&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-projects-maven.html">https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-projects-maven.html</a> 
-	</li>
-	<li>
-		动态下拉菜单&nbsp;<a href="https://www.linkedin.com/pulse/granite-datasource-inside-touch-ui-select-object-aem-gonz%C3%A1lez-ramos">https://www.linkedin.com/pulse/granite-datasource-inside-touch-ui-select-object-aem-gonz%C3%A1lez-ramos</a><a href="https://mkbansal.wordpress.com/2016/01/04/aem-acs-generic-list-dialog-configuration-touch-ui/">https://mkbansal.wordpress.com/2016/01/04/aem-acs-generic-list-dialog-configuration-touch-ui/</a><a href="https://helpx.adobe.com/experience-manager/using/creating-touchui-validate11.html">https://helpx.adobe.com/experience-manager/using/creating-touchui-validate11.html</a> 
-	</li>
-	<li>
-		Using Translator to Manage Dictionaries&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/i18n-translator.html">https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/i18n-translator.html</a> 
-	</li>
-	<li>
-		Configuring the Rich Text Editor&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/rich-text-editor.html#PluginsandtheirFeatures">https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/rich-text-editor.html#PluginsandtheirFeatures</a> 
-	</li>
-	<li>
-		Components for Page Authoring&nbsp;<a href="https://helpx.adobe.com/experience-manager/6-2/sites/authoring/using/editmode.html#Text">https://helpx.adobe.com/experience-manager/6-2/sites/authoring/using/editmode.html#Text</a> 
-	</li>
-	<li>
-		Understanding AEM Content Fragments&nbsp;<a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html">https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html</a> 
-	</li>
-	<li>
-		使用Multifield&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/multifield_aem63.html">https://helpx.adobe.com/experience-manager/using/multifield_aem63.html</a> 
-	</li>
-	<li>
-		使用SlingModel&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/aem63_htl_repeat_slingmodel.html">https://helpx.adobe.com/experience-manager/using/aem63_htl_repeat_slingmodel.html</a> 
-	</li>
-	<li>
-		Creating an Adobe Experience Manager HTML Template Language component that uses the WCMUsePojo API<a href="https://helpx.adobe.com/experience-manager/using/first_htl_WCMUsePojo.html">https://helpx.adobe.com/experience-manager/using/first_htl_WCMUsePojo.html</a> 
-	</li>
-	<li>
-		SlingModel&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html">https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html</a> 
-	</li>
-	<li>
-		创建custom sling servlet&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/resourcetypes.html">https://helpx.adobe.com/experience-manager/using/resourcetypes.html</a> 
-	</li>
-	<li>
-		创建render component&nbsp;<a href="https://helpx.adobe.com/experience-manager/using/resourcetypes.html#h2Createarendercomponentthatusesthetemplatebrh2">https://helpx.adobe.com/experience-manager/using/resourcetypes.html#h2Createarendercomponentthatusesthetemplatebrh2</a> 
-	</li>
-	<li>
-		创建一个Servlet service&nbsp;<a href="http://www.6dglobal.com/blog/servlets-sling-case-disappearing-servlet-path-2013-01-31">http://www.6dglobal.com/blog/servlets-sling-case-disappearing-servlet-path-2013-01-31</a> 
-	</li>
-	<li>
-		Sling Servlet service 文档&nbsp;<a href="https://sling.apache.org/documentation/the-sling-engine/servlets.html">https://sling.apache.org/documentation/the-sling-engine/servlets.html</a> 
-	</li>
-</ol>
-<p>
-	<br />
-</p>
-<p>
-	<br />
-</p>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [AEM Training](#aem-training)
+  - [AEM basic technical knowledge study](#aem-basic-technical-knowledge-study)
+    - [1. 什么是AEM](#1-%E4%BB%80%E4%B9%88%E6%98%AFaem)
+      - [1.1 AEM 官方定义](#11-aem-%E5%AE%98%E6%96%B9%E5%AE%9A%E4%B9%89)
+      - [1.2 AEM 自我理解](#12-aem-%E8%87%AA%E6%88%91%E7%90%86%E8%A7%A3)
+        - [1.2.1 AEM简要介绍](#121-aem%E7%AE%80%E8%A6%81%E4%BB%8B%E7%BB%8D)
+        - [1.2.2 AEM具有以下显著特点：](#122-aem%E5%85%B7%E6%9C%89%E4%BB%A5%E4%B8%8B%E6%98%BE%E8%91%97%E7%89%B9%E7%82%B9)
+      - [1.3 AEM 能做什么](#13-aem-%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88)
+    - [2. AEM 技术架构](#2-aem-%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84)
+      - [2.1 AEM 三大分层和三大核心技术架构图](#21-aem-%E4%B8%89%E5%A4%A7%E5%88%86%E5%B1%82%E5%92%8C%E4%B8%89%E5%A4%A7%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%9B%BE)
+      - [2.2 AEM 三大核心技术](#22-aem-%E4%B8%89%E5%A4%A7%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF)
+        - [2.2.1 Apache Sling](#221-apache-sling)
+        - [2.2.2 java JCR & Apache Jackrabbit](#222-java-jcr--apache-jackrabbit)
+        - [2.2.3 Apache Felix](#223-apache-felix)
+      - [2.3. AEM 首选渲染层模板语言：HTL](#23-aem-%E9%A6%96%E9%80%89%E6%B8%B2%E6%9F%93%E5%B1%82%E6%A8%A1%E6%9D%BF%E8%AF%AD%E8%A8%80htl)
+    - [3. AEM 开发和使用](#3-aem-%E5%BC%80%E5%8F%91%E5%92%8C%E4%BD%BF%E7%94%A8)
+      - [3.1 AEM 开发/部署/运维流程图](#31-aem-%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2%E8%BF%90%E7%BB%B4%E6%B5%81%E7%A8%8B%E5%9B%BE)
+      - [3.2 AEM 核心概念](#32-aem-%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5)
+    - [4. AEM Build命令详解](#4-aem-build%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3)
+      - [4.1 MVN build命令相关知识](#41-mvn-build%E5%91%BD%E4%BB%A4%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86)
+      - [4.2 AEM Build命令结构解释](#42-aem-build%E5%91%BD%E4%BB%A4%E7%BB%93%E6%9E%84%E8%A7%A3%E9%87%8A)
+    - [5. AEM 相关学习资料](#5-aem-%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99)
+      - [5.1 Adobe 官方教程入口](#51-adobe-%E5%AE%98%E6%96%B9%E6%95%99%E7%A8%8B%E5%85%A5%E5%8F%A3)
+      - [5.2 Adobe 官方视频教程入口](#52-adobe-%E5%AE%98%E6%96%B9%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B%E5%85%A5%E5%8F%A3)
+      - [5.3 Adobe 官方实例教程入口](#53-adobe-%E5%AE%98%E6%96%B9%E5%AE%9E%E4%BE%8B%E6%95%99%E7%A8%8B%E5%85%A5%E5%8F%A3)
+      - [5.4 Adobe官方aem-project-archetype](#54-adobe%E5%AE%98%E6%96%B9aem-project-archetype)
+      - [5.5 Adobe官方“怎么样实现XX”文章汇总](#55-adobe%E5%AE%98%E6%96%B9%E6%80%8E%E4%B9%88%E6%A0%B7%E5%AE%9E%E7%8E%B0xx%E6%96%87%E7%AB%A0%E6%B1%87%E6%80%BB)
+    - [6. AEM分步学习](#6-aem%E5%88%86%E6%AD%A5%E5%AD%A6%E4%B9%A0)
+      - [6.1 Part 1 Project Setup](#61-part-1-project-setup)
+      - [6.2 Part 2 Creating a Base Page and Template](#62-part-2-creating-a-base-page-and-template)
+      - [6.3 Part 3 Client-Side Libraries and Responsive Grid](#63-part-3-client-side-libraries-and-responsive-grid)
+      - [6.4 Part 4 Developing with the Style System](#64-part-4-developing-with-the-style-system)
+      - [6.5 Part 5 Navigation and Search](#65-part-5-navigation-and-search)
+      - [6.5 Part 6 Sling Models and Card Component](#65-part-6-sling-models-and-card-component)
+    - [7. 常用技术点](#7-%E5%B8%B8%E7%94%A8%E6%8A%80%E6%9C%AF%E7%82%B9)
+      - [7.1 在线查看AEM的log](#71-%E5%9C%A8%E7%BA%BF%E6%9F%A5%E7%9C%8Baem%E7%9A%84log)
+      - [7.2 Create AEM component by using Sling Model](#72-create-aem-component-by-using-sling-model)
+      - [7.3 Create AEM component by using WCMUsePojo](#73-create-aem-component-by-using-wcmusepojo)
+      - [7.4 Scheduling with a cron expression](#74-scheduling-with-a-cron-expression)
+      - [7.5 Query Builder API](#75-query-builder-api)
+      - [7.6 SSO in AEM](#76-sso-in-aem)
+      - [7.7 Content Services](#77-content-services)
+      - [7.8 Developing AEM Mobile Content Services](#78-developing-aem-mobile-content-services)
+      - [7.9 Getting Started with AEM Content Services](#79-getting-started-with-aem-content-services)
+      - [7.10 Developing Sling Model Exporters in AEM](#710-developing-sling-model-exporters-in-aem)
+      - [7.11 Enabling JSON Export for a Component](#711-enabling-json-export-for-a-component)
+      - [7.12 Scripting variables in JSP](#712-scripting-variables-in-jsp)
+      - [7.13 How to Build AEM Projects using Apache Maven](#713-how-to-build-aem-projects-using-apache-maven)
+      - [7.14 动态下拉菜单](#714-%E5%8A%A8%E6%80%81%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95)
+      - [7.15 Using Translator to Manage Dictionaries](#715-using-translator-to-manage-dictionaries)
+      - [7.16 Configuring the Rich Text Editor](#716-configuring-the-rich-text-editor)
+      - [7.17 Components for Page Authoring](#717-components-for-page-authoring)
+      - [7.18 Understanding AEM Content Fragments](#718-understanding-aem-content-fragments)
+      - [7.19 使用Multifield](#719-%E4%BD%BF%E7%94%A8multifield)
+      - [7.20 使用SlingModel](#720-%E4%BD%BF%E7%94%A8slingmodel)
+      - [7.21 Creating an Adobe Experience Manager HTML Template Language component that uses the WCMUsePojo API](#721-creating-an-adobe-experience-manager-html-template-language-component-that-uses-the-wcmusepojo-api)
+      - [7.22 SlingModel](#722-slingmodel)
+      - [7.23 创建custom sling servlet](#723-%E5%88%9B%E5%BB%BAcustom-sling-servlet)
+      - [7.24 创建render component](#724-%E5%88%9B%E5%BB%BArender-component)
+      - [7.25 创建一个Servlet service](#725-%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAservlet-service)
+      - [7.26 Sling Servlet service 文档](#726-sling-servlet-service-%E6%96%87%E6%A1%A3)
+      - [7.27 AEM配置系统用户](#727-aem%E9%85%8D%E7%BD%AE%E7%B3%BB%E7%BB%9F%E7%94%A8%E6%88%B7)
+      - [7.28 SegmentNotFound Issue or AuthenticationSupport service missing issue](#728-segmentnotfound-issue-or-authenticationsupport-service-missing-issue)
+      - [7.29 Mvn build 时出现类似不能下载Adobe相关依赖的依赖性错误](#729-mvn-build-%E6%97%B6%E5%87%BA%E7%8E%B0%E7%B1%BB%E4%BC%BC%E4%B8%8D%E8%83%BD%E4%B8%8B%E8%BD%BDadobe%E7%9B%B8%E5%85%B3%E4%BE%9D%E8%B5%96%E7%9A%84%E4%BE%9D%E8%B5%96%E6%80%A7%E9%94%99%E8%AF%AF)
+    - [8. Self-Assessment Preparation and Learning worksheet](#8-self-assessment-preparation-and-learning-worksheet)
+  - [AEM advanced technical knowledge study](#aem-advanced-technical-knowledge-study)
+    - [1. Self-Assessment Preparation Worksheet](#1-self-assessment-preparation-worksheet)
+    - [2. Learning plan tracking form](#2-learning-plan-tracking-form)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+# AEM Training
+
+## AEM basic technical knowledge study
+### 1. 什么是AEM
+#### 1.1 AEM 官方定义
+- Adobe Experience Manager is a web-based client-server system for building, managing, and deploying commercial websites and related services.
+- A number of infrastructure-level and application-level functions are combined into a single integrated package.
+#### 1.2 AEM 自我理解
+##### 1.2.1 AEM简要介绍
+AEM本质为 Adobe 出品的一个CMS管理系统，相比于市面上其他著名的CMS系统，比如Wordpress,织梦等。 
+ ##### 1.2.2 AEM具有以下显著特点：
+  **所见即所得**: 一般的CMS系统都会提供很多预开发好的功能和页面，比如首页，文章详情页，文章列表页等页面，然后用户可以在CMS提供的管理后台管理和维护站点的相关信息，或者创建新的文章，而这些管理后台都只是表单型的提交数据到数据库，用户再次进入站点前台页面时，前台页面会读取新的数据配置的页面信息再次渲染出来。一般管理后台长这样：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107161210499.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107161313745.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+而AEM则不需要在一个独立的管理后台中进行表单式的提交数据，而是直接在最终页面上进行编辑，编辑完后直接显示
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107161449416.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+          **组件化**: 不用于一般CMS由开发商一次开发好所有网站功能，一般以页面为单位，用户只能在管理后台编辑数据的模式，AEM的具有一定逻辑代码的最小单元是组件，AEM平台本身提供了很多常用的组件，比如列表（链接，图片均可），富文本编辑，面包屑，图片，轮播图，表格等组件，开发者也可以开发任何自定义组件，比如上面图中，就是酒店房间列表组件，该组件提供一个编辑窗口来收集房间数据，最终按照开发者写好的HTML进行渲染。
+下面是OOTB提供的一些组件：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107162126799.png)
+          **文档型数据库**: 不用于一般的CMS系统使用MySql, SqlServer等关系型数据库，AEM采用文档型数据库（JCR）来存储数据。使用该数据库的显著特点是AEM的程序本身，以及用户所添加的数据，上传的图片等全部存储在AEM实例的所在文件夹中，文件夹结构如下：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107162707872.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+#### 1.3 AEM 能做什么
+   AEM 作为一个企业级的CMS管理系统，主要用户维护，创建和部署大型商业网站及其服务
+
+### 2. AEM 技术架构
+####  2.1 AEM 三大分层和三大核心技术架构图  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107161013639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+#### 2.2 AEM 三大核心技术
+#####  2.2.1 Apache Sling 
+Apache Sling :: Servlet Resolution
+			 [https://sling.apache.org/old-stuff/servlet-resolution.html](https://sling.apache.org/old-stuff/servlet-resolution.html)
+			Apache Sling :: URL decomposition
+			 [http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html](http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html)
+			Apache Sling :: HTL Scripting
+			 [https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html)
+			Apache Sling :: Sling Models
+			 [https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-     since-110](https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-%20%20%20%20%20since-110)
+			 拓展书目：
+			 [Continuous Delivery of Apache Sling Applications](https://github.com/tobywang11030/mangoCMS/blob/master/Continuous%20Delivery%20of%20Apache%20Sling%20Applications.pdf)
+			 [Server-side OSGi with Apache Sling](https://github.com/tobywang11030/mangoCMS/blob/master/Server-side%20OSGi%20with%20Apache%20Sling.pdf)
+			 
+##### 2.2.2 java JCR & Apache Jackrabbit
+Java JSR-170(JCR) 
+		JCR规范下载
+		[http://download.oracle.com/otndocs/jcp/content_repository-1.0.1-mr-oth-JSpec/index.html](http://download.oracle.com/otndocs/jcp/content_repository-1.0.1-mr-oth-JSpec/index.html)
+		Jackrabbit
+		依据JCR规范的一个JCR实现类库 [http://jackrabbit.apache.org/jcr/jackrabbit-architecture.html](http://jackrabbit.apache.org/jcr/jackrabbit-architecture.html)
+##### 2.2.3 Apache Felix
+ 一个OSGI实现 官网 [http://felix.apache.org/](http://felix.apache.org/)
+ 拓展书目: [OSGi and Apache Felix 3.0 Beginner's Guide](https://github.com/tobywang11030/mangoCMS/blob/master/OSGi%20and%20Apache%20Felix%203.0%20Beginner%27s%20Guide.pdf)
+ 
+####  2.3. AEM 首选渲染层模板语言：HTL
+HTML Template Language (HTL)是AEM所推荐使用的服务器端动态HTML模板语言
+		HTL 语法详解
+		 [https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md#221-use](https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md#221-use)
+		HTL Adobe 官方教程
+		 [https://helpx.adobe.com/experience-manager/htl/using/getting-started.html](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html)
+### 3. AEM 开发和使用
+#### 3.1 AEM 开发/部署/运维流程图
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107183558735.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+#### 3.2 AEM 核心概念
+   + Author instance
+     Typically, for security, governance, and other reasons, a production site will divide instances of AEM into Author and Publish instances. For more information on deployment architecture (including Author/Publish instances), see documentation about AEM Instances.
+	
+  + Publish instance
+	For security, governance, and other reasons, a production site will typically divide instances of AEM into Author and Publish instances. For more information on deployment architecture (including Author/Publish instances), see documentation about AEM Instances.
+	
+  + Component
+	In AEM, a Component is an object type, instances of which can generally be created by dragging and dropping them from, say, the Sidekick. So for example, out-of-the-box components that ship with AEM include the Text, Title, Tag Cloud, Carousel, Image, and List components, all available from the Sidekick at runtime.
+	
+  + Digital assets
+	In AEM, Digital Assets are (typically) images and rich media files. For further information, see Working with Digital Assets in DAM.
+	
+  + Template
+	In AEM, a Template specifies a particular type of page. It defines the structure of a page (while also typically specifying a thumbnail image, and various properties). For example, you may have separate templates for product pages, sitemaps, and contact information.
+	
+      + Workflow
+	The AEM Workflow system allows for creation of automated processes involving pages or assets.
+  
+  + Dispatcher
+	The Dispatcher is both a caching and load-balancing tool, as well as providing certain security safeguards.
+	
+  + JCR, Java Content Repository
+	The Java Content Repository specification (JSR-283) provides both an abstract data model and an Application Programming Interface for realizing a massively scalable NoSQL data repository that combines features of a file system and an object database. While you do not need to understand JSR-283 in exhaustive detail, you should take time to familiarize yourself with the basic capabilities of JCR and the data model underlying it, because JCR is what makes possible the "everything is content" philosophy of AEM.
+	
+	In essence, JCR is a system of nodes and properties, in which nodes can inherit from other nodes and all content is stored as property values. Note that in addition to ordinary inheritance, JCR allows for a concept of "mixin" nodes, which enables modelling of multiple inheritance.
+	
+	JCR has a number of predefined node types and property types, but in general the typing system is quite flexible, and (indeed) one of the strengths of JCR is that it allows structured as well as unstructured content to be stored/managed with equal ease. That is, JCR can accommodate highly structured data, but it can also accommodate arbitrary dynamic data structures without schema constraints.
+	
+	The JavaDoc for JCR's Java API is here.
+	
+	Before attempting to read the JavaDoc or the JCR spec itself, you might want to look at this high-level explanation of JCR as implemented by Adobe Experience Services.
+
+	
+  + OSGi
+	OSGi is the services-based runtime technology that provides the basis for modularized Java development in AEM. It is a framework that provides not only a highly dynamic (and secure) classloading and execution environment for code resources (known as bundles), but also full control over the visibility and lifecycle of the various services exposed by bundles. A service registry provides a cooperation model for bundles that takes lifecycle dynamics (and version requirements) into account. OSGi solves many of the problems that application servers were intended to solve, but does so in a lightweight, highly dynamic way, making it possible, for example, to hot-deploy services (making the new code immediately available without restarting the server).	
+	
+  + Quickstart
+	Unlike many other programs, you install AEM by using a single "Quickstart" self-extracting JAR file. When you double-click the JAR file for the first time, everything you need is automatically installed. The quickstart JAR includes all files required for the CRX repository (including administrative facilities), virtual repository services, index and search services, workflow services, security, and a Web server, plus the CQ Servlet Engine (CQSE) and all AEM services. There are no other files to install: the Quickstart is self-contained.
+	
+    The first time you start the Quickstart, it creates an entire JCR-compliant repository in the background, which can take several minutes. After this initial startup, subsequent startups are much quicker as the repository infrastructure has already been laid down.
+	
+    Many startup options (such as the active port number and whether the AEM instance in question should be a Publish instance versus an Author instance; and much more) can be controlled by appropriately renaming the Quickstart file. To see a list of options in this regard, run the JAR with "-help" on the command line:
+	**java -jar <quickstartfilename>.jar –help**
+  + Replication agents
+	Replication agents are central to AEM as the mechanism used to Publish (activate) content from an author to a publish environment; flush content from the Dispatcher cache; return user generated content (for example, form input) from the Publish environment to the Author environment.
+
+  + Tar Storage (TarMK)
+	TarMK is the default persistence system in AEM. Although AEM can be configured to use a different persistence system (such as MongoDB), TarMK has certain advantages in that it is performance-optimized for typical JCR use-cases (thus is very fast), uses an industry-standard data format, and can be quickly and easily backed up. Read more here.
+### 4. AEM Build命令详解
+#### 4.1 MVN build命令相关知识
+**参考书目**：[Maven权威指南中文版](https://github.com/tobywang11030/mangoCMS/blob/master/Maven%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%E4%B8%AD%E6%96%87%E7%89%88.pdf)
+#### 4.2 AEM Build命令结构解释
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191108104552463.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+### 5. AEM 相关学习资料
+#### 5.1 Adobe 官方教程入口 
+[https://helpx.adobe.com/support/experience-manager/6-3.html](https://helpx.adobe.com/support/experience-manager/6-3.html)
+
+#### 5.2 Adobe 官方视频教程入口
+ [https://helpx.adobe.com/experience-manager/kt/index/aem-6-3-videos.html](https://helpx.adobe.com/experience-manager/kt/index/aem-6-3-videos.html)
+
+#### 5.3 Adobe 官方实例教程入口
+教你一步一步的开发AEM，很实用 附带官方实例源码 
+[https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd](https://github.com/Adobe-Marketing-Cloud/aem-guides-wknd)
+
+#### 5.4 Adobe官方aem-project-archetype 
+
+```bash
+mvn archetype:generate -DarchetypeGroupId=com.adobe.granite.archetypes -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=10 -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/
+```
+#### 5.5 Adobe官方“怎么样实现XX”文章汇总
+[https://helpx.adobe.com/experience-manager/topics/how-to.html](https://helpx.adobe.com/experience-manager/topics/how-to.html)
+### 6. AEM分步学习
+#### 6.1 Part 1 Project Setup 
+[https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
+
+#### 6.2 Part 2 Creating a Base Page and Template 
+[https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+
+#### 6.3 Part 3 Client-Side Libraries and Responsive Grid 
+[https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part3.html](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part3.html)
+
+#### 6.4 Part 4 Developing with the Style System
+ [https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part4.html](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part4.html)
+
+#### 6.5 Part 5 Navigation and Search 
+[https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part5.html](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part5.html)
+
+#### 6.5 Part 6 Sling Models and Card Component 
+[https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part6.html](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part6.html)
+
+### 7. 常用技术点
+#### 7.1 在线查看AEM的log 
+http://localhost:4502/system/console/slinglog
+#### 7.2 Create AEM component by using Sling Model 
+https://helpx.adobe.com/experience-manager/using/aem63_slingmodel.html
+#### 7.3 Create AEM component by using WCMUsePojo 
+https://helpx.adobe.com/experience-manager/using/first_htl_WCMUsePojo.html
+#### 7.4 Scheduling with a cron expression 
+https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html
+#### 7.5 Query Builder API 
+https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/querybuilder-api.html
+#### 7.6 SSO in AEM 
+https://helpx.adobe.com/experience-manager/6-3/sites/deploying/using/single-sign-on.html
+#### 7.7 Content Services 
+https://helpx.adobe.com/experience-manager/6-4/mobile/using/content-services.html
+#### 7.8 Developing AEM Mobile Content Services 
+https://helpx.adobe.com/experience-manager/6-4/mobile/using/spaces-and-entities.html
+#### 7.9 Getting Started with AEM Content Services 
+https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html
+#### 7.10 Developing Sling Model Exporters in AEM 
+https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html
+#### 7.11 Enabling JSON Export for a Component  
+https://helpx.adobe.com/experience-manager/6-3/release-notes/json-exporter-dev-fp.html
+#### 7.12 Scripting variables in JSP 
+https://cwiki.apache.org/confluence/display/SLING/Scripting+variables#Scriptingvariables-Commonscriptingvariables
+#### 7.13 How to Build AEM Projects using Apache Maven 
+https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/ht-projects-maven.html
+#### 7.14 动态下拉菜单 
+https://www.linkedin.com/pulse/granite-datasource-inside-touch-ui-select-object-aem-gonz%C3%A1lez-ramos
+https://mkbansal.wordpress.com/2016/01/04/aem-acs-generic-list-dialog-configuration-touch-ui/
+https://helpx.adobe.com/experience-manager/using/creating-touchui-validate11.html
+#### 7.15 Using Translator to Manage Dictionaries 
+https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/i18n-translator.html
+#### 7.16 Configuring the Rich Text Editor 
+https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/rich-text-editor.html#PluginsandtheirFeatures
+#### 7.17 Components for Page Authoring 
+https://helpx.adobe.com/experience-manager/6-2/sites/authoring/using/editmode.html#Text
+#### 7.18 Understanding AEM Content Fragments 
+https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html
+#### 7.19 使用Multifield 
+https://helpx.adobe.com/experience-manager/using/multifield_aem63.html
+#### 7.20 使用SlingModel 
+https://helpx.adobe.com/experience-manager/using/aem63_htl_repeat_slingmodel.html
+#### 7.21 Creating an Adobe Experience Manager HTML Template Language component that uses the WCMUsePojo API 
+https://helpx.adobe.com/experience-manager/using/first_htl_WCMUsePojo.html
+#### 7.22 SlingModel 
+https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html
+#### 7.23 创建custom sling servlet
+https://helpx.adobe.com/experience-manager/using/resourcetypes.html
+#### 7.24 创建render component 
+https://helpx.adobe.com/experience-manager/using/resourcetypes.html#h2Createarendercomponentthatusesthetemplatebrh2
+#### 7.25 创建一个Servlet service 
+http://www.6dglobal.com/blog/servlets-sling-case-disappearing-servlet-path-2013-01-31
+#### 7.26 Sling Servlet service 文档 
+https://sling.apache.org/documentation/the-sling-engine/servlets.html
+#### 7.27 AEM配置系统用户
+[http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
+#### 7.28 SegmentNotFound Issue or AuthenticationSupport service missing issue
+[https://github.com/tobywang11030/mangoCMS/blob/master/SegmentNotFound%20Issue%20and%20AuthenticationSupport%20service%20missing%20issue](https://github.com/tobywang11030/mangoCMS/blob/master/SegmentNotFound%20Issue%20and%20AuthenticationSupport%20service%20missing%20issue)
+
+#### 7.29 Mvn build 时出现类似不能下载Adobe相关依赖的依赖性错误
+Maven settings 
+[http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html](http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html)
+运行时加上
+
+```bash
+ -Padobe-public
+```
+
+### 8. Self-Assessment Preparation and Learning worksheet 
+| Topics | Cost(hours) | Details | Reference | Start Date | End Date | Completed? | Questions | Comment |
+| :----- | ------------ | :----- | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+| Basic AEM knowledge study   |   | |   |   |   |   |   |   |
+| Installing and configuring an AEM developer environment  |   |  1. Install AEM on supported operating systems.  <br>2. Install AEM with different run modes (Author and Publish). <br> 3. Start AEM in debug mode for remote debugging. <br>4. Setup and configure replication agents. <br>5.  Setup and configure a Web server<br>5. Setup and manage OSGi configurations.<br>6. Manage users and groups<br>7. Manage Access Control Level (ACL) permissions. |   |   |   |   |   |   |
+|  Building and deploying AEM projects |   | 1. Configure a source control system to manage files in AEM<br>2. Build and deploy AEM projects by using Maven |   |   |   |   |   |   |
+| Building AEM components  |   | 1. Create custom components and dialogs<br>2. Create templates and page components <br>3. Create client libraries.<br>4. Extend out-of-the-box AEM components.  |   |   |   |   |   |   |
+|  Building OSGi services |   |  1. Create custom OSGi services. <br>2. Create and manage custom OSGi configurations.<br>3. Configure and manage OSGi services and bundles by using the Felix web console. <br>4. Manage Maven dependencies.|   |   |   |   |   |   |
+| Troubleshooting AEM projects  |   | 1. Create custom log files by using the Web console.<br>2. Configure and manage AEM log levels for specific AEM environments. <br>3. Given an option for starting AEM, I can select the correct parameter(s) for starting AEM. <br>4. Troubleshoot caching issues related to the Dispatcher and browsers.<br>5. Troubleshoot AEM configurations.|   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |
+
+## AEM advanced technical knowledge study
+
+### 1. Self-Assessment Preparation Worksheet
+
+### 2. Learning plan tracking form
+| Topics | Cost(hours) | Details | Reference | Start Date | End Date | Completed? | Questions | Comment |
+| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+|   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [AEM Training](#aem-training)
   - [AEM basic technical knowledge study](#aem-basic-technical-knowledge-study)
     - [1. 什么是AEM](#1-%E4%BB%80%E4%B9%88%E6%98%AFaem)
@@ -68,7 +67,14 @@
       - [7.29 Mvn build 时出现类似不能下载Adobe相关依赖的依赖性错误](#729-mvn-build-%E6%97%B6%E5%87%BA%E7%8E%B0%E7%B1%BB%E4%BC%BC%E4%B8%8D%E8%83%BD%E4%B8%8B%E8%BD%BDadobe%E7%9B%B8%E5%85%B3%E4%BE%9D%E8%B5%96%E7%9A%84%E4%BE%9D%E8%B5%96%E6%80%A7%E9%94%99%E8%AF%AF)
     - [8. Self-Assessment Preparation and Learning worksheet](#8-self-assessment-preparation-and-learning-worksheet)
   - [AEM advanced technical knowledge study](#aem-advanced-technical-knowledge-study)
-    - [1. Self-Assessment Preparation Worksheet](#1-self-assessment-preparation-worksheet)
+    - [1. 系统维护](#1-%E7%B3%BB%E7%BB%9F%E7%BB%B4%E6%8A%A4)
+      - [1.1 清理磁盘空间占用](#11-%E6%B8%85%E7%90%86%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E5%8D%A0%E7%94%A8)
+        - [1.1.1 Online Revision Cleanup](#111-online-revision-cleanup)
+        - [1.1.2 Offline Revision Cleanup](#112-offline-revision-cleanup)
+      - [1.2 关闭AEM默认的Version生成方式进一步永久性的减小磁盘占用](#12-%E5%85%B3%E9%97%ADaem%E9%BB%98%E8%AE%A4%E7%9A%84version%E7%94%9F%E6%88%90%E6%96%B9%E5%BC%8F%E8%BF%9B%E4%B8%80%E6%AD%A5%E6%B0%B8%E4%B9%85%E6%80%A7%E7%9A%84%E5%87%8F%E5%B0%8F%E7%A3%81%E7%9B%98%E5%8D%A0%E7%94%A8)
+      - [1.3 数据存储方式](#13-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F)
+        - [1.3.1 File Storage](#131-file-storage)
+        - [1.3.2 Mongo Storage](#132-mongo-storage)
     - [2. Learning plan tracking form](#2-learning-plan-tracking-form)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -150,7 +156,7 @@ HTML Template Language (HTL)是AEM所推荐使用的服务器端动态HTML模板
   + Template
 	In AEM, a Template specifies a particular type of page. It defines the structure of a page (while also typically specifying a thumbnail image, and various properties). For example, you may have separate templates for product pages, sitemaps, and contact information.
 	
-      + Workflow
+   + Workflow
 	The AEM Workflow system allows for creation of automated processes involving pages or assets.
   
   + Dispatcher
@@ -187,7 +193,8 @@ HTML Template Language (HTL)是AEM所推荐使用的服务器端动态HTML模板
 #### 4.1 MVN build命令相关知识
 **参考书目**：[Maven权威指南中文版](https://github.com/tobywang11030/mangoCMS/blob/master/Maven%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%E4%B8%AD%E6%96%87%E7%89%88.pdf)
 #### 4.2 AEM Build命令结构解释
-![在这里插入图片描述](https://github.com/tobywang11030/mangoCMS/blob/master/20191108104552463.png?raw=true)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191108104552463.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+如无法显示此图片，请浏览器中打开此链接：https://img-blog.csdnimg.cn/20191108104552463.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70
 ### 5. AEM 相关学习资料
 #### 5.1 Adobe 官方教程入口 
 [https://helpx.adobe.com/support/experience-manager/6-3.html](https://helpx.adobe.com/support/experience-manager/6-3.html)
@@ -307,7 +314,65 @@ Maven settings <br>
 
 ## AEM advanced technical knowledge study
 
-### 1. Self-Assessment Preparation Worksheet
+### 1. 系统维护
+#### 1.1 清理磁盘空间占用
+AEM使用一段时间之后，因AEM的存储机制问题，AEM的Repository的文件夹的大小会越来越大，会造成极大的系统开销甚至导致数据错误时AEM崩溃无法运行。AEM6.3以后提供两种方式清理AEM的数据仓库以节省磁盘占用。下面为具体步骤，亦可参考Adobe官网https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/revision-cleanup.html
+##### 1.1.1 Online Revision Cleanup
+依次进入Tools-Operations-Maintenance 进入系统维护工具
+或者直接访问 http://localhost:4502/libs/granite/operations/content/maintenance.html
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2019052915400967.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+AEM提供了两组清理工具，一组为建议Daily执行的，一组为建议Weekly执行的。
+点击Daily Maintenance Window，即可发现系统默认提供了两个清理工具
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190529154448221.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+可以直接手动运行这个Revision Clean Up，该工具运行后，可以减少repository\segmentstore文件夹的大小
+点击Weekly Maintenance Window，即可发现系统默认提供了两个清理工具
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190529154828555.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+可以直接手动运行这个Data Store Garbage Collection，该工具运行后，可以减少repository\datastore文件夹的大小
+**备注**：如发现运行Online Revision Cleanup中的任何清理工具均无任何效果，则需要用Offline Revision Cleanup进行清理。该问题根据官网介绍，可能是因为清理机制的问题。
+##### 1.1.2 Offline Revision Cleanup
+如发现Online Revision Cleanup的方式无法清理，需要使用Offline Revision Cleanup
+
+首先访问https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/下载合适版本的 oak-run.jar 工具
+
+然后关掉AEM实例
+
+依次执行如下命令：
+```bash
+Shut down AEM.
+```
+执行命令 
+```bash
+java -jar oak-run.jar checkpoints install-folder/crx-quickstart/repository/segmentstore
+```
+执行命令
+```bash
+ java -jar oak-run.jar checkpoints install-folder/crx-quickstart/repository/segmentstore rm-unreferenced
+```
+执行命令 
+```bash
+java -jar -Dsun.arch.data.model=32 oak-run.jar compact install-folder/crx-quickstart/repository/segmentstore
+```
+#### 1.2 关闭AEM默认的Version生成方式进一步永久性的减小磁盘占用
+AEM默认会开启Version生成，当你上传，更新，新建，发布一个页面或者asset时，均会生成一个对应的Version，而这些额外的Version默认设置下是不会被删除的，会造成磁盘占用越来越大，可以通过修改VersionManagerImpl这个类的设置开关闭Version生成，或者开启Version Purgin功能自动清理Version。
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190529180247940.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+#### 1.3 数据存储方式
+AEM有两种形式的数据，一种为Node数据，主要存储的是JCR属性，另一个为二进制数据，主要存储的是上传的图片，视频等。安装并启动一个AEM实例后，在默认情况下，这两种形式的数据均以Tar Storage（一种文件存储系统）的形式储存在本地磁盘中。可参考https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/storage-elements-in-aem-6.html
+##### 1.3.1 File Storage
+AEM的默认数据存储方式，该方式下数据已Tar文件的形式存储，该方式具有比较高的性能，也是AEM建议的存储方式，该方式的缺点是如果用户会上传大量的图片，视频，以及每天会有大量的author和修改的话，会造成repository文件夹很大，甚至几TB，这样一是比较昂贵，而是因为数据文件过多，增加了数据损坏导致系统崩溃的风险。
+
+该模式的几种优化方案：
++ 将一个网络磁盘挂载到服务器上映射为本地磁盘路径，然后将数据文件存储在该路径下，因为这个网络磁盘可能是一个比较便宜的虚拟机，或者是类似于OSS这样的专业网盘，价格相比服务器磁盘会便宜，可降低运维费用。备注：可参考该文档将阿里的OSS映射为一个本地磁盘路径，http://data-migration.oss-ap-southeast-1.aliyuncs.com/MountOSSasLocalFilesystemusingOSSFS.pdf
++ 将二进制数据和Node数据拆开，单独将二进制数据（视频，图片等）配置在第三方云当中，目前AEM原生支持Amazon S3 Data Store和Azure Data Store这两种云。具体配置可参考https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/data-store-config.html
+
+##### 1.3.2 Mongo Storage
+根据AEM官方介绍，如果符合以下条件，建议使用Mongo Storage存储方式，否则还是应使用默认的file storage
+
++ More than 1000 unique users per day;
++ More than 100 concurrent users;
++ High volumes of page edits;
++ Large rollouts or activations
+
+启用该存储方式，可以将Node数据以及二进制数据（可选，二进制数据仍可以已文件形式存在本地磁盘或者S3等第三方云），这样可以借助Mongo Storage的高性能，分布式的特点提高AEM的数据存储性能。具体可参考https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/aem-with-mongodb.html
 
 ### 2. Learning plan tracking form
 | Topics | Cost(hours) | Details | Reference | Start Date | End Date | Completed? | Questions | Comment |
@@ -319,26 +384,5 @@ Maven settings <br>
 |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

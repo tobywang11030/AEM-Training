@@ -376,13 +376,14 @@ AEM的默认数据存储方式，该方式下数据已Tar文件的形式存储�
 
 ### 2. Learning plan tracking form
 | Topics | Cost(hours) | Details | Reference | Start Date | End Date | Completed? | Questions | Comment |
-| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
-|   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |
+| :------------ | ------------ | :------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+| Install and Configure the AEM Environment  |   | 1. Identify the default runmode of the AEM server<br>2. Identify the default runmode of the AEM server<br>3. Apply best practices for installation of AEM 6.0 ondifferent operating systems<br>4. Determine the valid run modes to operate AEM<br>5. State the configurations required for the installation on application servers<br>6. Identify the supported operating system for installing AEM on an application  |   |   |   |   |   |   |
+|  Build and deploy AEM projects |   |  1. Apply version control management best practices<br>2. Apply standard procedures to create multi-module Maven projects<br>3. Apply standard procedures to develop and debug application using IDE |   |   |   |   |   |   |
+| Build AEM Components |   | 1. Given a scenario, I can analyze and evaluate the usage of forms, metadata and other features<br>2. Apply best practices to create and use client libraries<br>3. Apply best practices to create, customize, and configure AEM components and dialogs<br>4. Given a scenario, I can determine workflow steps and processes<br>5. Apply standard procedures to create and extend AEM components, templates, and page components  |   |   |   |   |   |   |
+|  Create and configure OSGI services |   |1. Apply standard processes to manage OSGI bundles,services and dependencies<br>2. Analyze and evaluate the logs to identify discrepancies<br>3. Given a scenario, I can determine the OSGI configuration<br>4. Apply a standard process to create OSGI components and services   |   |   |   |   |   |   |
+|  Setup content structure and taxonomy |   | 1. Apply best practices to manage user-generated content<br>2. Given a scenario, I can analyze content structure and evaluate query efficiency<br>3. Apply standard procedures to manage AEM tagging framework<br>4. Given a scenario, I can analyze workflows to setup multilingual sites  |   |   |   |   |   |   |
+| Create AEM security policies  |   |  1. Evaluate AEM users and group permissions<br>2. Apply standard processes to set up CUGs<br>3. Evaluate ACLs and permission level for users/groups |   |   |   |   |   |   |
+| Set-up and configure deployment infrastructure  |   | 1. Analyze and evaluate logs and other artifacts to manage garbage collection and TAR optimization<br>2. Apply standard procedure for backend data store configuration<br>3. Apply standard procedures to integrate AEM applications with Marketing Cloud tools and third-party tools<br>4. Apply standard procedures to integrate AEM applications with LDAP/SSO/OAUTH Providers/Third-Party login authentication mechanisms  |   |   |   |   |   |   |
+| Troubleshoot AEM projects  |   |  1. Troubleshoot issues related to performance<br>2. Troubleshoot functional issues<br>3. Identify issues related to scalability bottlenecks |   |   |   |   |   |   |
 
 

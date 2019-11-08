@@ -92,7 +92,7 @@ AEM本质为 Adobe 出品的一个CMS管理系统，相比于市面上其他著�
           **组件化**: 不用于一般CMS由开发商一次开发好所有网站功能，一般以页面为单位，用户只能在管理后台编辑数据的模式，AEM的具有一定逻辑代码的最小单元是组件，AEM平台本身提供了很多常用的组件，比如列表（链接，图片均可），富文本编辑，面包屑，图片，轮播图，表格等组件，开发者也可以开发任何自定义组件，比如上面图中，就是酒店房间列表组件，该组件提供一个编辑窗口来收集房间数据，最终按照开发者写好的HTML进行渲染。
 下面是OOTB提供的一些组件：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107162126799.png)
-          **文档型数据库**: 不用于一般的CMS系统使用MySql, SqlServer等关系型数据库，AEM采用文档型数据库（JCR）来存储数据。使用该数据库的显著特点是AEM的程序本身，以及用户所添加的数据，上传的图片等全部存储在AEM实例的所在文件夹中，文件夹结构如下：<br.
+          **文档型数据库**: 不用于一般的CMS系统使用MySql, SqlServer等关系型数据库，AEM采用文档型数据库（JCR）来存储数据。使用该数据库的显著特点是AEM的程序本身，以及用户所添加的数据，上传的图片等全部存储在AEM实例的所在文件夹中，文件夹结构如下：<br>.
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107162707872.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
 #### 1.3 AEM 能做什么
    AEM 作为一个企业级的CMS管理系统，主要用户维护，创建和部署大型商业网站及其服务
@@ -115,11 +115,12 @@ Apache Sling :: Servlet Resolution<br>
 			 [Server-side OSGi with Apache Sling](https://github.com/tobywang11030/mangoCMS/blob/master/Server-side%20OSGi%20with%20Apache%20Sling.pdf)
 			 
 ##### 2.2.2 java JCR & Apache Jackrabbit
-Java JSR-170(JCR) 
-		JCR规范下载
-		[http://download.oracle.com/otndocs/jcp/content_repository-1.0.1-mr-oth-JSpec/index.html](http://download.oracle.com/otndocs/jcp/content_repository-1.0.1-mr-oth-JSpec/index.html)
-		Jackrabbit
-		依据JCR规范的一个JCR实现类库 [http://jackrabbit.apache.org/jcr/jackrabbit-architecture.html](http://jackrabbit.apache.org/jcr/jackrabbit-architecture.html)
+Java JSR-170(JCR) <br>
+		JCR规范下载<br>
+		[http://download.oracle.com/otndocs/jcp/content_repository-1.0.1-mr-oth-JSpec/index.html](http://download.oracle.com/otndocs/jcp/content_repository-1.0.1-mr-oth-JSpec/index.html)<br>
+		Jackrabbit<br>
+		依据JCR规范的一个JCR实现类库 <br>
+		[http://jackrabbit.apache.org/jcr/jackrabbit-architecture.html](http://jackrabbit.apache.org/jcr/jackrabbit-architecture.html)
 ##### 2.2.3 Apache Felix
  一个OSGI实现 官网 [http://felix.apache.org/](http://felix.apache.org/)<br>
  拓展书目: [OSGi and Apache Felix 3.0 Beginner's Guide](https://github.com/tobywang11030/mangoCMS/blob/master/OSGi%20and%20Apache%20Felix%203.0%20Beginner%27s%20Guide.pdf)
@@ -128,7 +129,7 @@ Java JSR-170(JCR)
 HTML Template Language (HTL)是AEM所推荐使用的服务器端动态HTML模板语言<br>
 		HTL 语法详解<br>
 		 [https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md#221-use](https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md#221-use)<br>
-		HTL Adobe 官方教程
+		HTL Adobe 官方教程<br>
 		 [https://helpx.adobe.com/experience-manager/htl/using/getting-started.html](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html)
 ### 3. AEM 开发和使用
 #### 3.1 AEM 开发/部署/运维流程图
@@ -186,7 +187,7 @@ HTML Template Language (HTL)是AEM所推荐使用的服务器端动态HTML模板
 #### 4.1 MVN build命令相关知识
 **参考书目**：[Maven权威指南中文版](https://github.com/tobywang11030/mangoCMS/blob/master/Maven%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%E4%B8%AD%E6%96%87%E7%89%88.pdf)
 #### 4.2 AEM Build命令结构解释
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191108104552463.png)
+![在这里插入图片描述](https://github.com/tobywang11030/mangoCMS/blob/master/20191108104552463.png?raw=true)
 ### 5. AEM 相关学习资料
 #### 5.1 Adobe 官方教程入口 
 [https://helpx.adobe.com/support/experience-manager/6-3.html](https://helpx.adobe.com/support/experience-manager/6-3.html)

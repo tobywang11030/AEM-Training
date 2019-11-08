@@ -322,12 +322,13 @@ AEM使用一段时间之后，因AEM的存储机制问题，AEM的Repository的�
 或者直接访问 http://localhost:4502/libs/granite/operations/content/maintenance.html
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2019052915400967.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
 AEM提供了两组清理工具，一组为建议Daily执行的，一组为建议Weekly执行的。
-点击Daily Maintenance Window，即可发现系统默认提供了两个清理工具
+点击Daily Maintenance Window，即可发现系统默认提供了两个清理工具<br>
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190529154448221.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
 可以直接手动运行这个Revision Clean Up，该工具运行后，可以减少repository\segmentstore文件夹的大小
-点击Weekly Maintenance Window，即可发现系统默认提供了两个清理工具
+点击Weekly Maintenance Window，即可发现系统默认提供了两个清理工具<br>
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190529154828555.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
-可以直接手动运行这个Data Store Garbage Collection，该工具运行后，可以减少repository\datastore文件夹的大小
+<br>
+可以直接手动运行这个Data Store Garbage Collection，该工具运行后，可以减少repository\datastore文件夹的大小<br>
 **备注**：如发现运行Online Revision Cleanup中的任何清理工具均无任何效果，则需要用Offline Revision Cleanup进行清理。该问题根据官网介绍，可能是因为清理机制的问题。
 ##### 1.1.2 Offline Revision Cleanup
 如发现Online Revision Cleanup的方式无法清理，需要使用Offline Revision Cleanup

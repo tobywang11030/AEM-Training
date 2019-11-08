@@ -65,6 +65,8 @@
       - [7.27 AEM配置系统用户](#727-aem%E9%85%8D%E7%BD%AE%E7%B3%BB%E7%BB%9F%E7%94%A8%E6%88%B7)
       - [7.28 SegmentNotFound Issue or AuthenticationSupport service missing issue](#728-segmentnotfound-issue-or-authenticationsupport-service-missing-issue)
       - [7.29 Mvn build 时出现类似不能下载Adobe相关依赖的依赖性错误](#729-mvn-build-%E6%97%B6%E5%87%BA%E7%8E%B0%E7%B1%BB%E4%BC%BC%E4%B8%8D%E8%83%BD%E4%B8%8B%E8%BD%BDadobe%E7%9B%B8%E5%85%B3%E4%BE%9D%E8%B5%96%E7%9A%84%E4%BE%9D%E8%B5%96%E6%80%A7%E9%94%99%E8%AF%AF)
+      - [7.30 i18n的使用](#730-i18n%e7%9a%84%e4%bd%bf%e7%94%a8)
+      - [7.31 Editable and Static Templates](#731-Editable+and+Static+Templates)
     - [8. Self-Assessment Preparation and Learning worksheet](#8-self-assessment-preparation-and-learning-worksheet)
   - [AEM advanced technical knowledge study](#aem-advanced-technical-knowledge-study)
     - [1. 系统维护](#1-%E7%B3%BB%E7%BB%9F%E7%BB%B4%E6%8A%A4)
@@ -299,6 +301,38 @@ Maven settings <br>
 ```bash
  -Padobe-public
 ```
+#### 7.30 i18n的使用
++ /etc/languages (没有的话，自己创建它，添加languages属性，类型为数组)下定义全局语言例如：sc_cn, zh_tw
+
++ 代码合适位置，创建自己的i18n定义文件，例如/apps/ns-zh/i18n/zh.json，文件的node属性中包含jcr:language=sc_cn，jcr:mixinTypes=mix:language
++ 创建语言分类页面，例如sc_cn.html，在其jcr:content中添加jcr:language=sc_cn
++ 在组件的HTML中使用  ${'check-address' @i18n}
++ 在JS中使用，先全局定义
+
+```javascript
+先引入这个category的JS：granite.utils
+Granite.I18n.setLocale('sc_cn');
+```
++ 然后在自己的JS中
+
+```javascript
+Granite.I18n.get('upload-time')；
+```
+#### 7.31 Editable and Static Templates
+##### 7.31.1 Editable Templates
+[官方定义](https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/templates.html#CreatingandManagingNewTemplates)
++ Can be created and edited by template authors using the Template console and editor. The Template console is accessible in the General section of the Tools console.
++ After the new page is created a dynamic connection is maintained between the page and the template. This means that changes to the template structure and/or locked content will be reflected on any pages created with that template. Changes to the unlocked (i.e. initial) content will not be reflected.
++ Use content policies, which you can define these from the template editor, to persist the design properties. Design mode within the page editor is no longer used for editable templates.
+
+##### 7.31.2 Static Templates
++ Static templates have been available for several versions of AEM.
++ They are provided by your developers, so they cannot be created or edited by authors.
++ Are copied to create the new page, but no dynamic connection exists after this (though the template name is registered for information).
++ Use Design Mode to persist design properties.
++ Because editing static templates is the exclusive task of a developer, please see the developer document Page Templates - Static for more information.
+
+By definition, the template console and template editor only allow creation and editing of editable templates. Therefore this document focuses exclusively on editable templates.
 
 ### 8. Self-Assessment Preparation and Learning worksheet 
 | Topics | Cost(hours) | Details | Reference | Start Date | End Date | Completed? | Questions | Comment |

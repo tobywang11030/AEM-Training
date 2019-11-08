@@ -105,7 +105,7 @@ AEM本质为 Adobe 出品的一个CMS管理系统，相比于市面上其他著�
 
 ### 2. AEM 技术架构
 ####  2.1 AEM 三大分层和三大核心技术架构图  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107161013639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/AEM.png?raw=true)
 #### 2.2 AEM 三大核心技术
 #####  2.2.1 Apache Sling 
 Apache Sling :: Servlet Resolution<br>

@@ -77,7 +77,7 @@
       - [1.3 数据存储方式](#13-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F)
         - [1.3.1 File Storage](#131-file-storage)
         - [1.3.2 Mongo Storage](#132-mongo-storage)
-    - [2. Learning plan tracking form](#2-learning-plan-tracking-form)
+    - [2. Self-Assessment Preparation and Learning worksheet](#2-self-assessment-preparation-and-learning-worksheet)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

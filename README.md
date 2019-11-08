@@ -322,18 +322,6 @@ Granite.I18n.setLocale('sc_cn');
 ```javascript
 Granite.I18n.get('upload-time')；
 ```
-#### 7.32 命令行 CURL 安装和下载 package
-##### 7.32.1 curl 下载 package
-
-```bash
-curl -# -u admin:admin -O http://localhost:4503/etc/packages/my_packages/image.zip
-```
-##### 7.32.2 curl 上传或安装 package
-
-```bash
-curl -u admin:admin -F file=@"content.zip" -F name=“Package” -F force=true -F install=false http://localhost:4502/crx/packmgr/service.jsp --progress-bar -o upload.txt
-```
-
 #### 7.31 Editable and Static Templates
 ##### 7.31.1 Editable Templates
 [官方定义](https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/templates.html#CreatingandManagingNewTemplates)
@@ -349,7 +337,17 @@ curl -u admin:admin -F file=@"content.zip" -F name=“Package” -F force=true -
 + Because editing static templates is the exclusive task of a developer, please see the developer document Page Templates - Static for more information.
 
 By definition, the template console and template editor only allow creation and editing of editable templates. Therefore this document focuses exclusively on editable templates.
+#### 7.32 命令行 CURL 安装和下载 package
+##### 7.32.1 curl 下载 package
 
+```bash
+curl -# -u admin:admin -O http://localhost:4503/etc/packages/my_packages/image.zip
+```
+##### 7.32.2 curl 上传或安装 package
+
+```bash
+curl -u admin:admin -F file=@"content.zip" -F name=“Package” -F force=true -F install=false http://localhost:4502/crx/packmgr/service.jsp --progress-bar -o upload.txt
+```
 ### 8. Self-Assessment Preparation and Learning worksheet 
 | Topics | Cost(hours) | Details | Reference | Start Date | End Date | Completed? | Questions | Comment |
 | :----- | ------------ | :----- | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |

@@ -67,6 +67,7 @@
       - [7.29 Mvn build 时出现类似不能下载Adobe相关依赖的依赖性错误](#729-mvn-build-%E6%97%B6%E5%87%BA%E7%8E%B0%E7%B1%BB%E4%BC%BC%E4%B8%8D%E8%83%BD%E4%B8%8B%E8%BD%BDadobe%E7%9B%B8%E5%85%B3%E4%BE%9D%E8%B5%96%E7%9A%84%E4%BE%9D%E8%B5%96%E6%80%A7%E9%94%99%E8%AF%AF)
       - [7.30 i18n的使用](#730-i18n%e7%9a%84%e4%bd%bf%e7%94%a8)
       - [7.31 Editable and Static Templates](#731-Editable+and+Static+Templates)
+      - [7.32 命令行 CURL 安装和下载 package](#732-%e5%91%bd%e4%bb%a4%e8%a1%8c+CURL+%e5%ae%89%e8%a3%85%e5%92%8c%e4%b8%8b%e8%bd%bd+package)
     - [8. Self-Assessment Preparation and Learning worksheet](#8-self-assessment-preparation-and-learning-worksheet)
   - [AEM advanced technical knowledge study](#aem-advanced-technical-knowledge-study)
     - [1. 系统维护](#1-%E7%B3%BB%E7%BB%9F%E7%BB%B4%E6%8A%A4)
@@ -321,6 +322,18 @@ Granite.I18n.setLocale('sc_cn');
 ```javascript
 Granite.I18n.get('upload-time')；
 ```
+#### 7.32 命令行 CURL 安装和下载 package
+##### 7.32.1 curl 下载 package
+
+```bash
+curl -# -u admin:admin -O http://localhost:4503/etc/packages/my_packages/image.zip
+```
+##### 7.32.2 curl 上传或安装 package
+
+```bash
+curl -u admin:admin -F file=@"content.zip" -F name=“Package” -F force=true -F install=false http://localhost:4502/crx/packmgr/service.jsp --progress-bar -o upload.txt
+```
+
 #### 7.31 Editable and Static Templates
 ##### 7.31.1 Editable Templates
 [官方定义](https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/templates.html#CreatingandManagingNewTemplates)

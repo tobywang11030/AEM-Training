@@ -302,6 +302,9 @@ Maven settings <br>
  -Padobe-public
 ```
 #### 7.30 i18n的使用
+##### 7.30.1 OOTB的I18N translator 
+http://localhost:4502/libs/cq/i18n/translator.html
+##### 7.30.2 在HTML中和JS中调用I18N
 + /etc/languages (没有的话，自己创建它，添加languages属性，类型为数组)下定义全局语言例如：sc_cn, zh_tw
 
 + 代码合适位置，创建自己的i18n定义文件，例如/apps/ns-zh/i18n/zh.json，文件的node属性中包含jcr:language=sc_cn，jcr:mixinTypes=mix:language

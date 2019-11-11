@@ -24,9 +24,17 @@
       - [3.3 AEM 的开发和部署工具](#33-aem-%E7%9A%84%E5%BC%80%E5%8F%91%E5%92%8C%E9%83%A8%E7%BD%B2%E5%B7%A5%E5%85%B7)
         - [3.3.1 推荐使用IntelliJ进行AEM开发](#331-%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8intellij%E8%BF%9B%E8%A1%8Caem%E5%BC%80%E5%8F%91)
         - [3.3.2 部署AEM代码到Instance](#332-%E9%83%A8%E7%BD%B2aem%E4%BB%A3%E7%A0%81%E5%88%B0instance)
-      - [3.4 AEM 基础术语](#34-aem-%E5%9F%BA%E7%A1%80%E6%9C%AF%E8%AF%AD)
-      - [3.5 AEM 常用操作](#35-aem-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C)
-        - [3.5.1 调试AEM代码](#351-%E8%B0%83%E8%AF%95aem%E4%BB%A3%E7%A0%81)
+      - [3.4 AEM 控制台](#34-aem-%E6%8E%A7%E5%88%B6%E5%8F%B0)
+        - [3.4.1 http://localhost:4502/aem/start.html](#341-httplocalhost4502aemstarthtml)
+        - [3.4.2 http://localhost:4502/crx/de/index.jsp](#342-httplocalhost4502crxdeindexjsp)
+        - [3.4.3 http://localhost:4502/system/console/configMgr](#343-httplocalhost4502systemconsoleconfigmgr)
+        - [3.4.4 http://localhost:4502/crx/explorer/index.jsp](#344-httplocalhost4502crxexplorerindexjsp)
+      - [3.5 AEM 基础术语](#35-aem-%E5%9F%BA%E7%A1%80%E6%9C%AF%E8%AF%AD)
+      - [3.6 AEM 开发常用操作](#36-aem-%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C)
+        - [3.6.1 调试AEM代码](#361-%E8%B0%83%E8%AF%95aem%E4%BB%A3%E7%A0%81)
+        - [3.6.2 组件的代码结构](#362-%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84)
+        - [3.6.3 创建新的组件/模板的代码](#363-%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84%E7%BB%84%E4%BB%B6%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BB%A3%E7%A0%81)
+        - [3.6.4 使用Crx/de Create Package（导出数据）](#364-%E4%BD%BF%E7%94%A8crxde-create-package%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE)
     - [4. AEM Build命令详解](#4-aem-build%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3)
       - [4.1 MVN build命令相关知识](#41-mvn-build%E5%91%BD%E4%BB%A4%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86)
       - [4.2 AEM Build命令结构解释](#42-aem-build%E5%91%BD%E4%BB%A4%E7%BB%93%E6%9E%84%E8%A7%A3%E9%87%8A)
@@ -181,7 +189,7 @@ java -XX:MaxPermSize=1028m -Xmx2048M -Xdebug -Xnoagent -Djava.compiler=NONE -Xru
 + 使用IntelliJ的Maven控制台
 由于一般AEM项目均采用Maven进行依赖管理，并且一般我们也会在项目配置文件中配置AEM的Maven的部署插件，所以，我们可以按如下操作部署AEM代码：
 ![使用IntelliJ的maven插件部署代码](https://github.com/tobywang11030/AEM-Training/blob/master/maven-deploye.png?raw=true)
-<br>**注意**:一般我们会选择项目root目录下的lifecycle中的clean,install。这样会部署全部项目代码，有时候我们也可以只选中某个子模块的lifecycle，比如xxx.ui.apps这样的ui层模块，这样只会部署组件等代码，可以提高部署效率。
+<br>**注意**：一般我们会选择项目root目录下的lifecycle中的clean,install。这样会部署全部项目代码，有时候我们也可以只选中某个子模块的lifecycle，比如xxx.ui.apps这样的ui层模块，这样只会部署组件等代码，可以提高部署效率。
 + 用命令行部署代码到AEM
 我们可以直接在项目根目录或子模块目录运行控制台并运行如下命令来部署代码：
 
@@ -191,8 +199,26 @@ mvn clean install -PautoInstallPackage,local-author,adobe-public
 + 使用IntelliVault插件部署
 配置IntelliJ的IntelliVault插件后，我们可以直接在需要部署的任意folder上右键，在弹出的选项中直接选择Pull/Push代码到Instance，如下：
 ![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/vault.png?raw=true)
-<br>**注意**:一般这种方式只是快速调试用，并不建议用该方式进行代码提交前的自测。
-#### 3.4 AEM 基础术语
+<br>**注意**：一般这种方式只是快速调试用，并不建议用该方式进行代码提交前的自测。
+#### 3.4 AEM 控制台
+##### 3.4.1 http://localhost:4502/aem/start.html
+Touch UI Manager是AEM的核心控制台
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111171900616.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+Touch UI控制台主要提供页面的管理（创建新页面，编辑页面），Asset管理（上传，删除图片，视频等素材），另外还提供了一些列工具，比如replication，workflow，template，account等，具体可直接点击Tool按钮查看：
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111172138237.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+Touch UI控制台是运维人员和AEM管理员的主要控制台
+##### 3.4.2 http://localhost:4502/crx/de/index.jsp
+Crx/de控制台可以认为是AEM的数据库管理工具
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111172322767.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+Crx/de 工具的主要功能是查看JCR的底层数据，包括我们部署到AEM的代码，OOTB的代码，以及用户创建的页面，添加的组件等，可以说，整个AEM的所有数据都可以在Crx/de中查看，以及修改，修改立即生效，因此，在项目中，我们可以在Crx/de中验证我们的功能，或者直接在Crx/de中添加修改数据而不经过代码部署环节，甚至，可以在生产环境的Crx/de中快速开发一个紧急功能而绕过其他环节。
+Crx/de的另一个功能是数据导入导出，将用户生产的数据（添加的页面，图片，author的组件）等导入到其他Instance中。
+##### 3.4.3 http://localhost:4502/system/console/configMgr
+ConfigMgr主要用来查看Bundle级的信息，比如，项目代码的Bundle是否部署和运行成功，组件java代码的Model是否成功运行，最重要的功能是，如果我们在java代码中添加了Property field，那我们可以在这个控制台中进行配置。
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111173139856.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+##### 3.4.4 http://localhost:4502/crx/explorer/index.jsp
+explorer 控制台不是很常用，核心功能是配置系统级用户，系统级用户是，在AEM的权限管理中，所有操作JCR数据必须要有一个用户，我们在Java中使用API操作JCR也不例外，因此需要为我们的java代码分配一个用户，而直接在Touch UI中创建用户，安全性低并且还需要密码认证，所以我们一般在该控制台中创建一个为代码使用的系统级用户。
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111173459894.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+#### 3.5 AEM 基础术语
    + Author instance
      Typically, for security, governance, and other reasons, a production site will divide instances of AEM into Author and Publish instances. For more information on deployment architecture (including Author/Publish instances), see documentation about AEM Instances.
 	
@@ -213,19 +239,31 @@ mvn clean install -PautoInstallPackage,local-author,adobe-public
   + Replication agents
 	Replication agents are central to AEM as the mechanism used to Publish (activate) content from an author to a publish environment; flush content from the Dispatcher cache; return user generated content (for example, form input) from the Publish environment to the Author environment.
 
-#### 3.5 AEM 常用操作
-##### 3.5.1 调试AEM代码
+#### 3.6 AEM 开发常用操作
+##### 3.6.1 调试AEM代码
 以IntelliJ为例，首先需要保证是以命令行启动的AEM并配置了相关debug参数，然后，按照如下配置IntelliJ的debug
 ![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/debug.png?raw=true)
 在创建好的remote debug config中，端口输入AEM启动参数中配置的30308，点击ok保存
 ![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/debug2.png?raw=true)
 配置完成后，在右上角选择我们刚才的debug配置，再点击右边的小虫子debug按钮即可开启debug。
 ![IntelliJ开启debug](https://github.com/tobywang11030/AEM-Training/blob/master/debug3.png?raw=true)
+##### 3.6.2 组件的代码结构
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111174615709.png)
+##### 3.6.3 创建新的组件/模板的代码
++ 基于现有代码复制并修改
+一般我们IDE中的AEM项目代码，都是基于Archetype运行代码来开发的，因此，当我们需要创建新组件时，可以找一个和我们需求类似的组件，复制它并重命名，根据需要修改复制过来的文件中的.content.xml componentName.html, _cq_dialog/.content.xml三个文件的内容实现新的组件。
++ 使用Crx/de导出或直接复制OOTB的代码进行开发新组件
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111174911837.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+##### 3.6.4 使用Crx/de Create Package（导出数据）
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111175329762.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+在Crx/de中切换package视图，创建一个新的package，在新的package中添加要打包的节点，组件，页面，asset均可
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111175609117.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
 ### 4. AEM Build命令详解
 #### 4.1 MVN build命令相关知识
 **参考书目**：[Maven权威指南中文版](https://github.com/tobywang11030/mangoCMS/blob/master/Maven%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%E4%B8%AD%E6%96%87%E7%89%88.pdf)
 #### 4.2 AEM Build命令结构解释
-![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/SIPOC%E5%88%86%E6%9E%90%E6%A8%A1%E7%89%88%20(3).png?raw=true)
+![在这里插入图片描述](hhttps://github.com/tobywang11030/AEM-Training/blob/master/SIPOC%E5%88%86%E6%9E%90%E6%A8%A1%E7%89%88%20(3).png?raw=true)
+
 ### 5. AEM 相关学习资料
 #### 5.1 Adobe 官方教程入口 
 [https://helpx.adobe.com/support/experience-manager/6-3.html](https://helpx.adobe.com/support/experience-manager/6-3.html)

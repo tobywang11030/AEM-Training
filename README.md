@@ -7,7 +7,7 @@
       - [1.1 AEM 官方定义](#11-aem-%E5%AE%98%E6%96%B9%E5%AE%9A%E4%B9%89)
       - [1.2 AEM 自我理解](#12-aem-%E8%87%AA%E6%88%91%E7%90%86%E8%A7%A3)
         - [1.2.1 AEM简要介绍](#121-aem%E7%AE%80%E8%A6%81%E4%BB%8B%E7%BB%8D)
-        - [1.2.2 AEM具有以下显著特点：](#122-aem%E5%85%B7%E6%9C%89%E4%BB%A5%E4%B8%8B%E6%98%BE%E8%91%97%E7%89%B9%E7%82%B9)
+        - [1.2.2 AEM具有以下显著特征：](#122-aem%E5%85%B7%E6%9C%89%E4%BB%A5%E4%B8%8B%E6%98%BE%E8%91%97%E7%89%B9%E5%BE%81)
       - [1.3 AEM 能做什么](#13-aem-%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88)
     - [2. AEM 技术架构](#2-aem-%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84)
       - [2.1 AEM 三大分层和三大核心技术架构图](#21-aem-%E4%B8%89%E5%A4%A7%E5%88%86%E5%B1%82%E5%92%8C%E4%B8%89%E5%A4%A7%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%9B%BE)
@@ -18,7 +18,15 @@
       - [2.3. AEM 首选渲染层模板语言：HTL](#23-aem-%E9%A6%96%E9%80%89%E6%B8%B2%E6%9F%93%E5%B1%82%E6%A8%A1%E6%9D%BF%E8%AF%AD%E8%A8%80htl)
     - [3. AEM 开发和使用](#3-aem-%E5%BC%80%E5%8F%91%E5%92%8C%E4%BD%BF%E7%94%A8)
       - [3.1 AEM 开发/部署/运维流程图](#31-aem-%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2%E8%BF%90%E7%BB%B4%E6%B5%81%E7%A8%8B%E5%9B%BE)
-      - [3.2 AEM 核心概念](#32-aem-%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5)
+      - [3.2 启动 AEM](#32-%E5%90%AF%E5%8A%A8-aem)
+        - [3.2.1 直接运行jar文件](#321-%E7%9B%B4%E6%8E%A5%E8%BF%90%E8%A1%8Cjar%E6%96%87%E4%BB%B6)
+        - [3.2.2 在命令行中使用java命令启动](#322-%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E4%BD%BF%E7%94%A8java%E5%91%BD%E4%BB%A4%E5%90%AF%E5%8A%A8)
+      - [3.3 AEM 的开发和部署工具](#33-aem-%E7%9A%84%E5%BC%80%E5%8F%91%E5%92%8C%E9%83%A8%E7%BD%B2%E5%B7%A5%E5%85%B7)
+        - [3.3.1 推荐使用IntelliJ进行AEM开发](#331-%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8intellij%E8%BF%9B%E8%A1%8Caem%E5%BC%80%E5%8F%91)
+        - [3.3.2 部署AEM代码到Instance](#332-%E9%83%A8%E7%BD%B2aem%E4%BB%A3%E7%A0%81%E5%88%B0instance)
+      - [3.4 AEM 基础术语](#34-aem-%E5%9F%BA%E7%A1%80%E6%9C%AF%E8%AF%AD)
+      - [3.5 AEM 常用操作](#35-aem-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C)
+        - [3.5.1 调试AEM代码](#351-%E8%B0%83%E8%AF%95aem%E4%BB%A3%E7%A0%81)
     - [4. AEM Build命令详解](#4-aem-build%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3)
       - [4.1 MVN build命令相关知识](#41-mvn-build%E5%91%BD%E4%BB%A4%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86)
       - [4.2 AEM Build命令结构解释](#42-aem-build%E5%91%BD%E4%BB%A4%E7%BB%93%E6%9E%84%E8%A7%A3%E9%87%8A)
@@ -65,9 +73,15 @@
       - [7.27 AEM配置系统用户](#727-aem%E9%85%8D%E7%BD%AE%E7%B3%BB%E7%BB%9F%E7%94%A8%E6%88%B7)
       - [7.28 SegmentNotFound Issue or AuthenticationSupport service missing issue](#728-segmentnotfound-issue-or-authenticationsupport-service-missing-issue)
       - [7.29 Mvn build 时出现类似不能下载Adobe相关依赖的依赖性错误](#729-mvn-build-%E6%97%B6%E5%87%BA%E7%8E%B0%E7%B1%BB%E4%BC%BC%E4%B8%8D%E8%83%BD%E4%B8%8B%E8%BD%BDadobe%E7%9B%B8%E5%85%B3%E4%BE%9D%E8%B5%96%E7%9A%84%E4%BE%9D%E8%B5%96%E6%80%A7%E9%94%99%E8%AF%AF)
-      - [7.30 i18n的使用](#730-i18n%e7%9a%84%e4%bd%bf%e7%94%a8)
-      - [7.31 Editable and Static Templates](#731-Editable-and-Static-Templates)
-      - [7.32 命令行 CURL 安装和下载 package](#732-%e5%91%bd%e4%bb%a4%e8%a1%8c-CURL-%e5%ae%89%e8%a3%85%e5%92%8c%e4%b8%8b%e8%bd%bd-package)
+      - [7.30 i18n的使用](#730-i18n%E7%9A%84%E4%BD%BF%E7%94%A8)
+        - [7.30.1 OOTB的I18N translator](#7301-ootb%E7%9A%84i18n-translator)
+        - [7.30.2 在HTML中和JS中调用I18N](#7302-%E5%9C%A8html%E4%B8%AD%E5%92%8Cjs%E4%B8%AD%E8%B0%83%E7%94%A8i18n)
+      - [7.31 Editable and Static Templates](#731-editable-and-static-templates)
+        - [7.31.1 Editable Templates](#7311-editable-templates)
+        - [7.31.2 Static Templates](#7312-static-templates)
+      - [7.32 命令后 CURL 安装和下载 package](#732-%E5%91%BD%E4%BB%A4%E5%90%8E-curl-%E5%AE%89%E8%A3%85%E5%92%8C%E4%B8%8B%E8%BD%BD-package)
+        - [7.32.1 curl 下载 package](#7321-curl-%E4%B8%8B%E8%BD%BD-package)
+        - [7.32.2 curl 上传或安装 package](#7322-curl-%E4%B8%8A%E4%BC%A0%E6%88%96%E5%AE%89%E8%A3%85-package)
     - [8. Self-Assessment Preparation and Learning worksheet](#8-self-assessment-preparation-and-learning-worksheet)
   - [AEM advanced technical knowledge study](#aem-advanced-technical-knowledge-study)
     - [1. 系统维护](#1-%E7%B3%BB%E7%BB%9F%E7%BB%B4%E6%8A%A4)
@@ -78,7 +92,7 @@
       - [1.3 数据存储方式](#13-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F)
         - [1.3.1 File Storage](#131-file-storage)
         - [1.3.2 Mongo Storage](#132-mongo-storage)
-    - [2. Self-Assessment Preparation and Learning worksheet](#2-self-assessment-preparation-and-learning-worksheet)
+    - [2. Learning plan tracking form](#2-learning-plan-tracking-form)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -91,10 +105,11 @@
 - A number of infrastructure-level and application-level functions are combined into a single integrated package.
 #### 1.2 AEM 自我理解
 ##### 1.2.1 AEM简要介绍
-AEM本质为 Adobe 出品的一个CMS管理系统，相比于市面上其他著名的CMS系统，比如Wordpress,织梦等。 
- ##### 1.2.2 AEM具有以下显著特点：
-  **所见即所得**: 一般的CMS系统都会提供很多预开发好的功能和页面，比如首页，文章详情页，文章列表页等页面，然后用户可以在CMS提供的管理后台管理和维护站点的相关信息，或者创建新的文章，而这些管理后台都只是表单型的提交数据到数据库，用户再次进入站点前台页面时，前台页面会读取新的数据配置的页面信息再次渲染出来。一般管理后台长这样：
+AEM是 Adobe 出品的一个CMS管理系统，相比于市面上其他著名的CMS系统，比如Wordpress,织梦等，AEM具有灵活性高，高可复用性，定制化程度高，组件化和运维功能丰富等特点。 
+ ##### 1.2.2 AEM具有以下显著特征：
+  **所见即所得**: 一般的CMS系统都会提供很多预开发好的功能和页面，比如首页，文章详情页，文章列表页等页面，然后用户可以在CMS提供的管理后台添加和维护站点的相关信息，比如创建新的文章，而这些管理后台都只是表单型的提交文章数据到数据库，用户再次进入站点前台页面时，会读取后台配置好的文章数据，按照CMS厂商写死的固定显示样式来渲染文章。一般管理后台长这样：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107161210499.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+创建新文章面板：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107161313745.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
 而AEM则不需要在一个独立的管理后台中进行表单式的提交数据，而是直接在最终页面上进行编辑，编辑完后直接显示
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107161449416.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
@@ -104,7 +119,7 @@ AEM本质为 Adobe 出品的一个CMS管理系统，相比于市面上其他著�
           **文档型数据库**: 不用于一般的CMS系统使用MySql, SqlServer等关系型数据库，AEM采用文档型数据库（JCR）来存储数据。使用该数据库的显著特点是AEM的程序本身，以及用户所添加的数据，上传的图片等全部存储在AEM实例的所在文件夹中，文件夹结构如下：<br>.
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107162707872.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
 #### 1.3 AEM 能做什么
-   AEM 作为一个企业级的CMS管理系统，主要用户维护，创建和部署大型商业网站及其服务
+   AEM 作为一个企业级的CMS管理系统，主要用户维护，创建和部署大型商业网站及其服务。
 
 ### 2. AEM 技术架构
 ####  2.1 AEM 三大分层和三大核心技术架构图  
@@ -127,7 +142,7 @@ Apache Sling :: Servlet Resolution<br>
 Java JSR-170(JCR) <br>
 		JCR规范下载<br>
 		[http://download.oracle.com/otndocs/jcp/content_repository-1.0.1-mr-oth-JSpec/index.html](http://download.oracle.com/otndocs/jcp/content_repository-1.0.1-mr-oth-JSpec/index.html)<br>
-		Jackrabbit<br>
+		Jackrabbit：
 		依据JCR规范的一个JCR实现类库 <br>
 		[http://jackrabbit.apache.org/jcr/jackrabbit-architecture.html](http://jackrabbit.apache.org/jcr/jackrabbit-architecture.html)
 ##### 2.2.3 Apache Felix
@@ -143,7 +158,41 @@ HTML Template Language (HTL)是AEM所推荐使用的服务器端动态HTML模板
 ### 3. AEM 开发和使用
 #### 3.1 AEM 开发/部署/运维流程图
 ![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/%E5%BA%94%E7%94%A8%E4%BC%81%E4%B8%9A%E6%9E%B6%E6%9E%84%E5%88%86%E6%9E%90%E6%A8%A1%E7%89%88.png?raw=true)
-#### 3.2 AEM 核心概念
+#### 3.2 启动 AEM
+##### 3.2.1 直接运行jar文件
+我们可以直接双击运行cq-author-4502.jar这个文件来启动AEM，但这只是快速调试用的临时启动方式，用该方式无法调试代码，以及优化AEM启动参数等。
+##### 3.2.2 在命令行中使用java命令启动
+无论是开发者开发还是生产环境部署，均首选此方式。一般的启动命令如下：
+
+```bash
+java -XX:MaxPermSize=1028m -Xmx2048M -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=30308,server=y,suspend=n -jar cq-author-4502.jar  -r author localdev
+```
++ ‘-XX:MaxPermSize=1028m -Xmx2048M’ 这一段为JVM优化参数，具体请查阅JVM优化相关资料
++ ‘-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=30308’ 这一段为开启debug，并配置调试端口为30308
++ '-jar cq-author-4502.jar' 指定jar文件
++ ‘-r author localdev’ 指定runmode，其中author为OOTB内置runmode，author即为author模式启动，publish为publish模式启动，localdev为自定义runmode，可实现诸如不同环境的自动化配置等功能。
+#### 3.3 AEM 的开发和部署工具
+##### 3.3.1 推荐使用IntelliJ进行AEM开发
+相较于Eclipse，IntelliJ更加灵活便捷，而且IntelliJ的插件市场也能提供很多丰富的实用插件。
+使用IntelliJ进行AEM开发时，请在导入AEM项目时，选择Maven项目，如下：
+![Intellij导入Maven项目](https://github.com/tobywang11030/AEM-Training/blob/master/import-maven.png?raw=true)
+##### 3.3.2 部署AEM代码到Instance
+有三种方式可以部署代码到AEM实例
++ 使用IntelliJ的Maven控制台
+由于一般AEM项目均采用Maven进行依赖管理，并且一般我们也会在项目配置文件中配置AEM的Maven的部署插件，所以，我们可以按如下操作部署AEM代码：
+![使用IntelliJ的maven插件部署代码](https://github.com/tobywang11030/AEM-Training/blob/master/maven-deploye.png?raw=true)
+**注意：**一般我们会选择项目root目录下的lifecycle中的clean,install。这样会部署全部项目代码，有时候我们也可以只选中某个子模块的lifecycle，比如xxx.ui.apps这样的ui层模块，这样只会部署组件等代码，可以提高部署效率。
++ 用命令行部署代码到AEM
+我们可以直接在项目根目录或子模块目录运行控制台并运行如下命令来部署代码：
+
+```bash
+mvn clean install -PautoInstallPackage,local-author,adobe-public
+```
++ 使用IntelliVault插件部署
+配置IntelliJ的IntelliVault插件后，我们可以直接在需要部署的任意folder上右键，在弹出的选项中直接选择Pull/Push代码到Instance，如下：
+![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/vault.png?raw=true)
+**注意：**一般这种方式只是快速调试用，并不建议用该方式进行代码提交前的自测。
+#### 3.4 AEM 基础术语
    + Author instance
      Typically, for security, governance, and other reasons, a production site will divide instances of AEM into Author and Publish instances. For more information on deployment architecture (including Author/Publish instances), see documentation about AEM Instances.
 	
@@ -152,46 +201,26 @@ HTML Template Language (HTL)是AEM所推荐使用的服务器端动态HTML模板
 	
   + Component
 	In AEM, a Component is an object type, instances of which can generally be created by dragging and dropping them from, say, the Sidekick. So for example, out-of-the-box components that ship with AEM include the Text, Title, Tag Cloud, Carousel, Image, and List components, all available from the Sidekick at runtime.
-	
-  + Digital assets
-	In AEM, Digital Assets are (typically) images and rich media files. For further information, see Working with Digital Assets in DAM.
-	
   + Template
 	In AEM, a Template specifies a particular type of page. It defines the structure of a page (while also typically specifying a thumbnail image, and various properties). For example, you may have separate templates for product pages, sitemaps, and contact information.
-	
+  + Page
+    组件（模板也是一种特殊的组件）是AEM的最小的代码逻辑单元，但组件本身是无法实例化的，它只是一个代码对用户是不可见的，在AEM中，页面就是一个实例化的容器，组件必须插入到页面中才可以显示并运行给用户，用户和AEM运维人员实际操作的都是页面，用户基于某个模板创建一个页面，然后在页面上插入和编辑某些组件，页面本身不包含任何代码，页面的实际功能由它的模板和插入的组件所决定。
+   + Digital assets
+	In AEM, Digital Assets are (typically) images and rich media files. For further information, see Working with Digital Assets in DAM.
    + Workflow
 	The AEM Workflow system allows for creation of automated processes involving pages or assets.
-  
-  + Dispatcher
-	The Dispatcher is both a caching and load-balancing tool, as well as providing certain security safeguards.
 	
-  + JCR, Java Content Repository
-	The Java Content Repository specification (JSR-283) provides both an abstract data model and an Application Programming Interface for realizing a massively scalable NoSQL data repository that combines features of a file system and an object database. While you do not need to understand JSR-283 in exhaustive detail, you should take time to familiarize yourself with the basic capabilities of JCR and the data model underlying it, because JCR is what makes possible the "everything is content" philosophy of AEM.
-	
-	In essence, JCR is a system of nodes and properties, in which nodes can inherit from other nodes and all content is stored as property values. Note that in addition to ordinary inheritance, JCR allows for a concept of "mixin" nodes, which enables modelling of multiple inheritance.
-	
-	JCR has a number of predefined node types and property types, but in general the typing system is quite flexible, and (indeed) one of the strengths of JCR is that it allows structured as well as unstructured content to be stored/managed with equal ease. That is, JCR can accommodate highly structured data, but it can also accommodate arbitrary dynamic data structures without schema constraints.
-	
-	The JavaDoc for JCR's Java API is here.
-	
-	Before attempting to read the JavaDoc or the JCR spec itself, you might want to look at this high-level explanation of JCR as implemented by Adobe Experience Services.
-
-	
-  + OSGi
-	OSGi is the services-based runtime technology that provides the basis for modularized Java development in AEM. It is a framework that provides not only a highly dynamic (and secure) classloading and execution environment for code resources (known as bundles), but also full control over the visibility and lifecycle of the various services exposed by bundles. A service registry provides a cooperation model for bundles that takes lifecycle dynamics (and version requirements) into account. OSGi solves many of the problems that application servers were intended to solve, but does so in a lightweight, highly dynamic way, making it possible, for example, to hot-deploy services (making the new code immediately available without restarting the server).	
-	
-  + Quickstart
-	Unlike many other programs, you install AEM by using a single "Quickstart" self-extracting JAR file. When you double-click the JAR file for the first time, everything you need is automatically installed. The quickstart JAR includes all files required for the CRX repository (including administrative facilities), virtual repository services, index and search services, workflow services, security, and a Web server, plus the CQ Servlet Engine (CQSE) and all AEM services. There are no other files to install: the Quickstart is self-contained.
-	
-    The first time you start the Quickstart, it creates an entire JCR-compliant repository in the background, which can take several minutes. After this initial startup, subsequent startups are much quicker as the repository infrastructure has already been laid down.
-	
-    Many startup options (such as the active port number and whether the AEM instance in question should be a Publish instance versus an Author instance; and much more) can be controlled by appropriately renaming the Quickstart file. To see a list of options in this regard, run the JAR with "-help" on the command line:
-	**java -jar <quickstartfilename>.jar –help**
   + Replication agents
 	Replication agents are central to AEM as the mechanism used to Publish (activate) content from an author to a publish environment; flush content from the Dispatcher cache; return user generated content (for example, form input) from the Publish environment to the Author environment.
 
-  + Tar Storage (TarMK)
-	TarMK is the default persistence system in AEM. Although AEM can be configured to use a different persistence system (such as MongoDB), TarMK has certain advantages in that it is performance-optimized for typical JCR use-cases (thus is very fast), uses an industry-standard data format, and can be quickly and easily backed up. Read more here.
+#### 3.5 AEM 常用操作
+##### 3.5.1 调试AEM代码
+以IntelliJ为例，首先需要保证是以命令行启动的AEM并配置了相关debug参数，然后，按照如下配置IntelliJ的debug
+![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/debug.png?raw=true)
+在创建好的remote debug config中，端口输入AEM启动参数中配置的30308，点击ok保存
+![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/debug2.png?raw=true)
+配置完成后，在右上角选择我们刚才的debug配置，再点击右边的小虫子debug按钮即可开启debug。
+![IntelliJ开启debug](https://github.com/tobywang11030/AEM-Training/blob/master/debug3.png?raw=true)
 ### 4. AEM Build命令详解
 #### 4.1 MVN build命令相关知识
 **参考书目**：[Maven权威指南中文版](https://github.com/tobywang11030/mangoCMS/blob/master/Maven%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%E4%B8%AD%E6%96%87%E7%89%88.pdf)
@@ -337,7 +366,7 @@ Granite.I18n.get('upload-time')；
 + Because editing static templates is the exclusive task of a developer, please see the developer document Page Templates - Static for more information.
 
 By definition, the template console and template editor only allow creation and editing of editable templates. Therefore this document focuses exclusively on editable templates.
-#### 7.32 命令行 CURL 安装和下载 package
+#### 7.32 命令后 CURL 安装和下载 package
 ##### 7.32.1 curl 下载 package
 
 ```bash
@@ -348,6 +377,7 @@ curl -# -u admin:admin -O http://localhost:4503/etc/packages/my_packages/image.z
 ```bash
 curl -u admin:admin -F file=@"content.zip" -F name=“Package” -F force=true -F install=false http://localhost:4502/crx/packmgr/service.jsp --progress-bar -o upload.txt
 ```
+
 ### 8. Self-Assessment Preparation and Learning worksheet 
 | Topics | Cost(hours) | Details | Reference | Start Date | End Date | Completed? | Questions | Comment |
 | :----- | ------------ | :----- | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
@@ -422,7 +452,7 @@ AEM的默认数据存储方式，该方式下数据已Tar文件的形式存储�
 
 启用该存储方式，可以将Node数据以及二进制数据（可选，二进制数据仍可以已文件形式存在本地磁盘或者S3等第三方云），这样可以借助Mongo Storage的高性能，分布式的特点提高AEM的数据存储性能。具体可参考https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/aem-with-mongodb.html
 
-### 2. Self-Assessment Preparation and Learning worksheet 
+### 2. Learning plan tracking form
 | Topics | Cost(hours) | Details | Reference | Start Date | End Date | Completed? | Questions | Comment |
 | :------------ | ------------ | :------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
 | Install and Configure the AEM Environment  |   | 1. Identify the default runmode of the AEM server<br>2. Identify the default runmode of the AEM server<br>3. Apply best practices for installation of AEM 6.0 ondifferent operating systems<br>4. Determine the valid run modes to operate AEM<br>5. State the configurations required for the installation on application servers<br>6. Identify the supported operating system for installing AEM on an application  |   |   |   |   |   |   |
@@ -433,5 +463,4 @@ AEM的默认数据存储方式，该方式下数据已Tar文件的形式存储�
 | Create AEM security policies  |   |  1. Evaluate AEM users and group permissions<br>2. Apply standard processes to set up CUGs<br>3. Evaluate ACLs and permission level for users/groups |   |   |   |   |   |   |
 | Set-up and configure deployment infrastructure  |   | 1. Analyze and evaluate logs and other artifacts to manage garbage collection and TAR optimization<br>2. Apply standard procedure for backend data store configuration<br>3. Apply standard procedures to integrate AEM applications with Marketing Cloud tools and third-party tools<br>4. Apply standard procedures to integrate AEM applications with LDAP/SSO/OAUTH Providers/Third-Party login authentication mechanisms  |   |   |   |   |   |   |
 | Troubleshoot AEM projects  |   |  1. Troubleshoot issues related to performance<br>2. Troubleshoot functional issues<br>3. Identify issues related to scalability bottlenecks |   |   |   |   |   |   |
-
 

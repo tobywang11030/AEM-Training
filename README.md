@@ -262,7 +262,7 @@ explorer 控制台不是很常用，核心功能是配置系统级用户，系�
 #### 4.1 MVN build命令相关知识
 **参考书目**：[Maven权威指南中文版](https://github.com/tobywang11030/mangoCMS/blob/master/Maven%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%E4%B8%AD%E6%96%87%E7%89%88.pdf)
 #### 4.2 AEM Build命令结构解释
-![在这里插入图片描述](hhttps://github.com/tobywang11030/AEM-Training/blob/master/SIPOC%E5%88%86%E6%9E%90%E6%A8%A1%E7%89%88%20(3).png?raw=true)
+![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/SIPOC%E5%88%86%E6%9E%90%E6%A8%A1%E7%89%88%20(3).png?raw=true)
 
 ### 5. AEM 相关学习资料
 #### 5.1 Adobe 官方教程入口 

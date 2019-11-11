@@ -181,7 +181,7 @@ java -XX:MaxPermSize=1028m -Xmx2048M -Xdebug -Xnoagent -Djava.compiler=NONE -Xru
 + 使用IntelliJ的Maven控制台
 由于一般AEM项目均采用Maven进行依赖管理，并且一般我们也会在项目配置文件中配置AEM的Maven的部署插件，所以，我们可以按如下操作部署AEM代码：
 ![使用IntelliJ的maven插件部署代码](https://github.com/tobywang11030/AEM-Training/blob/master/maven-deploye.png?raw=true)
-**注意：**一般我们会选择项目root目录下的lifecycle中的clean,install。这样会部署全部项目代码，有时候我们也可以只选中某个子模块的lifecycle，比如xxx.ui.apps这样的ui层模块，这样只会部署组件等代码，可以提高部署效率。
+<br>**注意**:一般我们会选择项目root目录下的lifecycle中的clean,install。这样会部署全部项目代码，有时候我们也可以只选中某个子模块的lifecycle，比如xxx.ui.apps这样的ui层模块，这样只会部署组件等代码，可以提高部署效率。
 + 用命令行部署代码到AEM
 我们可以直接在项目根目录或子模块目录运行控制台并运行如下命令来部署代码：
 
@@ -191,7 +191,7 @@ mvn clean install -PautoInstallPackage,local-author,adobe-public
 + 使用IntelliVault插件部署
 配置IntelliJ的IntelliVault插件后，我们可以直接在需要部署的任意folder上右键，在弹出的选项中直接选择Pull/Push代码到Instance，如下：
 ![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/vault.png?raw=true)
-**注意：**一般这种方式只是快速调试用，并不建议用该方式进行代码提交前的自测。
+<br>**注意**:一般这种方式只是快速调试用，并不建议用该方式进行代码提交前的自测。
 #### 3.4 AEM 基础术语
    + Author instance
      Typically, for security, governance, and other reasons, a production site will divide instances of AEM into Author and Publish instances. For more information on deployment architecture (including Author/Publish instances), see documentation about AEM Instances.

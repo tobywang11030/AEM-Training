@@ -1,5 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [AEM Training](#aem-training)
   - [AEM basic technical knowledge study](#aem-basic-technical-knowledge-study)
@@ -9,32 +10,34 @@
         - [1.2.1 AEM简要介绍](#121-aem%E7%AE%80%E8%A6%81%E4%BB%8B%E7%BB%8D)
         - [1.2.2 AEM具有以下显著特征：](#122-aem%E5%85%B7%E6%9C%89%E4%BB%A5%E4%B8%8B%E6%98%BE%E8%91%97%E7%89%B9%E5%BE%81)
       - [1.3 AEM 能做什么](#13-aem-%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88)
-    - [2. AEM 技术架构](#2-aem-%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84)
-      - [2.1 AEM 三大分层和三大核心技术架构图](#21-aem-%E4%B8%89%E5%A4%A7%E5%88%86%E5%B1%82%E5%92%8C%E4%B8%89%E5%A4%A7%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%9B%BE)
-      - [2.2 AEM 三大核心技术](#22-aem-%E4%B8%89%E5%A4%A7%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF)
-        - [2.2.1 Apache Sling](#221-apache-sling)
-        - [2.2.2 java JCR & Apache Jackrabbit](#222-java-jcr--apache-jackrabbit)
-        - [2.2.3 Apache Felix](#223-apache-felix)
-      - [2.3. AEM 首选渲染层模板语言：HTL](#23-aem-%E9%A6%96%E9%80%89%E6%B8%B2%E6%9F%93%E5%B1%82%E6%A8%A1%E6%9D%BF%E8%AF%AD%E8%A8%80htl)
-    - [3. AEM 开发和使用](#3-aem-%E5%BC%80%E5%8F%91%E5%92%8C%E4%BD%BF%E7%94%A8)
-      - [3.1 AEM 开发/部署/运维流程图](#31-aem-%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2%E8%BF%90%E7%BB%B4%E6%B5%81%E7%A8%8B%E5%9B%BE)
-      - [3.2 启动 AEM](#32-%E5%90%AF%E5%8A%A8-aem)
-        - [3.2.1 直接运行jar文件](#321-%E7%9B%B4%E6%8E%A5%E8%BF%90%E8%A1%8Cjar%E6%96%87%E4%BB%B6)
-        - [3.2.2 在命令行中使用java命令启动](#322-%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E4%BD%BF%E7%94%A8java%E5%91%BD%E4%BB%A4%E5%90%AF%E5%8A%A8)
-      - [3.3 AEM 的开发和部署工具](#33-aem-%E7%9A%84%E5%BC%80%E5%8F%91%E5%92%8C%E9%83%A8%E7%BD%B2%E5%B7%A5%E5%85%B7)
-        - [3.3.1 推荐使用IntelliJ进行AEM开发](#331-%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8intellij%E8%BF%9B%E8%A1%8Caem%E5%BC%80%E5%8F%91)
-        - [3.3.2 部署AEM代码到Instance](#332-%E9%83%A8%E7%BD%B2aem%E4%BB%A3%E7%A0%81%E5%88%B0instance)
-      - [3.4 AEM 控制台](#34-aem-%E6%8E%A7%E5%88%B6%E5%8F%B0)
-        - [3.4.1 http://localhost:4502/aem/start.html](#341-httplocalhost4502aemstarthtml)
-        - [3.4.2 http://localhost:4502/crx/de/index.jsp](#342-httplocalhost4502crxdeindexjsp)
-        - [3.4.3 http://localhost:4502/system/console/configMgr](#343-httplocalhost4502systemconsoleconfigmgr)
-        - [3.4.4 http://localhost:4502/crx/explorer/index.jsp](#344-httplocalhost4502crxexplorerindexjsp)
-      - [3.5 AEM 基础术语](#35-aem-%E5%9F%BA%E7%A1%80%E6%9C%AF%E8%AF%AD)
-      - [3.6 AEM 开发常用操作](#36-aem-%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C)
-        - [3.6.1 调试AEM代码](#361-%E8%B0%83%E8%AF%95aem%E4%BB%A3%E7%A0%81)
-        - [3.6.2 组件的代码结构](#362-%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84)
-        - [3.6.3 创建新的组件/模板的代码](#363-%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84%E7%BB%84%E4%BB%B6%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BB%A3%E7%A0%81)
-        - [3.6.4 使用Crx/de Create Package（导出数据）](#364-%E4%BD%BF%E7%94%A8crxde-create-package%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE)
+    - [2. AEM 开发和使用](#2-aem-%E5%BC%80%E5%8F%91%E5%92%8C%E4%BD%BF%E7%94%A8)
+      - [2.1 启动 AEM](#21-%E5%90%AF%E5%8A%A8-aem)
+        - [2.1.1 直接运行jar文件](#211-%E7%9B%B4%E6%8E%A5%E8%BF%90%E8%A1%8Cjar%E6%96%87%E4%BB%B6)
+        - [2.1.2 在命令行中使用java命令启动](#212-%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E4%BD%BF%E7%94%A8java%E5%91%BD%E4%BB%A4%E5%90%AF%E5%8A%A8)
+      - [2.2 AEM 的开发和部署工具](#22-aem-%E7%9A%84%E5%BC%80%E5%8F%91%E5%92%8C%E9%83%A8%E7%BD%B2%E5%B7%A5%E5%85%B7)
+        - [2.2.1 推荐使用IntelliJ进行AEM开发](#221-%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8intellij%E8%BF%9B%E8%A1%8Caem%E5%BC%80%E5%8F%91)
+        - [2.2.2 部署AEM代码到Instance](#222-%E9%83%A8%E7%BD%B2aem%E4%BB%A3%E7%A0%81%E5%88%B0instance)
+      - [2.3 AEM 控制台](#23-aem-%E6%8E%A7%E5%88%B6%E5%8F%B0)
+        - [2.3.1 http://localhost:4502/aem/start.html](#231-httplocalhost4502aemstarthtml)
+        - [2.3.2 http://localhost:4502/crx/de/index.jsp](#232-httplocalhost4502crxdeindexjsp)
+        - [2.3.3 http://localhost:4502/system/console/configMgr](#233-httplocalhost4502systemconsoleconfigmgr)
+        - [2.3.4 http://localhost:4502/crx/explorer/index.jsp](#234-httplocalhost4502crxexplorerindexjsp)
+      - [2.4 AEM 基础术语](#24-aem-%E5%9F%BA%E7%A1%80%E6%9C%AF%E8%AF%AD)
+      - [2.5 AEM 开发/部署/运维流程图](#25-aem-%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2%E8%BF%90%E7%BB%B4%E6%B5%81%E7%A8%8B%E5%9B%BE)
+      - [2.6 AEM 开发都开发什么](#26-aem-%E5%BC%80%E5%8F%91%E9%83%BD%E5%BC%80%E5%8F%91%E4%BB%80%E4%B9%88)
+        - [2.6.1 开发AEM组件](#261-%E5%BC%80%E5%8F%91aem%E7%BB%84%E4%BB%B6)
+      - [2.7 AEM 开发常用操作](#27-aem-%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C)
+        - [2.7.1 调试AEM代码](#271-%E8%B0%83%E8%AF%95aem%E4%BB%A3%E7%A0%81)
+        - [2.7.2 组件的代码结构](#272-%E7%BB%84%E4%BB%B6%E7%9A%84%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84)
+        - [2.7.3 创建新的组件/模板的代码](#273-%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84%E7%BB%84%E4%BB%B6%E6%A8%A1%E6%9D%BF%E7%9A%84%E4%BB%A3%E7%A0%81)
+        - [2.7.4 使用Crx/de Create Package（导出数据）](#274-%E4%BD%BF%E7%94%A8crxde-create-package%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE)
+    - [3. AEM 技术架构](#3-aem-%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84)
+      - [3.1 AEM 三大分层和三大核心技术架构图](#31-aem-%E4%B8%89%E5%A4%A7%E5%88%86%E5%B1%82%E5%92%8C%E4%B8%89%E5%A4%A7%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%9B%BE)
+      - [3.2 AEM 三大核心技术](#32-aem-%E4%B8%89%E5%A4%A7%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF)
+        - [3.2.1 Apache Sling](#321-apache-sling)
+        - [3.2.2 java JCR & Apache Jackrabbit](#322-java-jcr--apache-jackrabbit)
+        - [3.2.3 Apache Felix](#323-apache-felix)
+      - [3.3. AEM 首选渲染层模板语言：HTL](#33-aem-%E9%A6%96%E9%80%89%E6%B8%B2%E6%9F%93%E5%B1%82%E6%A8%A1%E6%9D%BF%E8%AF%AD%E8%A8%80htl)
     - [4. AEM Build命令详解](#4-aem-build%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3)
       - [4.1 MVN build命令相关知识](#41-mvn-build%E5%91%BD%E4%BB%A4%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86)
       - [4.2 AEM Build命令结构解释](#42-aem-build%E5%91%BD%E4%BB%A4%E7%BB%93%E6%9E%84%E8%A7%A3%E9%87%8A)
@@ -127,49 +130,17 @@ AEM是 Adobe 出品的一个CMS管理系统，相比于市面上其他著名的C
           **文档型数据库**: 不用于一般的CMS系统使用MySql, SqlServer等关系型数据库，AEM采用文档型数据库（JCR）来存储数据。使用该数据库的显著特点是AEM的程序本身，以及用户所添加的数据，上传的图片等全部存储在AEM实例的所在文件夹中，文件夹结构如下：<br>.
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107162707872.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
 #### 1.3 AEM 能做什么
-   AEM 作为一个企业级的CMS管理系统，主要用户维护，创建和部署大型商业网站及其服务。
-
-### 2. AEM 技术架构
-####  2.1 AEM 三大分层和三大核心技术架构图  
-![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/AEM.png?raw=true)
-#### 2.2 AEM 三大核心技术
-#####  2.2.1 Apache Sling 
-Apache Sling :: Servlet Resolution<br>
-			 [https://sling.apache.org/old-stuff/servlet-resolution.html](https://sling.apache.org/old-stuff/servlet-resolution.html)<br>
-			Apache Sling :: URL decomposition<br>
-			 [http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html](http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html)<br>
-			Apache Sling :: HTL Scripting<br>
-			 [https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html)<br>
-			Apache Sling :: Sling Models<br>
-			 [https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-     since-110](https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-%20%20%20%20%20since-110)<br>
-			 拓展书目：<br>
-			 [Continuous Delivery of Apache Sling Applications](https://github.com/tobywang11030/mangoCMS/blob/master/Continuous%20Delivery%20of%20Apache%20Sling%20Applications.pdf)<br>
-			 [Server-side OSGi with Apache Sling](https://github.com/tobywang11030/mangoCMS/blob/master/Server-side%20OSGi%20with%20Apache%20Sling.pdf)
-			 
-##### 2.2.2 java JCR & Apache Jackrabbit
-Java JSR-170(JCR) <br>
-		JCR规范下载<br>
-		[http://download.oracle.com/otndocs/jcp/content_repository-1.0.1-mr-oth-JSpec/index.html](http://download.oracle.com/otndocs/jcp/content_repository-1.0.1-mr-oth-JSpec/index.html)<br>
-		Jackrabbit：
-		依据JCR规范的一个JCR实现类库 <br>
-		[http://jackrabbit.apache.org/jcr/jackrabbit-architecture.html](http://jackrabbit.apache.org/jcr/jackrabbit-architecture.html)
-##### 2.2.3 Apache Felix
- 一个OSGI实现 官网 [http://felix.apache.org/](http://felix.apache.org/)<br>
- 拓展书目: [OSGi and Apache Felix 3.0 Beginner's Guide](https://github.com/tobywang11030/mangoCMS/blob/master/OSGi%20and%20Apache%20Felix%203.0%20Beginner%27s%20Guide.pdf)
- 
-####  2.3. AEM 首选渲染层模板语言：HTL
-HTML Template Language (HTL)是AEM所推荐使用的服务器端动态HTML模板语言<br>
-		HTL 语法详解<br>
-		 [https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md#221-use](https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md#221-use)<br>
-		HTL Adobe 官方教程<br>
-		 [https://helpx.adobe.com/experience-manager/htl/using/getting-started.html](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html)
-### 3. AEM 开发和使用
-#### 3.1 AEM 开发/部署/运维流程图
-![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/%E5%BA%94%E7%94%A8%E4%BC%81%E4%B8%9A%E6%9E%B6%E6%9E%84%E5%88%86%E6%9E%90%E6%A8%A1%E7%89%88.png?raw=true)
-#### 3.2 启动 AEM
-##### 3.2.1 直接运行jar文件
+   AEM 作为一个企业级的CMS管理系统，主要用户维护，创建和部署大型商业网站及其服务。<br>
+一般AEM的应用场景如下：
++ 博客类/资讯类/新闻类门户网站
++ 企业门户
++ 企业电商（前端展示部分）
++ 资产管理（可以作为一个独立的视频/图片等素材管理系统和和其他系统整合使用）
+### 2. AEM 开发和使用
+#### 2.1 启动 AEM
+##### 2.1.1 直接运行jar文件
 我们可以直接双击运行cq-author-4502.jar这个文件来启动AEM，但这只是快速调试用的临时启动方式，用该方式无法调试代码，以及优化AEM启动参数等。
-##### 3.2.2 在命令行中使用java命令启动
+##### 2.1.2 在命令行中使用java命令启动
 无论是开发者开发还是生产环境部署，均首选此方式。一般的启动命令如下：
 
 ```bash
@@ -179,12 +150,12 @@ java -XX:MaxPermSize=1028m -Xmx2048M -Xdebug -Xnoagent -Djava.compiler=NONE -Xru
 + ‘-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=30308’ 这一段为开启debug，并配置调试端口为30308
 + '-jar cq-author-4502.jar' 指定jar文件
 + ‘-r author localdev’ 指定runmode，其中author为OOTB内置runmode，author即为author模式启动，publish为publish模式启动，localdev为自定义runmode，可实现诸如不同环境的自动化配置等功能。
-#### 3.3 AEM 的开发和部署工具
-##### 3.3.1 推荐使用IntelliJ进行AEM开发
+#### 2.2 AEM 的开发和部署工具
+##### 2.2.1 推荐使用IntelliJ进行AEM开发
 相较于Eclipse，IntelliJ更加灵活便捷，而且IntelliJ的插件市场也能提供很多丰富的实用插件。
 使用IntelliJ进行AEM开发时，请在导入AEM项目时，选择Maven项目，如下：
 ![Intellij导入Maven项目](https://github.com/tobywang11030/AEM-Training/blob/master/import-maven.png?raw=true)
-##### 3.3.2 部署AEM代码到Instance
+##### 2.2.2 部署AEM代码到Instance
 有三种方式可以部署代码到AEM实例
 + 使用IntelliJ的Maven控制台
 由于一般AEM项目均采用Maven进行依赖管理，并且一般我们也会在项目配置文件中配置AEM的Maven的部署插件，所以，我们可以按如下操作部署AEM代码：
@@ -200,25 +171,25 @@ mvn clean install -PautoInstallPackage,local-author,adobe-public
 配置IntelliJ的IntelliVault插件后，我们可以直接在需要部署的任意folder上右键，在弹出的选项中直接选择Pull/Push代码到Instance，如下：
 ![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/vault.png?raw=true)
 <br>**注意**：一般这种方式只是快速调试用，并不建议用该方式进行代码提交前的自测。
-#### 3.4 AEM 控制台
-##### 3.4.1 http://localhost:4502/aem/start.html
+#### 2.3 AEM 控制台
+##### 2.3.1 http://localhost:4502/aem/start.html
 Touch UI Manager是AEM的核心控制台
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111171900616.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
 Touch UI控制台主要提供页面的管理（创建新页面，编辑页面），Asset管理（上传，删除图片，视频等素材），另外还提供了一些列工具，比如replication，workflow，template，account等，具体可直接点击Tool按钮查看：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111172138237.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
 Touch UI控制台是运维人员和AEM管理员的主要控制台
-##### 3.4.2 http://localhost:4502/crx/de/index.jsp
+##### 2.3.2 http://localhost:4502/crx/de/index.jsp
 Crx/de控制台可以认为是AEM的数据库管理工具
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111172322767.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
 Crx/de 工具的主要功能是查看JCR的底层数据，包括我们部署到AEM的代码，OOTB的代码，以及用户创建的页面，添加的组件等，可以说，整个AEM的所有数据都可以在Crx/de中查看，以及修改，修改立即生效，因此，在项目中，我们可以在Crx/de中验证我们的功能，或者直接在Crx/de中添加修改数据而不经过代码部署环节，甚至，可以在生产环境的Crx/de中快速开发一个紧急功能而绕过其他环节。
 Crx/de的另一个功能是数据导入导出，将用户生产的数据（添加的页面，图片，author的组件）等导入到其他Instance中。
-##### 3.4.3 http://localhost:4502/system/console/configMgr
+##### 2.3.3 http://localhost:4502/system/console/configMgr
 ConfigMgr主要用来查看Bundle级的信息，比如，项目代码的Bundle是否部署和运行成功，组件java代码的Model是否成功运行，最重要的功能是，如果我们在java代码中添加了Property field，那我们可以在这个控制台中进行配置。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111173139856.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
-##### 3.4.4 http://localhost:4502/crx/explorer/index.jsp
+##### 2.3.4 http://localhost:4502/crx/explorer/index.jsp
 explorer 控制台不是很常用，核心功能是配置系统级用户，系统级用户是，在AEM的权限管理中，所有操作JCR数据必须要有一个用户，我们在Java中使用API操作JCR也不例外，因此需要为我们的java代码分配一个用户，而直接在Touch UI中创建用户，安全性低并且还需要密码认证，所以我们一般在该控制台中创建一个为代码使用的系统级用户。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111173459894.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
-#### 3.5 AEM 基础术语
+#### 2.4 AEM 基础术语
    + Author instance
      Typically, for security, governance, and other reasons, a production site will divide instances of AEM into Author and Publish instances. For more information on deployment architecture (including Author/Publish instances), see documentation about AEM Instances.
 	
@@ -238,32 +209,80 @@ explorer 控制台不是很常用，核心功能是配置系统级用户，系�
 	
   + Replication agents
 	Replication agents are central to AEM as the mechanism used to Publish (activate) content from an author to a publish environment; flush content from the Dispatcher cache; return user generated content (for example, form input) from the Publish environment to the Author environment.
+#### 2.5 AEM 开发/部署/运维流程图
+![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/%E5%BA%94%E7%94%A8%E4%BC%81%E4%B8%9A%E6%9E%B6%E6%9E%84%E5%88%86%E6%9E%90%E6%A8%A1%E7%89%88.png?raw=true)
+#### 2.6 AEM 开发都开发什么
+##### 2.6.1 开发AEM组件
+在AEM中，具有最小代码逻辑单元的是组件。一般我们看到的一个AEM页面，这个页面是由若干个组件来组成的，这个页面本身并不包含任何代码，包括前端HTML，JS，后台的java等，这个页面只是一个容器，由用户确定拖放哪些组件进入这个页面，这个页面的最终渲染效果和其功能以及数据来源，均是有每个组件来决定的。
+在AEM开发组件。一般我们可以将AEM组件的开发工作分为三部分：
++ HTML/JS/CSS
+HTML/JS/CSS决定了这个组件将如何显示如何交互，比如显示一个列表，列表有个按钮可以点击等等。一般HTML/JS/CSS 应事先由前端开发人员按照设计稿开发出来，之后交给后台开发人员替换动态变量来渲染动态内容。特殊情况下，HTML/JS/CSS也会由后台开发人员来进行开发，这种一般是UI比较简单。
++ Dialog 
+AEM组件的一大特性就是AEM平台给每个组件提供了可供运维人员修改和编辑内容的交互界面，这个界面就是Dialog，Dialog一般由后台开发人员根据业务需求和UI设计来决定需要暴露哪些配置项给用户，然后在开发该组件的Dialog。
++ Sling Model
+对于一个组件来说，很多时候只写HTML和Dialog不能够完全实现功能，比如该组件需要和其他系统交互获得数据，或者需要使用Java API操作Jcr数据等，这个时候就需要开发一个java 类（Sling Model）来处理和封装数据，然后在HTML中使用这些数据。
 
-#### 3.6 AEM 开发常用操作
-##### 3.6.1 调试AEM代码
+#### 2.7 AEM 开发常用操作
+##### 2.7.1 调试AEM代码
 以IntelliJ为例，首先需要保证是以命令行启动的AEM并配置了相关debug参数，然后，按照如下配置IntelliJ的debug
 ![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/debug.png?raw=true)
 在创建好的remote debug config中，端口输入AEM启动参数中配置的30308，点击ok保存
 ![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/debug2.png?raw=true)
 配置完成后，在右上角选择我们刚才的debug配置，再点击右边的小虫子debug按钮即可开启debug。
 ![IntelliJ开启debug](https://github.com/tobywang11030/AEM-Training/blob/master/debug3.png?raw=true)
-##### 3.6.2 组件的代码结构
+##### 2.7.2 组件的代码结构
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111174615709.png)
-##### 3.6.3 创建新的组件/模板的代码
+##### 2.7.3 创建新的组件/模板的代码
 + 基于现有代码复制并修改
 一般我们IDE中的AEM项目代码，都是基于Archetype运行代码来开发的，因此，当我们需要创建新组件时，可以找一个和我们需求类似的组件，复制它并重命名，根据需要修改复制过来的文件中的.content.xml componentName.html, _cq_dialog/.content.xml三个文件的内容实现新的组件。
 + 使用Crx/de导出或直接复制OOTB的代码进行开发新组件
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111174911837.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
-##### 3.6.4 使用Crx/de Create Package（导出数据）
+##### 2.7.4 使用Crx/de Create Package（导出数据）
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111175329762.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
 在Crx/de中切换package视图，创建一个新的package，在新的package中添加要打包的节点，组件，页面，asset均可
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191111175609117.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+
+### 3. AEM 技术架构
+####  3.1 AEM 三大分层和三大核心技术架构图  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107161013639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+#### 3.2 AEM 三大核心技术
+#####  3.2.1 Apache Sling 
+Apache Sling :: Servlet Resolution<br>
+			 [https://sling.apache.org/old-stuff/servlet-resolution.html](https://sling.apache.org/old-stuff/servlet-resolution.html)<br>
+			Apache Sling :: URL decomposition<br>
+			 [http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html](http://sling.apache.org/documentation/the-sling-engine/url-decomposition.html)<br>
+			Apache Sling :: HTL Scripting<br>
+			 [https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html)<br>
+			Apache Sling :: Sling Models<br>
+			 [https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-     since-110](https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-%20%20%20%20%20since-110)<br>
+			 拓展书目：<br>
+			 [Continuous Delivery of Apache Sling Applications](https://github.com/tobywang11030/mangoCMS/blob/master/Continuous%20Delivery%20of%20Apache%20Sling%20Applications.pdf)<br>
+			 [Server-side OSGi with Apache Sling](https://github.com/tobywang11030/mangoCMS/blob/master/Server-side%20OSGi%20with%20Apache%20Sling.pdf)
+			 
+##### 3.2.2 java JCR & Apache Jackrabbit
+Java JSR-170(JCR) <br>
+		JCR规范下载<br>
+		[http://download.oracle.com/otndocs/jcp/content_repository-1.0.1-mr-oth-JSpec/index.html](http://download.oracle.com/otndocs/jcp/content_repository-1.0.1-mr-oth-JSpec/index.html)<br>
+		Jackrabbit：
+		依据JCR规范的一个JCR实现类库 <br>
+		[http://jackrabbit.apache.org/jcr/jackrabbit-architecture.html](http://jackrabbit.apache.org/jcr/jackrabbit-architecture.html)
+##### 3.2.3 Apache Felix
+ 一个OSGI实现 官网 [http://felix.apache.org/](http://felix.apache.org/)<br>
+ 拓展书目: [OSGi and Apache Felix 3.0 Beginner's Guide](https://github.com/tobywang11030/mangoCMS/blob/master/OSGi%20and%20Apache%20Felix%203.0%20Beginner%27s%20Guide.pdf)
+ 
+####  3.3. AEM 首选渲染层模板语言：HTL
+HTML Template Language (HTL)是AEM所推荐使用的服务器端动态HTML模板语言<br>
+		HTL 语法详解<br>
+		 [https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md#221-use](https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md#221-use)<br>
+		HTL Adobe 官方教程<br>
+		 [https://helpx.adobe.com/experience-manager/htl/using/getting-started.html](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html)
+
 ### 4. AEM Build命令详解
 #### 4.1 MVN build命令相关知识
 **参考书目**：[Maven权威指南中文版](https://github.com/tobywang11030/mangoCMS/blob/master/Maven%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%E4%B8%AD%E6%96%87%E7%89%88.pdf)
 #### 4.2 AEM Build命令结构解释
-![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/SIPOC%E5%88%86%E6%9E%90%E6%A8%A1%E7%89%88%20(3).png?raw=true)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20191108104552463.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+如无法显示此图片，请浏览器中打开此链接：https://img-blog.csdnimg.cn/20191108104552463.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70
 ### 5. AEM 相关学习资料
 #### 5.1 Adobe 官方教程入口 
 [https://helpx.adobe.com/support/experience-manager/6-3.html](https://helpx.adobe.com/support/experience-manager/6-3.html)

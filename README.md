@@ -313,7 +313,7 @@ curl -u admin:admin -F file=@"content.zip" -F name=“Package” -F force=true -
 ```
 ### 3. AEM 技术架构
 ####  3.1 AEM 三大分层和三大核心技术架构图  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191107161013639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/AEM.png?raw=true)
 #### 3.2 AEM 三大核心技术
 #####  3.2.1 Apache Sling 
 Apache Sling :: Servlet Resolution<br>

@@ -471,6 +471,41 @@ By definition, the template console and template editor only allow creation and 
 |  Building OSGi services |   |  1. Create custom OSGi services. <br>2. Create and manage custom OSGi configurations.<br>3. Configure and manage OSGi services and bundles by using the Felix web console. <br>4. Manage Maven dependencies.|   |   |   |   |   |   |
 | Troubleshooting AEM projects  |   | 1. Create custom log files by using the Web console.<br>2. Configure and manage AEM log levels for specific AEM environments. <br>3. Given an option for starting AEM, I can select the correct parameter(s) for starting AEM. <br>4. Troubleshoot caching issues related to the Dispatcher and browsers.<br>5. Troubleshoot AEM configurations.|   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |
+### 9. AEM实战项目 Mango
+#### 9.1 Mango项目介绍
+Mango是一个企业门户网站，主要功能是展示企业信息，企业动态，企业大事记等。
+#### 9.2 项目需求-基础篇
++ 修改mango-base-template<br>
+mango-base-template 代码路径：\mango\ui.apps\src\main\content\jcr_root\apps\mango\pages\basepage
+在Base template中:<br>
+Head标签引入该站点的全局CSS clientlib category: mango-base<br>
+body底部引入该站点的全局Js clientlib category: mango-base<br>
+mango-base clientlib已创建好，路径：/etc/clientlibs/mango/clientlib-base
+所有组件页面相关的CSS和JS均写在该clientlib里
++ 创建一个mango-home-template 继承自 mango-base-template<br>
+在该template中，设定root layout container 只允许插入组件group为 mango-home 的组件
++ 创建一个mango-content-template 继承自 mango-base-template<br>
+在该template中，设定root layout container 只允许插入组件group为 mango-content 的组件<br>
++ 创建一个hero banner 组件 来显示首页大图<br>
+该组件可以author的field有：image, button title, button link, 该组件group为mango-home
++ 创建一个weather 组件 来显示指定城市的天气<br>
+该组件可以author的field有：city name, 该组件group为mango-home<br>
+该组件有一个对应的Sling model java类，在java类中调用任意第三方天气API获得天气数据并赋给前台显示
++ 创建一个 news 组件 来显示编辑好的新闻列表<br>
+该组件可以author的field有：mutiple field嵌套属性，每个item有三个属性：新闻图片，新闻标题，新闻描述
+该组件group为mango-content<br>
+该组件有一个对应的Sling model java类，在java类中处理用户author的新闻数据，该数据可为JSON，或者树状节点，这取决于dialog的配置。
++ 创建一个 general list 组件 来显示指定路径下的所有page或者asset<br>
+该组件可以author的field有：root path
+该组件有一个对应的Sling model java类，在java类中首先获得配置的root path的节点类型是folder还是page；<br>
+如果是folder，则以图片列表的形式显示folder下的assets(图片)，如果是page，则以链接列表的形式显示所有pages。
++ 在上述任务完成后，进入Touch UI控制台，分别基于home 和 content模板创建页面，再在页面中创建好相应的组件，要求可以正常显示组件内容，组件数据工作正常。
+并且，除自行开发的四个组件外，可在页面中适当插入OOTB的若干组件，比如，image, richtext等来丰富页面外观。
+#### 9.2 项目需求-定制化篇
+#### 9.3 项目需求-Servlet
+#### 9.4 项目需求-workflow
+
+
 
 ## AEM advanced technical knowledge study
 

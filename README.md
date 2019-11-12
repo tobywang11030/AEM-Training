@@ -95,6 +95,12 @@
         - [7.27.1 Editable Templates](#7271-editable-templates)
         - [7.27.2 Static Templates](#7272-static-templates)
     - [8. Self-Assessment Preparation and Learning worksheet](#8-self-assessment-preparation-and-learning-worksheet)
+    - [9. AEM实战项目 Mango](#9-aem%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE-mango)
+      - [9.1 Mango项目介绍](#91-mango%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D)
+      - [9.2 项目需求-基础篇](#92-%E9%A1%B9%E7%9B%AE%E9%9C%80%E6%B1%82-%E5%9F%BA%E7%A1%80%E7%AF%87)
+      - [9.2 项目需求-定制化篇](#92-%E9%A1%B9%E7%9B%AE%E9%9C%80%E6%B1%82-%E5%AE%9A%E5%88%B6%E5%8C%96%E7%AF%87)
+      - [9.3 项目需求-Servlet](#93-%E9%A1%B9%E7%9B%AE%E9%9C%80%E6%B1%82-servlet)
+      - [9.4 项目需求-workflow](#94-%E9%A1%B9%E7%9B%AE%E9%9C%80%E6%B1%82-workflow)
   - [AEM advanced technical knowledge study](#aem-advanced-technical-knowledge-study)
     - [1. 系统维护](#1-%E7%B3%BB%E7%BB%9F%E7%BB%B4%E6%8A%A4)
       - [1.1 清理磁盘空间占用](#11-%E6%B8%85%E7%90%86%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E5%8D%A0%E7%94%A8)
@@ -107,6 +113,8 @@
     - [2. Self-Assessment Preparation and Learning worksheet](#2-self-assessment-preparation-and-learning-worksheet)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 
 # AEM Training
 

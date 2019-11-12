@@ -1,6 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
 
 - [AEM Training](#aem-training)
   - [AEM basic technical knowledge study](#aem-basic-technical-knowledge-study)
@@ -103,9 +103,12 @@
       - [1.3 数据存储方式](#13-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F)
         - [1.3.1 File Storage](#131-file-storage)
         - [1.3.2 Mongo Storage](#132-mongo-storage)
-    - [2. Learning plan tracking form](#2-learning-plan-tracking-form)
+    - [2. Self-Assessment Preparation and Learning worksheet](#2-self-assessment-preparation-and-learning-worksheet)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
+
 
 # AEM Training
 
@@ -509,7 +512,7 @@ AEM的默认数据存储方式，该方式下数据已Tar文件的形式存储�
 
 启用该存储方式，可以将Node数据以及二进制数据（可选，二进制数据仍可以已文件形式存在本地磁盘或者S3等第三方云），这样可以借助Mongo Storage的高性能，分布式的特点提高AEM的数据存储性能。具体可参考https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/aem-with-mongodb.html
 
-### 2. Learning plan tracking form
+### 2. Self-Assessment Preparation and Learning worksheet
 | Topics | Cost(hours) | Details | Reference | Start Date | End Date | Completed? | Questions | Comment |
 | :------------ | ------------ | :------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
 | Install and Configure the AEM Environment  |   | 1. Identify the default runmode of the AEM server<br>2. Identify the default runmode of the AEM server<br>3. Apply best practices for installation of AEM 6.0 ondifferent operating systems<br>4. Determine the valid run modes to operate AEM<br>5. State the configurations required for the installation on application servers<br>6. Identify the supported operating system for installing AEM on an application  |   |   |   |   |   |   |

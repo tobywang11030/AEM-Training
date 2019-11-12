@@ -350,7 +350,7 @@ HTML Template Language (HTL)是AEM所推荐使用的服务器端动态HTML模板
 #### 4.1 MVN build命令相关知识
 **参考书目**：[Maven权威指南中文版](https://github.com/tobywang11030/mangoCMS/blob/master/Maven%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%E4%B8%AD%E6%96%87%E7%89%88.pdf)
 #### 4.2 AEM Build命令结构解释
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191108104552463.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://github.com/tobywang11030/AEM-Training/blob/master/SIPOC%E5%88%86%E6%9E%90%E6%A8%A1%E7%89%88%20(3).png?raw=true)
 如无法显示此图片，请浏览器中打开此链接：https://img-blog.csdnimg.cn/20191108104552463.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0Jsb2c=,size_16,color_FFFFFF,t_70
 ### 5. AEM 相关学习资料
 #### 5.1 Adobe 官方教程入口 

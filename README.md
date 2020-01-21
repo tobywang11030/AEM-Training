@@ -94,6 +94,7 @@
       - [7.27 Editable and Static Templates](#727-editable-and-static-templates)
         - [7.27.1 Editable Templates](#7271-editable-templates)
         - [7.27.2 Static Templates](#7272-static-templates)
+      - [7.28 Sling Query](#728-slingquery)
     - [8. Self-Assessment Preparation and Learning worksheet](#8-self-assessment-preparation-and-learning-worksheet)
     - [9. AEM实战项目 Mango](#9-aem%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE-mango)
       - [9.1 Mango项目介绍](#91-mango%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D)
@@ -468,6 +469,9 @@ Maven settings <br>
 + Because editing static templates is the exclusive task of a developer, please see the developer document Page Templates - Static for more information.
 
 By definition, the template console and template editor only allow creation and editing of editable templates. Therefore this document focuses exclusively on editable templates.
+#### 7.28 Sling Query
+使用Sling query可实现类似JQuery选择器的体验来查询JCR，例如当前节点的上一个和下一个节点等实现分页效果
+https://sling.apache.org/documentation/bundles/sling-query.html
 
 ### 8. Self-Assessment Preparation and Learning worksheet 
 | Topics | Cost(hours) | Details | Reference | Start Date | End Date | Completed? | Questions | Comment |
